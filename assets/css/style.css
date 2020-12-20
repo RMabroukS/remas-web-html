@@ -1,0 +1,187 @@
+/*
+Theme Name : hajar cars
+Author: BMA
+Author URI: https://mostaql.com/u/bma_dev
+*/
+
+/*=========================================
+======= Font ==============================
+===========================================*/
+
+
+
+/*=========================================
+======= ==== ==============================
+===========================================*/
+
+* {
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  -moz-transition: all 350ms;
+  transition: all 350ms;
+}
+
+body {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.btn.focus,
+.btn:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+               Header
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+               Footer
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+               Cars
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+          Car Details
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Success
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+          sign in/up
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+          Comparaison
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+          My Profile
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+          Comparaison
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Responsive
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+/*========= 1024px ==========*/
+@media only screen and (max-width: 1024px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 990px ==========*/
+@media only screen and (max-width: 990px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 768px ==========*/
+@media only screen and (max-width: 768px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 580px ==========*/
+@media only screen and (max-width: 580px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 480px ==========*/
+@media only screen and (max-width: 480px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+
+}
