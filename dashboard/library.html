@@ -165,52 +165,45 @@
     
         <!-- = = main content = = -->
         <div class="main-content">
-
-            <div class="library-list">
-                <div class="lib-list-tlt">
-                    <h4>Your library</h4>
-                </div>
-                <div class="lib-list-menu">
-                    <ul class="nav flex-column">
-                        <li class="nav-item active">
-                            <span>Playlists</span>
-                            <ul>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="library-list">
+                        <div class="lib-list-tlt">
+                            <h4>Your library</h4>
+                        </div>
+                        <div class="lib-list-tab">
+                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <li>
-                                    <a href="" class="d-flex">
+                                    <span class="up-tab">Playlists</span>
+                                    <a class="nav-link d-flex active" id="liked-songs-tab" data-toggle="pill"
+                                        href="#liked-songs" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/lib-1.png" alt="">
                                         <div class="lib-name align-self-center">
                                             <span>Liked Songs</span>
                                             <small>214 Songs</small>
                                         </div>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" class="d-flex">
+                                    <a class="nav-link d-flex" id="liked-clips-tab" data-toggle="pill" href="#liked-clips"
+                                        role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/lib-2.png" alt="">
                                         <div class="lib-name align-self-center">
                                             <span>Clips</span>
                                             <small>54 Videos</small>
                                         </div>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" class="d-flex">
+                                    <a class="nav-link d-flex" href="#">
                                         <img class="align-self-center" src="../assets/img/dash/lib-3.png" alt="">
                                         <div class="lib-name align-self-center">
                                             <span>Downloads (Play Offline)</span>
                                         </div>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" class="d-flex">
+                                    <a class="nav-link d-flex" href="#">
                                         <img class="align-self-center" src="../assets/img/dash/lib-4.png" alt="">
                                         <div class="lib-name align-self-center">
                                             <span>Recently Played</span>
                                         </div>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="" class="d-flex">
+                                    <a class="nav-link d-flex" href="#">
                                         <img class="align-self-center" src="../assets/img/dash/lib-5.png" alt="">
                                         <div class="lib-name align-self-center">
                                             <span>New Iraqi Songs</span>
@@ -218,228 +211,1011 @@
                                         </div>
                                     </a>
                                 </li>
+        
+                                <li>
+                                    <a class="nav-link" id="album-the-tab" data-toggle="pill" href="#album-tab"
+                                        role="tab">album</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" id="artist-the-tab" data-toggle="pill" href="#artist-tab"
+                                        role="tab">artists</a>
+                                </li>
                             </ul>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Albums</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Artists</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="album-list">
-                <div class="container">
-                    <div class="sec-tlt d-flex justify-content-between">
-                        <div class="sec-title align-self-center">
-                            <h3>Albums</h3>
-                            <span>6 Albums</span>
-                        </div>
-                        <div class="sec-search align-self-center">
-                            <form class="form-inline">
-                                <i class="fas fa-search"></i>
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..."
-                                    aria-label="Search">
-                            </form>
                         </div>
                     </div>
-                    <div class="album-list-content">
-                        <div class="album-item">
-                            <div class="d-flex justify-content-between">
-                                <div class="album-name align-self-center">
-                                    <img src="../assets/img/dash/song-1.png" alt="">
-                                    <a href="album.html">Mohtama Bel Tafassil</a>
-                                </div>
-                                <div class="album-artist align-self-center">
-                                    <a href="artist.html">Cairokee Band</a>
-                                </div>
-                                <div class="album-btn align-self-center">
-                                    <div class="btn-group dropleft">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-heart"></i>
-                                                <span>Liked</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-share-square"></i>
-                                                <span>Share</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user-circle"></i>
-                                                <span>Artist Profile</span>
-                                            </a>
+                </div>
+        
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="liked-songs" role="tabpanel">
+                            <div class="songs-list">
+                                <div class="container">
+                                    <div class="sec-tlt d-flex justify-content-between">
+                                        <div class="sec-title align-self-center">
+                                            <h3>Playlists for you</h3>
+                                            <span>14 Songs</span>
                                         </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="album-item">
-                            <div class="d-flex justify-content-between">
-                                <div class="album-name align-self-center">
-                                    <img src="../assets/img/dash/song-2.png" alt="">
-                                    <a href="album.html">Nokta Beeda</a>
-                                </div>
-                                <div class="album-artist align-self-center">
-                                    <a href="artist.html">Cairokee Band</a>
-                                </div>
-                                <div class="album-btn align-self-center">
-                                    <div class="btn-group dropleft">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-heart"></i>
-                                                <span>Liked</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-share-square"></i>
-                                                <span>Share</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user-circle"></i>
-                                                <span>Artist Profile</span>
-                                            </a>
+                                        <div class="sec-search align-self-center">
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..."
+                                                    aria-label="Search">
+                                            </form>
                                         </div>
-                                      </div>
+                                    </div>
+                                    <div class="songs-list-content">
+                                        <div class="song-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="song-name align-self-center">
+                                                    <img src="../assets/img/dash/song-1.png" alt="">
+                                                    <a href="song.html">Ahed El Donia</a>
+                                                </div>
+                                                <div class="song-artist align-self-center">
+                                                    <a href="artist.html">Ramy Sabri</a>
+                                                </div>
+                                                <div class="song-length align-self-center">
+                                                    <span>05:33</span>
+                                                </div>
+                                                <div class="songs-btns align-self-center d-flex">
+                                                    <a href="">
+                                                        <i class="fas fa-play-circle"></i>
+                                                        Video Clip
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="far fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="song-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="song-name align-self-center">
+                                                    <img src="../assets/img/dash/song-2.png" alt="">
+                                                    <a href="song.html">Ya Magnoon</a>
+                                                </div>
+                                                <div class="song-artist align-self-center">
+                                                    <a href="artist.html">Asala Nasry</a>
+                                                </div>
+                                                <div class="song-length align-self-center">
+                                                    <span>03:53</span>
+                                                </div>
+                                                <div class="songs-btns align-self-center d-flex">
+                                                    <a href="">
+                                                        <i class="fas fa-play-circle"></i>
+                                                        Video Clip
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="far fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="song-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="song-name align-self-center">
+                                                    <img src="../assets/img/dash/song-3.png" alt="">
+                                                    <a href="song.html">Mahkama</a>
+                                                </div>
+                                                <div class="song-artist align-self-center">
+                                                    <a href="artist.html">Kazem El-Saher</a>
+                                                </div>
+                                                <div class="song-length align-self-center">
+                                                    <span>07:55</span>
+                                                </div>
+                                                <div class="songs-btns align-self-center d-flex">
+                                                    <a href="">
+                                                        <i class="fas fa-play-circle"></i>
+                                                        Video Clip
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="far fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="song-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="song-name align-self-center">
+                                                    <img src="../assets/img/dash/song-4.png" alt="">
+                                                    <a href="song.html">Song Name</a>
+                                                </div>
+                                                <div class="song-artist align-self-center">
+                                                    <a href="artist.html">Artist Name</a>
+                                                </div>
+                                                <div class="song-length align-self-center">
+                                                    <span>02:33</span>
+                                                </div>
+                                                <div class="songs-btns align-self-center d-flex">
+                                                    <a href="">
+                                                        <i class="fas fa-play-circle"></i>
+                                                        Video Clip
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="far fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="song-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="song-name align-self-center">
+                                                    <img src="../assets/img/dash/song-5.png" alt="">
+                                                    <a href="song.html">North Ireland</a>
+                                                </div>
+                                                <div class="song-artist align-self-center">
+                                                    <a href="artist.html">Call Band</a>
+                                                </div>
+                                                <div class="song-length align-self-center">
+                                                    <span>05:33</span>
+                                                </div>
+                                                <div class="songs-btns align-self-center d-flex">
+                                                    <a href="">
+                                                        <i class="fas fa-play-circle"></i>
+                                                        Video Clip
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="far fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="song-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="song-name align-self-center">
+                                                    <img src="../assets/img/dash/song-6.png" alt="">
+                                                    <a href="song.html">Hello it's me</a>
+                                                </div>
+                                                <div class="song-artist align-self-center">
+                                                    <a href="artist.html">Adele</a>
+                                                </div>
+                                                <div class="song-length align-self-center">
+                                                    <span>04:45</span>
+                                                </div>
+                                                <div class="songs-btns align-self-center d-flex">
+                                                    <a href="">
+                                                        <i class="fas fa-play-circle"></i>
+                                                        Video Clip
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="far fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="album-item">
-                            <div class="d-flex justify-content-between">
-                                <div class="album-name align-self-center">
-                                    <img src="../assets/img/dash/song-3.png" alt="">
-                                    <a href="album.html">The Dark Side of the Moon</a>
+                        <div class="tab-pane fade" id="liked-clips" role="tabpanel">
+                            <div class="videos-clips">
+                                <div class="sec-tlt">
+                                    <div class="d-flex justify-content-between">
+                                        <h3>New released songs for you</h3>
+                                        <a href="#" class="gery-btn small-size">View All</a>
+                                    </div>
                                 </div>
-                                <div class="album-artist align-self-center">
-                                    <a href="artist.html">Pink Floyd</a>
-                                </div>
-                                <div class="album-btn align-self-center">
-                                    <div class="btn-group dropleft">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-heart"></i>
-                                                <span>Liked</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-share-square"></i>
-                                                <span>Share</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user-circle"></i>
-                                                <span>Artist Profile</span>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-4.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
                                             </a>
                                         </div>
-                                      </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-1.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-2.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-3.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-1.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-2.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-3.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-4.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-4.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-1.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-2.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-3.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-1.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-2.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-3.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-4.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-4.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-1.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-2.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-3.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-1.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-2.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-3.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="video-clip-post">
+                                            <a href="videos.html">
+                                                <i class="fas fa-play"></i>
+                                                <img src="../assets/img/dash/vid-4.png" alt="">
+                                                <div class="video-clips-info">
+                                                    <span>Mahkama</span>
+                                                    <small>Kazem El-Saher</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="album-item">
-                            <div class="d-flex justify-content-between">
-                                <div class="album-name align-self-center">
-                                    <img src="../assets/img/dash/song-4.png" alt="">
-                                    <a href="album.html">Khaleek Folazi</a>
-                                </div>
-                                <div class="album-artist align-self-center">
-                                    <a href="artist.html">Tamer Hosny</a>
-                                </div>
-                                <div class="album-btn align-self-center">
-                                    <div class="btn-group dropleft">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-heart"></i>
-                                                <span>Liked</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-share-square"></i>
-                                                <span>Share</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user-circle"></i>
-                                                <span>Artist Profile</span>
-                                            </a>
+                        <div class="tab-pane fade" id="album-tab" role="tabpanel">
+                            <div class="album-list">
+                                <div class="container">
+                                    <div class="sec-tlt d-flex justify-content-between">
+                                        <div class="sec-title align-self-center">
+                                            <h3>Albums</h3>
+                                            <span>6 Albums</span>
                                         </div>
-                                      </div>
+                                        <div class="sec-search align-self-center">
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search"
+                                                    placeholder="Search in my liked songs..." aria-label="Search">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="album-list-content">
+                                        <div class="album-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="album-name align-self-center">
+                                                    <img src="../assets/img/dash/song-1.png" alt="">
+                                                    <a href="album.html">Mohtama Bel Tafassil</a>
+                                                </div>
+                                                <div class="album-artist align-self-center">
+                                                    <a href="artist.html">Cairokee Band</a>
+                                                </div>
+                                                <div class="album-btn align-self-center">
+                                                    <div class="btn-group dropleft">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-share-square"></i>
+                                                                <span>Share</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-user-circle"></i>
+                                                                <span>Artist Profile</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="album-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="album-name align-self-center">
+                                                    <img src="../assets/img/dash/song-2.png" alt="">
+                                                    <a href="album.html">Nokta Beeda</a>
+                                                </div>
+                                                <div class="album-artist align-self-center">
+                                                    <a href="artist.html">Cairokee Band</a>
+                                                </div>
+                                                <div class="album-btn align-self-center">
+                                                    <div class="btn-group dropleft">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-share-square"></i>
+                                                                <span>Share</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-user-circle"></i>
+                                                                <span>Artist Profile</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="album-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="album-name align-self-center">
+                                                    <img src="../assets/img/dash/song-3.png" alt="">
+                                                    <a href="album.html">The Dark Side of the Moon</a>
+                                                </div>
+                                                <div class="album-artist align-self-center">
+                                                    <a href="artist.html">Pink Floyd</a>
+                                                </div>
+                                                <div class="album-btn align-self-center">
+                                                    <div class="btn-group dropleft">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-share-square"></i>
+                                                                <span>Share</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-user-circle"></i>
+                                                                <span>Artist Profile</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="album-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="album-name align-self-center">
+                                                    <img src="../assets/img/dash/song-4.png" alt="">
+                                                    <a href="album.html">Khaleek Folazi</a>
+                                                </div>
+                                                <div class="album-artist align-self-center">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                                <div class="album-btn align-self-center">
+                                                    <div class="btn-group dropleft">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-share-square"></i>
+                                                                <span>Share</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-user-circle"></i>
+                                                                <span>Artist Profile</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="album-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="album-name align-self-center">
+                                                    <img src="../assets/img/dash/song-5.png" alt="">
+                                                    <a href="album.html">Shooky Leek</a>
+                                                </div>
+                                                <div class="album-artist align-self-center">
+                                                    <a href="artist.html">Noor Zain</a>
+                                                </div>
+                                                <div class="album-btn align-self-center">
+                                                    <div class="btn-group dropleft">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-share-square"></i>
+                                                                <span>Share</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-user-circle"></i>
+                                                                <span>Artist Profile</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="album-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="album-name align-self-center">
+                                                    <img src="../assets/img/dash/song-6.png" alt="">
+                                                    <a href="album.html">Nokta Beeda</a>
+                                                </div>
+                                                <div class="album-artist align-self-center">
+                                                    <a href="artist.html">Cairokee Band</a>
+                                                </div>
+                                                <div class="album-btn align-self-center">
+                                                    <div class="btn-group dropleft">
+                                                        <button type="button" class="btn btn-secondary dropdown-toggle"
+                                                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-heart"></i>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-share-square"></i>
+                                                                <span>Share</span>
+                                                            </a>
+                                                            <a class="dropdown-item" href="#">
+                                                                <i class="fas fa-user-circle"></i>
+                                                                <span>Artist Profile</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="album-item">
-                            <div class="d-flex justify-content-between">
-                                <div class="album-name align-self-center">
-                                    <img src="../assets/img/dash/song-5.png" alt="">
-                                    <a href="album.html">Shooky Leek</a>
-                                </div>
-                                <div class="album-artist align-self-center">
-                                    <a href="artist.html">Noor Zain</a>
-                                </div>
-                                <div class="album-btn align-self-center">
-                                    <div class="btn-group dropleft">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-heart"></i>
-                                                <span>Liked</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-share-square"></i>
-                                                <span>Share</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user-circle"></i>
-                                                <span>Artist Profile</span>
-                                            </a>
+                        <div class="tab-pane fade" id="artist-tab" role="tabpanel">
+                            <div class="artists-list">
+                                <div class="container">
+                                    <div class="sec-tlt d-flex justify-content-between">
+                                        <div class="sec-title align-self-center">
+                                            <h3>Meet your best singer</h3>
                                         </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="album-item">
-                            <div class="d-flex justify-content-between">
-                                <div class="album-name align-self-center">
-                                    <img src="../assets/img/dash/song-6.png" alt="">
-                                    <a href="album.html">Nokta Beeda</a>
-                                </div>
-                                <div class="album-artist align-self-center">
-                                    <a href="artist.html">Cairokee Band</a>
-                                </div>
-                                <div class="album-btn align-self-center">
-                                    <div class="btn-group dropleft">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-heart"></i>
-                                                <span>Liked</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-share-square"></i>
-                                                <span>Share</span>
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <i class="fas fa-user-circle"></i>
-                                                <span>Artist Profile</span>
-                                            </a>
+                                        <div class="sec-search align-self-center">
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..."
+                                                    aria-label="Search">
+                                            </form>
                                         </div>
-                                      </div>
+                                    </div>
+                                    <div class="artists-list-content">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Asala Nasri</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-4.png" alt="">
+                                                    <a href="artist.html">Angham</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-5.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Asala Nasri</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-4.png" alt="">
+                                                    <a href="artist.html">Angham</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-5.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Asala Nasri</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-4.png" alt="">
+                                                    <a href="artist.html">Angham</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-5.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Asala Nasri</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-4.png" alt="">
+                                                    <a href="artist.html">Angham</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-5.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Asala Nasri</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-4.png" alt="">
+                                                    <a href="artist.html">Angham</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-5.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-2.png" alt="">
+                                                    <a href="artist.html">Tamer Hosny</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-1.png" alt="">
+                                                    <a href="artist.html">Hussien Al-Jassmi</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-lg-2 col-md-3">
+                                                <div class="artist-item">
+                                                    <img src="../assets/img/dash/singer-3.png" alt="">
+                                                    <a href="artist.html">Mohamed Abdo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

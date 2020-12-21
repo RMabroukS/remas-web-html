@@ -13,26 +13,6 @@ Author URI: https://mostaql.com/u/bma_dev
    +++ Colors +++ 
    =========================*/
 
-  .main-color {
-    color: #0093D7 !important;
-  }
-  .sec-color {
-    color: #1DC215 !important;
-  }
-  .third-color {
-    color: #F5681C !important;
-  }
-  
-  .main-bg {
-    background-color: #0093D7 !important;
-  }
-  .sec-bg {
-    background-color: #1DC215 !important;
-  }
-  .third-bg {
-    background-color: #F5681C !important;
-  }
-
 
   /*========================
    +++ Buttons +++ 
@@ -96,6 +76,83 @@ Author URI: https://mostaql.com/u/bma_dev
    =========================*/
 
     /* === === SidNav === ===*/
+    .sidenav{
+      position: relative;
+      height: 100vh;
+      width: 250px;
+      left: 0;
+      top:0;
+      background-color: #000;
+    }
+    .sidenav .logo{
+      margin: auto;
+      text-align: center;
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .sidenav .ver-menu{
+      padding: 35px;
+      position: relative;
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .sidenav .ver-menu li{
+      margin-bottom: 35px;
+    }
+    .sidenav .ver-menu li:last-child{
+      margin-bottom: 0;
+    }
+    .sidenav .ver-menu li svg{
+      color: #979797;
+      font-size: 22px;
+    }
+    .sidenav .ver-menu li.active svg,
+    .foot-nav svg{
+      color: #fff;
+    }
+    .sidenav .ver-menu li a,
+    .sidenav .ver-menu li span{
+      display: inline;
+      font-size: 16px;
+      font-weight: 400;
+      color: #979797;
+      padding: 0 15px;
+    }
+    .sidenav .ver-menu li.active a,
+    .sidenav .ver-menu li a:hover,
+    .sidenav .ver-menu li.active span,
+    .sidenav .ver-menu li.active ul li.active a{
+      font-weight: 700;
+      color: #fff;
+    }
+    .sidenav .ver-menu li ul{
+      padding: 0;
+      margin-left: 22px;
+      margin-top: 15px;
+      list-style: none;
+    }
+    .sidenav .ver-menu li ul li{
+      margin-bottom: 15px;
+    }
+    .sidenav .foot-nav{
+      position: absolute;
+      bottom: 150px;
+      padding: 0 35px;
+    }
+    .foot-nav svg{
+      margin-right: 10px;
+      color: #979797;
+      font-size: 22px;
+    }
+    .foot-nav a{
+      display: inline;
+      font-size: 16px;
+      font-weight: 700;
+      color: #979797;
+      padding: 0 15px;
+    }
+    .sidenav .foot-nav a:hover,
+    .sidenav .foot-nav a.active{
+      color: #fff;
+    }
 
     /* === === Top nav === ===*/
 
