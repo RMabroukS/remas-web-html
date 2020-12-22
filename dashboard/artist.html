@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title> Artist Profile </title>
+
+    <!-- META DATA -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="img/fav.png" type="image/png" sizes="16x16">
+
+    <!-- ============== Fonts ============== -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- ============== Resources style ============== -->
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../assets/css/dash-style.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../assets/css/components.css" />
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Animate css Style -->
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+
+    <!-- Slick Slider css Style -->
+    <link rel="stylesheet" href="../assets/css/slick.css" />
+    
+
+</head>
+
+<body>
+
+    <!-- ==== Side Nav ==== -->
+    <div class="sidenav">
+        <div class="sidenav-content">
+            <div class="logo">
+                <a href="#"><img src="../assets/img/white-logo.png" alt="logo"></a>
+            </div>
+            <div class="ver-menu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <i class="fas fa-music"></i>
+                        <a class="nav-link" href="#">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fas fa-podcast"></i>
+                        <a class="nav-link" href="#">Live</a>
+                    </li>
+                    <li class="nav-item active">
+                        <i class="fas fa-music"></i>
+                        <span>Library</span>
+                        <ul>
+                            <li><a href="">Playlists</a></li>
+                            <li><a href="" class="active">Albums</a></li>
+                            <li><a href="">Artist</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot-nav">
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ==== The Content ==== -->
+
+    <div class="the-content">
+    
+        <!-- = = Top nav = =  -->
+        <div class="top-nav">
+            <div class="top-nav-content">
+                <div class="d-flex justify-content-between">
+                    <div class="top-nav-search">
+                        <form class="form-inline">
+                            <i class="fas fa-search"></i>
+                            <input class="form-control mr-sm-2" type="search"
+                                placeholder="Search for Artist, tracks, albums..." aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="top-nav-profile">
+                        <div class="d-flex">
+                            <a href="../prices.html" class="main-btn reg-size">Upgrad</a>
+
+                            <div class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropNotification"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell"></i>
+                                    <span class="badge">4</span>
+                                </a>
+    
+                                <div class="dropdown-menu" aria-labelledby="dropNotification">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <div class="d-flex">
+                                        <img src="../assets/img/dash/" alt="">
+                                        <div class="not-det">
+                                            <h6><a href="#">New Iraqi Songs</a></h6>
+                                            <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <span>09:35 AM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropProfile"
+                                    data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                    <img src="../assets/img/dash/user.png" alt="profile image">
+                                </a>
+    
+                                <div class="dropdown-menu" aria-labelledby="dropProfile">
+                                    <div class="drop-item">
+                                        <span>Ahmed Saleh</span>
+                                        <small><a href="">Edit</a></small>
+                                    </div>
+                                    <div class="drop-item">
+                                        <a class="dropdown-item" href="#">Contact Us</a>
+                                        <a class="dropdown-item" href="#">About</a>
+                                        <a class="dropdown-item" href="#">Terms and conditions</a>
+                                        <a class="dropdown-item" href="#">Privacy Policy</a>
+                                    </div>
+                                    <div class="drop-item">
+                                        <a href="settings.html">
+                                            <i class="fas fa-cog"></i>
+                                            <span>Settings</span>
+                                        </a>
+                                    </div>
+                                    <div class="drop-item">
+                                        <a href="settings.html">
+                                            <i class="fas fa-moon"></i>
+                                            <span>Dark Mode</span>
+                                        </a>
+                                    </div>
+                                    <div class="drop-item log-out">
+                                        <a href="settings.html">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- = = main content = = -->
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="artist-single single-block">
+                        <div class="signle-block-img">
+                            <button type="button" class="shr-btn"><i class="fas fa-share-square"></i></button>
+                            <img src="../assets/img/dash/ar-user.png" alt="">
+                        </div>
+                        <div class="single-block-tlt">
+                            <h3>Asala Nasry</h3>
+                            <div class="artist-stats d-flex">
+                                <div class="artist-stat">
+                                    <span>1.5M</span>
+                                    <small>Followers</small>
+                                </div>
+                                <div class="artist-stat">
+                                    <span>234M</span>
+                                    <small>Plays</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="signle-block-btns d-flex justify-content-center">
+                            <a href="#" class="main-btn regular-btn">
+                                <i class="fas fa-play"></i>
+                                <span>Play</span>
+                            </a>
+                            <a href="#" class="sec-btn regular-size">
+                                <i class="far fa-heart"></i>
+                                <span>My List</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-9">
+                    <div class="home-clips">
+                        <div class="sec-tlt">
+                            <div class="d-flex justify-content-between">
+                                <h3>Popular Video Clips</h3>
+                            </div>
+                        </div>
+                        <div class="home-carousel">
+                            <div class="carousel-item home-clips-post">
+                                <a href="videos.html">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/vid-1.png" alt="">
+                                    <div class="home-clips-info">
+                                        <span>Mahkama</span>
+                                        <div class="home-clips-meta d-flex justify-content-between">
+                                            <small>Kazem El-Saher</small>
+                                            <small>04:54</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-clips-post">
+                                <a href="videos.html">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/vid-2.png" alt="">
+                                    <div class="home-clips-info">
+                                        <span>Bahebak w Bartahlak</span>
+                                        <div class="home-clips-meta d-flex justify-content-between">
+                                            <small>Angham</small>
+                                            <small>04:54</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-clips-post">
+                                <a href="videos.html">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/vid-3.png" alt="">
+                                    <div class="home-clips-info">
+                                        <span>Song Name</span>
+                                        <div class="home-clips-meta d-flex justify-content-between">
+                                            <small>Noor Al-Zain</small>
+                                            <small>04:54</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-clips-post">
+                                <a href="videos.html">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/vid-1.png" alt="">
+                                    <div class="home-clips-info">
+                                        <span>Mahkama</span>
+                                        <div class="home-clips-meta d-flex justify-content-between">
+                                            <small>Kazem El-Saher</small>
+                                            <small>04:54</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-clips-post">
+                                <a href="videos.html">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/vid-2.png" alt="">
+                                    <div class="home-clips-info">
+                                        <span>Bahebak w Bartahlak</span>
+                                        <div class="home-clips-meta d-flex justify-content-between">
+                                            <small>Angham</small>
+                                            <small>04:54</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-clips-post">
+                                <a href="videos.html">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/vid-3.png" alt="">
+                                    <div class="home-clips-info">
+                                        <span>Song Name</span>
+                                        <div class="home-clips-meta d-flex justify-content-between">
+                                            <small>Noor Al-Zain</small>
+                                            <small>04:54</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songs">
+                        <div class="sec-tlt">
+                            <div class="d-flex justify-content-between">
+                                <h3>New released songs for you</h3>
+                                <a href="#" class="gery-btn small-size">View All</a>
+                            </div>
+                        </div>
+                        <div class="home-carousel">
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-1.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-2.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-3.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-4.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-5.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-1.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-2.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item home-songs-post">
+                                <a href="#">
+                                    <i class="fas fa-play"></i>
+                                    <img src="../assets/img/dash/song-3.png" alt="">
+                                    <div class="home-songs-info">
+                                        <span>Mohtama Bel Tafasel</span>
+                                        <small>Asala Nasry</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+    <!-- ============== Resources JS ============== -->
+
+    <!-- JQuery -->
+    <script src="../assets/js/jquery.min.js"></script>
+
+    <!-- Main -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="../assets/js/all.min.js"></script>
+
+    <!-- scroll Animation -->
+    <script src="../assets/js/wow.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <script src="../assets/js/slick.min.js"></script>
+
+    <!-- home playlists Carousel -->
+    <script type="text/javascript">
+        $('.home-clips .home-carousel').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerMode: true,
+        });
+    </script>
+
+    <!-- Songs Carousel -->
+    <script type="text/javascript">
+        $('.songs .home-carousel').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerMode: true,
+        });
+    </script>
+
+    <!-- Wow Animation -->
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

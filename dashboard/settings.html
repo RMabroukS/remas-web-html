@@ -24,7 +24,10 @@
 
     <!-- ============== Resources style ============== -->
     <!-- Main Style -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dash-style.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../assets/css/components.css" />
 
     <!-- Bootstrap Style -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
@@ -175,7 +178,7 @@
                         <div class="settings-list-tab">
                             <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <li>
-                                    <a class="nav-link d-flex active" id="profile-tab" data-toggle="pill"
+                                    <a class="nav-link d-flex active" id="profile-tab" href="#profile-link" data-toggle="pill"
                                         href="#profile" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/user.png" alt="">
                                         <span>Edit Profile</span>
@@ -183,7 +186,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="nav-link d-flex active" id="app-tab" data-toggle="pill"
+                                    <a class="nav-link d-flex" id="app-tab" href="#app-link" data-toggle="pill"
                                         href="#app" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/app.png" alt="">
                                         <span>App Settings</span>
@@ -191,7 +194,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="nav-link d-flex active" id="subscription-tab" data-toggle="pill"
+                                    <a class="nav-link d-flex" id="subscription-tab" href="#subscription-link" data-toggle="pill"
                                         href="#subscription" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/sub.png" alt="">
                                         <span>Subscription</span>
@@ -199,7 +202,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="nav-link d-flex active" id="notification-tab" data-toggle="pill"
+                                    <a class="nav-link d-flex" id="notification-tab" href="#notification-link" data-toggle="pill"
                                         href="#notification" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/notification.png" alt="">
                                         <span>Notification</span>
@@ -213,16 +216,215 @@
         
                 <div class="col-9">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="liked-songs" role="tabpanel">
+                        <div class="tab-pane fade show active" id="profile-link" role="tabpanel">
+                            <div class="edit-profile">
+                                <div class="edit-photo edit-block">
+                                    <div class="profile-photo">
+                                        <img src="../assets/img/dash/user-2.png" alt="">
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                </div>
+                                <div class="edit-info edit-block">
+                                    <form>
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <label for="firstName">Your Name</label>
+                                            <input type="text" class="form-control" placeholder="First name">
+                                          </div>
+                                          <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                          </div>
+                                          <div class="col-6">
+                                            <label for="email">Your Email</label>
+                                            <input type="email" class="form-control" placeholder="Your Email">
+                                          </div>
+                                          <div class="col-6">
+                                                <label for="phone">Your mobile number</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                                  <option>5</option>
+                                                </select>
+                                          </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="edit-password edit-block">
+                                    <div class="edit-block-tlt d-flex justify-content-between">
+                                        <h4>Change Password</h4>
+                                        <a href="#">Save</a>
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                          <div class="col-4">
+                                            <input type="password" class="form-control" placeholder="Old Password">
+                                          </div>
+                                          <div class="col-4">
+                                            <input type="password" class="form-control" placeholder="New Password">
+                                          </div>
+                                          <div class="col-4">
+                                            <input type="password" class="form-control" placeholder="Confirm Password">
+                                          </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="connect-btns edit-block d-flex justify-content-between">
+                                    <button type="button" class="fb-btn connect-btn">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Connect to facebbok</span>
+                                    </button>
+                                    <button type="button" class="google-btn connect-btn">
+                                        <img src="../assets/img/dash/search.png" alt="">
+                                        <span>Connect to Google</span>
+                                    </button>
+                                    <button type="button" class="apple-btn connect-btn">
+                                        <i class="fab fa-apple"></i>
+                                        <span>Connect to Apple</span>
+                                    </button>
+                                </div>
+                                <div class="text-right">
+                                    <a href="#" class="main-btn small-size">Save</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade" id="liked-clips" role="tabpanel">
+                        <div class="tab-pane fade" id="app-link" role="tabpanel">
+                            <div class="edit-theme">
+                                <div class="edit-lang">
+                                    <span>Language</span>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">English</label>
+                                      </div>
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2"> Arabic (عربي) </label>
+                                      </div>
+                                </div>
+                                <div class="edit-lang">
+                                    <span>Theme</span>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio01" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio01">Light</label>
+                                      </div>
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio02" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio02"> Dark</label>
+                                      </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade" id="album-tab" role="tabpanel">
+                        <div class="tab-pane fade" id="subscription-link" role="tabpanel">
+                            <div class="edit-subscription">
+                                <div class="free-txt">
+                                    <span>You are on the free plan now</span>
+                                </div>
+                                <div class="plans">
+                                    <h2>Upgrade your account</h2>
+                                    <div class="plans-content">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="sub-plan active">
+                                                    <div class="top-plan">
+                                                        <h3>Premium Plan</h3>
+                                                        <span>$49.99/month</span>
+                                                    </div>
+                                                    <div class="txt-plan">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                                        </p>
+                                                    </div>
+                                                    <div class="btn-plan">
+                                                        <a href="#" class="main-btn large-btn">Subscribe Now</a>
+                                                        <small>Cancel any time</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="sub-plan">
+                                                    <div class="top-plan">
+                                                        <h3>Family Plan</h3>
+                                                        <span>$24.99/month</span>
+                                                    </div>
+                                                    <div class="txt-plan">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                                        </p>
+                                                    </div>
+                                                    <div class="btn-plan">
+                                                        <a href="#" class="grey-btn large-btn">Subscribe Now</a>
+                                                        <small>Cancel any time</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="sub-plan">
+                                                    <div class="top-plan">
+                                                        <h3>Personal Plan</h3>
+                                                        <span>$19.99/month</span>
+                                                    </div>
+                                                    <div class="txt-plan">
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                                        </p>
+                                                    </div>
+                                                    <div class="btn-plan">
+                                                        <a href="#" class="grey-btn large-btn">Subscribe Now</a>
+                                                        <small>Cancel any time</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="tab-pane fade" id="artist-tab" role="tabpanel">
+                        <div class="tab-pane fade" id="notification-link" role="tabpanel">
+                            <div class="edit-notification">
+                                <div class="edt-notif-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Music recommendations</label>
+                                      </div>
+                                </div>
+                                <div class="edt-notif-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Artists I like</label>
+                                      </div>
+                                </div>
+                                <div class="edt-notif-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Playlists I like</label>
+                                      </div>
+                                </div>
+                                <div class="edt-notif-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Listening habits</label>
+                                      </div>
+                                </div>
+                                <div class="edt-notif-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                        <label class="custom-control-label" for="customCheck5">Social updates</label>
+                                      </div>
+                                </div>
+                                <div class="edt-notif-item">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">News, offers & great deals</label>
+                                      </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
