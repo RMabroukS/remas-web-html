@@ -19,6 +19,23 @@ Author URI: https://mostaql.com/u/bma_dev
    =========================*/
 
     /* === === Main Button === ===*/
+    .main-btn{
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
+    }
+    .main-btn.regular-size{
+      padding: 0 25px;
+      height: 35px;
+      line-height: 2;
+      font-weight: 700;
+    }
+    .main-btn.regular-size:hover{
+      padding: 0 35px;
+      color: #fff;
+      text-decoration: none;
+    }
 
     /* === === White Button === ===*/
 
@@ -43,6 +60,22 @@ Author URI: https://mostaql.com/u/bma_dev
   /*========================
    +++ Carousel Arrows +++ 
    =========================*/
+   .slick-slider{}
+   .slick-slider .slick-arrow {
+    position: absolute;
+    top: 45%;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 5px 8px!important;
+    z-index: 9;
+    text-align: center;
+   }
+   .slick-slider .slick-arrow.slick-prev{
+    left: 35px;
+   }
+   .slick-slider .slick-arrow.slick-next{
+     right: 10px;
+   }
 
 
 
@@ -77,12 +110,13 @@ Author URI: https://mostaql.com/u/bma_dev
 
     /* === === SidNav === ===*/
     .sidenav{
-      position: relative;
+      position: fixed;
       height: 100vh;
       width: 250px;
       left: 0;
       top:0;
       background-color: #000;
+      float: left;
     }
     .sidenav .logo{
       margin: auto;
@@ -155,6 +189,156 @@ Author URI: https://mostaql.com/u/bma_dev
     }
 
     /* === === Top nav === ===*/
+    .top-nav{
+      position: relative;
+      width: 100%;
+      background-color: transparent;
+      padding:15px 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .top-nav .top-nav-search{
+      position: relative;
+      width: 40%;
+    }
+    .top-nav .top-nav-search input{
+      position: relative;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      width: 80%;
+      height:50px;
+    }
+    .top-nav .top-nav-search input::placeholder{
+      color: #979797;
+    }
+    .top-nav .top-nav-search svg{
+      width: 16px;
+      height: 16px;
+      color: #979797;
+    }
+    .top-nav .top-nav-profile{
+      position: relative;
+      padding-top: 5px;
+    }
+    .top-nav .top-nav-profile a{
+      margin-right: 25px;
+    }
+    .top-nav .top-nav-profile .dropdown a{
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      position: relative;
+      margin-left: 15px;
+      padding: 0;
+    }
+    .top-nav .top-nav-profile .dropdown a:after{
+      display: none;
+    }
+    .top-nav .top-nav-profile .dropdown a svg{
+      color: #fff;
+      font-size: 18px;
+    }
+    .top-nav .top-nav-profile .dropdown a span{
+      position: absolute;
+      background-color: #FF3434;
+      font-size: 11px;
+      border-radius: 50%;
+      padding: 3px 5px;
+      right: 10px;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop{
+      position: relative;
+      max-width: 350px;
+      background-color: #000;
+      padding: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex{
+      padding: 10px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex:last-child{
+      border-bottom: none;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop img{
+      width: 76px;
+      height: 76px;
+      margin-right: 15px;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det{
+      position: relative;
+      width: 70%;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det a{
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det p{
+      color: #979797;
+      display: block;
+      margin-bottom: 0;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det span{
+      color: #FFDD00;
+      font-size: 11px;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop{
+      position: relative;
+      max-width: 200px;
+      background-color: #000;
+      border-radius: 5px;
+      border: none;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item:last-child{
+      border: none;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop span{
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+      display: block;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop small a{
+      font-size: 11px;
+      color: #FFDD00;
+      margin: 0;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item{
+      font-size: 14px;
+      color: #979797;
+      margin: 0;
+      padding: 5px 0;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item:hover{
+      color: #fff;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{}
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a{
+      padding: 0;
+      margin: 0;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a span{
+      position: relative;
+      display: inline-block;
+      background: transparent;
+      margin-left: 10px;
+    }
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a svg{}
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a span,
+    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a svg{
+      color: #FF3434;
+    }
+
+
 
     /* === === settings nav === ===*/
 

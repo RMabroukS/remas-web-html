@@ -5,10 +5,17 @@ Author URI: https://mostaql.com/u/bma_dev
 */
   
   /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-                 Header
+              The content
   =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
   
-  
+  .the-content{
+    position: relative;
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    background-color: #242424;
+  }
+  .the-content .main-content{
+  }
   
   
   
