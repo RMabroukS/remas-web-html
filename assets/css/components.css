@@ -25,10 +25,16 @@ Author URI: https://mostaql.com/u/bma_dev
       border-radius: 5px;
       background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
     }
-    .main-btn.regular-size{
-      padding: 0 25px;
+    .regular-size{
+      padding: 0 20px;
       height: 35px;
       line-height: 2;
+      font-weight: 700;
+    }
+    .small-size{
+      padding: 0 10px;
+      height: 30px;
+      line-height: 1.8;
       font-weight: 700;
     }
     .main-btn.regular-size:hover{
@@ -38,13 +44,64 @@ Author URI: https://mostaql.com/u/bma_dev
     }
 
     /* === === White Button === ===*/
+    .white-btn{
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+    .white-btn svg{
+      margin-right: 5px;
+    }
 
     /* === === Grey Button === ===*/
+    .grey-btn{
+      color: rgba(225, 225, 225, .66);
+      border: none;
+      border-radius: 5px;
+      background: #707070;
+      text-decoration: none;
+    }
+    .grey-btn:hover{
+      color: #fff;
+      text-decoration: none;
+    }
   
 
   /*========================
    +++ Titles +++ 
    =========================*/
+   .sec-tlt{
+     position: relative;
+     margin-bottom: 15px;
+     text-align: left;
+   }
+   .sec-tlt h3{
+     font-size: 20px;
+     margin-bottom: 3px;
+     color: #fff;
+     font-weight: bold;
+   }
+   .sec-tlt span{
+    font-size: 16px;
+    color: #979797;
+  }
+   .sec-tlt .sec-search{
+     position: relative;
+     width: 50%;
+   }
+   .sec-tlt .sec-search input{
+     width: 100%;
+     padding-left: 35px;
+   }
+   .sec-tlt .sec-search svg{
+    font-size: 16px;
+    color: #707070;
+    position: absolute;
+    left: 10px;
+   }
 
 
   /*========================
@@ -61,6 +118,10 @@ Author URI: https://mostaql.com/u/bma_dev
    +++ Carousel Arrows +++ 
    =========================*/
    .slick-slider{}
+   .slick-slider .slick-list{
+     padding: 0!important;
+   }
+
    .slick-slider .slick-arrow {
     position: absolute;
     top: 45%;
@@ -71,7 +132,7 @@ Author URI: https://mostaql.com/u/bma_dev
     text-align: center;
    }
    .slick-slider .slick-arrow.slick-prev{
-    left: 35px;
+    left: -15px;
    }
    .slick-slider .slick-arrow.slick-next{
      right: 10px;
@@ -347,27 +408,305 @@ Author URI: https://mostaql.com/u/bma_dev
     /* === === Intro nav === ===*/
 
     /* === === Artists === ===*/
+    .artists-list{
+      position: relative;
+      text-align: center;
+    }
+    .artists-list .artists-list-content{
+      margin-top: 50px;
+    }
+    .artists-list .artist-item{
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .artists-list .artist-item img{
+      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+      position: relative;
+      display: block;
+      margin: auto;
+    }
+    .artists-list .artist-item a{
+      font-size: 13px;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
+      display: block;
+    }
+    .artists-list .artist-item a:hover{
+      color: #FFDD00;
+    }
+
 
     /* === === album List === ===*/
+    .album-list{
+      position: relative;
+      text-align: center;
+    }
+    .album-list .album-list-content{
+      margin-top: 10px;
+    }
+    .album-list .album-item{
+      position: relative;
+      padding: 20px;
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .album-list .album-item:hover{
+      background-color: #1A1A1A;
+    }
+    .album-list .album-item:last-child{
+      border: none;
+    }
+    .album-list .album-item .album-name{
+      flex: 1;
+      text-align: left;
+    }
+    .album-list .album-item .album-name img{
+      width: 50px;
+      height: 50px;
+      margin-right: 35px;
+      border-radius: 5px;
+    }
+    .album-list .album-item .album-name{
+      flex: 1;
+    }
+    .album-list .album-item .album-name a{
+      font-size: 13px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .album-list .album-item .album-name a:hover,
+    .album-list .album-item .album-artist a:hover{
+      color: #FFDD00;
+    }
+    .album-list .album-item .album-artist a{
+      color: #979797;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .album-list .album-item .album-btn{
+      flex: 1;
+      text-align: right;
+    }
+    .album-list .album-item .album-btn button{
+      background-color: transparent!important;
+      color: #fff;
+      border: none;
+    }
+    .album-list .album-item .album-btn button:hover{
+      color: #FFDD00;
+    }
+    .album-list .album-item .album-btn button:before{
+      display: none;
+    }
+    .album-list .album-item .album-btn .dropdown-menu{
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      margin-right: 5px;
+    }
+    .album-list .album-item .album-btn .dropdown-menu a{
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .album-list .album-item .album-btn .dropdown-menu a:hover,
+    .album-list .album-item .album-btn .dropdown-menu a.active{
+      color: #FFDD00;
+      background-color: transparent;
+    }
+    .album-list .album-item .album-btn .dropdown-menu a svg{
+      margin-right: 10px;
+      font-size: 20px;  
+    }
+    .album-list .album-item .album-btn .dropdown-menu a span{}
+
+
+
 
     /* === === Songs List === ===*/
-
+    .songs-list{
+      position: relative;
+      text-align: center;
+    }
+    .songs-list .songs-list-content{
+      margin-top: 10px;
+    }
+    .songs-list .song-item{
+      position: relative;
+      padding: 20px;
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .songs-list .song-item:hover{
+      background-color: #1A1A1A;
+    }
+    .songs-list .song-item:last-child{
+      border: none;
+    }
+    .songs-list .song-item .song-name{}
+    .songs-list .song-item .song-name img{
+      width: 50px;
+      height: 50px;
+      margin-right: 35px;
+      border-radius: 5px;
+    }
+    .songs-list .song-item .song-name a{
+      font-size: 13px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .songs-list .song-item .song-name a:hover,
+    .songs-list .song-item .song-artist a:hover{
+      color: #FFDD00;
+    }
+    .songs-list .song-item .song-artist a,
+    .songs-list .song-item .song-length span{
+      color: #979797;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .songs-list .song-item .songs-btns a{
+      margin: 0 10px;
+      color: #fff;
+    }
+    .songs-list .song-item .songs-btns a:hover{
+      color: #FFDD00;
+    }
+ 
 
   /*========================
    +++ Home Components +++ 
    =========================*/
 
     /* === === Home Playlists === ===*/
+    .home-playlists{
+      position: relative;
+      margin-bottom: 35px;
+    }
+    .home-playlists img{
+      max-width: 100%;
+      max-height: 100%;
+      transition: all 350ms;
+      border-radius: 10px;
+    }
+    .home-playlists img:hover{
+      opacity: .8;
+      transform: scale(1.05);
+    }
 
     /* === === Home Clips === ===*/
+    .home-clips{
+      position: relative;
+      margin-bottom: 35px;
+    }
+    .home-clips .home-clips-post{
+      position: relative;
+      overflow: hidden;
+    }
+    .home-clips .home-clips-post svg{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 45%;
+      top: 45%;
+      background-color: #534753;
+      color: #fff;
+      padding: 7px;
+      border-radius: 50%;
+      z-index: 9;
+    }
+    .home-clips .home-clips-post img{}
+    .home-clips .home-clips-post .home-clips-info{}
+    .home-clips .home-clips-post .home-clips-info span{}
+    .home-clips .home-clips-post .home-clips-info .home-clips-meta{}
 
     /* === === Home Signers === ===*/
+    .signers .signers-content{
+      position: relative;
+      background-color: #1A1A1A;
+      margin-right: 70px !important;
+      margin: auto;
+      padding: 25px;
+      margin-bottom: 35px;
+      border-radius: 5px;
+    }
+    .the-content .main-content.music-content .signers .sec-tlt{
+      padding-right: 0!important;
+    }
+    .signers .signers-post-content{
+      position: relative;
+      background-color: #242424;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: center;
+      max-width: 175px;
+    }
+    .signers .signers-post-content img{
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
+    }
+    .signers .signers-post-content a{
+      font-size: 13px;
+      color: #fff;
+      margin: 20px 0;
+      display: block;
+    }
+    .signers .signers-post-content button{}
 
     /* === === home Songs === ===*/
 
-    /* === === Videos Clips === ===*/
-
     /* === === Geners === ===*/
+
+    /* === === Videos Clips === ===*/
+    .videos-clips{
+      position: relative;
+      padding-right: 70px;
+    }
+    .the-content .main-content.music-content .videos-clips .sec-tlt{
+      padding-right: 0!important;
+    }
+    .videos-clips .video-clip-post{
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 25px;
+    }
+    .videos-clips .video-clip-post img{
+      width: 100%;
+      max-width: 250px;
+      height: 120px;
+    }
+    .videos-clips .video-clip-post svg{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 45%;
+      top: 25%;
+      color: #fff;
+      padding: 7px;
+      border-radius: 50%;
+      z-index: 9;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+    .videos-clips .video-clip-post .video-clips-info{
+      position: relative;
+      margin-top: 10px;
+    }
+    .videos-clips .video-clip-post .video-clips-info span{
+      font-size: 17px;
+      font-weight: bold;
+      color: #fff;
+      display: block;
+    }
+    .videos-clips .video-clip-post .video-clips-info small{
+      font-size: 17px;
+      font-weight: 400;
+      color: #979797;
+    }
+
   
   
 

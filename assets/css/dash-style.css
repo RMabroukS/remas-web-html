@@ -3,6 +3,51 @@ Theme Name : hajar cars
 Author: BMA
 Author URI: https://mostaql.com/u/bma_dev
 */
+
+
+* {
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  -moz-transition: all 350ms;
+  transition: all 350ms;
+}
+
+body {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.btn.focus,
+.btn:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
   
   /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
               The content
@@ -15,6 +60,13 @@ Author URI: https://mostaql.com/u/bma_dev
     background-color: #242424;
   }
   .the-content .main-content{
+    padding: 35px 70px;
+  }
+  .the-content .main-content.music-content{
+    padding-right: 0!important;
+  }
+  .the-content .main-content.music-content .sec-tlt{
+    padding-right: 70px!important;
   }
   
   
