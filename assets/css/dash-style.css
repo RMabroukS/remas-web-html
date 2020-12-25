@@ -58,9 +58,14 @@ a {
     width: calc(100% - 250px);
     margin-left: 250px;
     background-color: #242424;
+    overflow: hidden;
+    min-height: 100vh;
   }
   .the-content .main-content{
-    padding: 35px 70px;
+    padding: 100px 70px;
+  }
+  .the-content .main-content.no-padding{
+    padding: 81px 0!important;
   }
   .the-content .main-content.music-content{
     padding-right: 0!important;
@@ -69,7 +74,27 @@ a {
     padding-right: 70px!important;
   }
   
+
+
+
+  /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Library Page
+  =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+  .library-page .tab-content,
+  .settings-page .tab-content,
+  .album-page .right-single-block{
+    margin-left: 350px;
+  }
   
+  /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Album Page
+  =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+  .album-page .signle-block-img{
+    background-image: url(../img/dash/play-list-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   
   
   

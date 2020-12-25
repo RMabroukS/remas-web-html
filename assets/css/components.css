@@ -19,23 +19,31 @@ Author URI: https://mostaql.com/u/bma_dev
    =========================*/
 
     /* === === Main Button === ===*/
-    .main-btn{
+    .main-btn,
+    .main-btn span{
       color: #fff;
       border: none;
       border-radius: 5px;
       background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
     }
     .regular-size{
-      padding: 0 20px;
+      padding: 0 30px;
       height: 35px;
       line-height: 2;
       font-weight: 700;
+      min-width: 135px;
+      text-align: center;
     }
     .small-size{
       padding: 0 10px;
       height: 30px;
       line-height: 1.8;
       font-weight: 700;
+    }
+    .regular-size svg,
+    .small-size svg {
+      font-size: 13px;
+      margin-right: 5px;
     }
     .main-btn.regular-size:hover{
       padding: 0 35px;
@@ -78,29 +86,36 @@ Author URI: https://mostaql.com/u/bma_dev
      margin-bottom: 15px;
      text-align: left;
    }
-   .sec-tlt h3{
+   .sec-tlt .sec-title h3{
      font-size: 20px;
      margin-bottom: 3px;
      color: #fff;
      font-weight: bold;
    }
-   .sec-tlt span{
+   .sec-tlt .sec-title  span{
     font-size: 16px;
     color: #979797;
   }
    .sec-tlt .sec-search{
      position: relative;
-     width: 50%;
+     width: 55%;
+
    }
+   .sec-tlt .sec-search form{
+    position: relative;
+    width: 75%;
+    display: inline-block;
+  }
    .sec-tlt .sec-search input{
      width: 100%;
      padding-left: 35px;
    }
-   .sec-tlt .sec-search svg{
+   .sec-tlt .sec-search form svg{
     font-size: 16px;
     color: #707070;
     position: absolute;
     left: 10px;
+    top: 10px;
    }
 
 
@@ -251,11 +266,15 @@ Author URI: https://mostaql.com/u/bma_dev
 
     /* === === Top nav === ===*/
     .top-nav{
-      position: relative;
-      width: 100%;
-      background-color: transparent;
-      padding:15px 50px;
+      position: fixed;
+      z-index: 99;
+      width: calc(100% - 250px);
+      left: 250px;
+      background-color: #24242480;
+      padding: 15px 50px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
     }
     .top-nav .top-nav-search{
       position: relative;
@@ -402,10 +421,156 @@ Author URI: https://mostaql.com/u/bma_dev
 
 
     /* === === settings nav === ===*/
+    .settings-list{
+      position: fixed;
+      height: calc(100vh - 80px);
+      border-right: 1px solid rgba(225, 225, 225, .16) ;
+      padding: 0 !important;
+      width: 350px;
+    }
+    .settings-list h4{
+      padding: 35px 50px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .settings-list h4 svg{
+      margin-right: 10px;
+    }
+    .settings-list ul{
+      position: relative;
+      margin-top: 25px;
+    }
+    .settings-list ul li a{
+      padding: 15px 35px;
+      position: relative;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    }
+    .settings-list ul li a.active{
+      background-color: #3A3A3A !important;
+      border-radius: 0;
+    }
+    .settings-list ul li a img{
+      margin-right: 20px;
+    }
+    .settings-list ul li a span{
+      margin-left: 0;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 0;
+      font-weight: 400;
+      line-height: 2.5;
+    }
+    .settings-list ul li a svg{
+      position: absolute;
+      right: 25px;
+      top: 25px;
+    }
+
 
     /* === === Library Nav === ===*/
+    .library-list{
+      position: fixed;
+      height: calc(100vh - 80px);
+      border-right: 1px solid rgba(225, 225, 225, .16) ;
+      padding: 0 !important;
+      width: 350px;
+    }
+    .library-list h4{
+      padding: 35px 50px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .library-list ul{
+      position: relative;
+      margin-top: 25px;
+    }
+    .library-list ul li{
+      border-bottom: 1px solid rgba(225, 225, 225, .16);
+    }
+    .library-list ul li span{
+      font-size: 16px;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+      margin-left: 35px;
+    }
+    .library-list ul li a{
+      padding: 15px 35px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 400;
+    }
+    .library-list ul li a.active{
+      background-color: #3A3A3A !important;
+      border-radius: 0;
+    }
+    .library-list ul li a img{
+      margin-right: 20px;
+    }
+    .library-list ul li a span{
+      margin-left: 0;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .library-list ul li a small{
+      font-size: 11px;
+      color: #979797;
+    }
+
 
     /* === === Intro nav === ===*/
+    .single-block{
+      position: fixed;
+      height: calc(100vh - 80px);
+      border-right: 1px solid rgba(225, 225, 225, .16) ;
+      padding: 0 !important;
+      width: 350px;
+    }
+    .single-block .signle-block-img img{
+      position: relative;
+      padding: 45px;
+      text-align: center;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(25px);
+      width: 100%;
+    }
+    .single-block .signle-block-img button{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      z-index: 9;
+    }
+    .single-block .signle-block-img button:hover{
+      color: #FFDD00;
+    }
+    .single-block .single-block-tlt{
+      position: relative;
+      margin: 35px 0;
+      text-align: center;
+    }
+    .single-block .single-block-tlt h3{
+      font-weight: bold;
+      color: #fff;
+      font-size: 30px;
+    }
+    .single-block .single-block-tlt small{
+      display: block;
+      color: #979797;
+      font-size: 14px;
+    }
+
 
     /* === === Artists === ===*/
     .artists-list{
