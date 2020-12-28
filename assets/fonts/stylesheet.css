@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'GE SS Text';
+    src: url('GESSTextLight-Light.woff2') format('woff2'),
+        url('GESSTextLight-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('GESSTwoBold-Bold.woff2') format('woff2'),
+        url('GESSTwoBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('GESSTwoMedium-Medium.woff2') format('woff2'),
+        url('GESSTwoMedium-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Unique';
+    src: url('GESSUniqueBold-Bold.woff2') format('woff2'),
+        url('GESSUniqueBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: url('GESSTextBold-Bold.woff2') format('woff2'),
+        url('GESSTextBold-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: url('GESSTextMedium-Medium.woff2') format('woff2'),
+        url('GESSTextMedium-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: url('GESSTextItalic-LightItalic.woff2') format('woff2'),
+        url('GESSTextItalic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Unique';
+    src: url('GESSUniqueLight-Light.woff2') format('woff2'),
+        url('GESSUniqueLight-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Text';
+    src: url('GESSTextUltraLight-UltraLight.woff2') format('woff2'),
+        url('GESSTextUltraLight-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('GESSTwoLight-Light.woff2') format('woff2'),
+        url('GESSTwoLight-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS TV';
+    src: url('GESSTV-Light.woff2') format('woff2'),
+        url('GESSTV-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS Three';
+    src: url('GESSThree-Light.woff2') format('woff2'),
+        url('GESSThree-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GE SS TV';
+    src: url('GESSTV-Medium.woff2') format('woff2'),
+        url('GESSTV-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

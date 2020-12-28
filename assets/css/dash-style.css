@@ -13,7 +13,7 @@ Author URI: https://mostaql.com/u/bma_dev
 }
 
 body {
-  font-family: 'Cairo', sans-serif !important;
+  font-family: 'GE SS Text' !important;
 }
 
 textarea:focus,
@@ -69,6 +69,7 @@ a {
   }
   .the-content .main-content.music-content{
     padding-right: 0!important;
+    padding-left: 20px;
   }
   .the-content .main-content.music-content .sec-tlt{
     padding-right: 70px!important;
@@ -82,7 +83,7 @@ a {
   =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
   .library-page .tab-content,
   .settings-page .tab-content,
-  .album-page .right-single-block{
+  .right-single-block{
     margin-left: 350px;
   }
   
@@ -95,7 +96,181 @@ a {
     background-position: center;
     background-size: cover;
   }
+
   
+  /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Playlist Page
+  =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+  .playlist-page .signle-block-img{
+    background-image: url(../img/dash/play-list-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  
+  /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            artist Page
+  =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+  .artist-page .single-block .single-block-tlt{
+    margin-top: 0px;
+  }
+  
+  /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+              Settings
+  =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+  .edit-profile{}
+  .edit-profile .edit-block{
+    position: relative;
+    text-align: center;
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+  }
+  .edit-profile .edit-block .edit-block-tlt{
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .edit-profile .edit-block .edit-block-tlt h4{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .edit-profile .edit-block .edit-block-tlt a{
+    font-size: 14px;
+    color: #FFDD00;
+    font-weight: 400;
+  }
+  .edit-profile .edit-photo{}
+  .edit-profile .edit-photo input{
+    opacity: 0;
+    width: 90px;
+    cursor: pointer;
+  }
+  .edit-profile .edit-photo label{
+    background: transparent;
+    width: fit-content;
+    border: none;
+    color: #FFDD00;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+  }
+  .edit-profile .edit-photo label::after{
+    display: none;
+  }
+  .edit-profile .edit-info .main-form span{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .edit-profile .connect-btns{}
+  .edit-profile .connect-btns button{
+    position: relative;
+    height: 40px;
+    max-width: 280px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 0 35px 0 15px;
+    line-height: 1;
+    border: none;
+    font-size: 16px;
+  }
+  .edit-profile .connect-btns button:hover{
+    opacity: 0.7;
+  }
+  .edit-profile .connect-btns button svg,
+  .edit-profile .connect-btns button img{
+    margin-right: 10px;
+  }
+  .edit-profile .connect-btns .fb-btn{
+    background-color: #1877F2;
+    color: #fff;
+  }
+  .edit-profile .connect-btns .google-btn{
+    background-color: #fff;
+    color: #000;
+    margin: 0 50px;
+  }
+  .edit-profile .connect-btns .apple-btn{
+    background-color: #000;
+    color: #fff;
+  }
+
+  .edit-theme{}
+  .edit-theme .edit-lang{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .edit-theme .edit-lang span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .edit-theme .custom-control,
+  .edit-notification .custom-control{
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.16) !important;
+    padding-bottom: 25px;
+    padding-left: 0;
+  }
+  .edit-theme .custom-control:last-child,
+  .edit-notification .custom-control:last-child{
+    border: none;
+  }
+  .edit-theme .custom-control input{}
+  .edit-theme .custom-control label,
+  .edit-notification .custom-control label{
+    color: rgba(225, 225, 225, 0.16);
+    font-size: 18px;
+    display: block;
+    width: 100%;
+  }
+  .edit-theme .custom-control label::before,
+  .edit-theme .custom-control label::after,
+  .edit-notification .custom-control label::before,
+  .edit-notification .custom-control label::after{
+    right: 0!important;
+    left: auto !important;
+    background-image: none !important;
+  }
+  .edit-theme .custom-control label::before,
+  .edit-notification .custom-control label::before{
+    background-color: #383838;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: none;
+  }
+  .edit-theme .custom-control .custom-control-input:not(:disabled):active~.custom-control-label::before,
+  .edit-theme .custom-control .custom-control-input:checked~.custom-control-label::before,
+  .edit-notification .custom-control .custom-control-input:not(:disabled):active~.custom-control-label::before,
+  .edit-notification .custom-control .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #FFDD00;
+    background-image: none;
+    border-color: #3371b5;
+  }
+
+
+  .edit-subscription{}
+  .edit-subscription .free-txt{
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+    font-size: 16px;
+    color: rgba(225, 225, 225, 0.16);
+  }
+  .edit-subscription .plans h2{
+    font-size: 34px;
+    font-weight: bold;
+    color: #fff;
+    margin: 35px 0;
+  }
   
   
   

@@ -406,6 +406,56 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="carousel-item signers-post">
+                            <div class="signers-post-content">
+                                <img src="../assets/img/dash/singer-1.png" alt="">
+                                <a href="signer">Tamer Hosny</a>
+                                <button class="white-btn regular-size">
+                                    <i class="fas fa-plus"></i>
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item signers-post">
+                            <div class="signers-post-content">
+                                <img src="../assets/img/dash/singer-2.png" alt="">
+                                <a href="signer">Asala Nasri</a>
+                                <button class="white-btn regular-size">
+                                    <i class="fas fa-plus"></i>
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item signers-post">
+                            <div class="signers-post-content">
+                                <img src="../assets/img/dash/singer-3.png" alt="">
+                                <a href="signer">Hussien Al-Jassmi</a>
+                                <button class="white-btn regular-size">
+                                    <i class="fas fa-plus"></i>
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item signers-post">
+                            <div class="signers-post-content">
+                                <img src="../assets/img/dash/singer-4.png" alt="">
+                                <a href="signer">Angham</a>
+                                <button class="white-btn regular-size">
+                                    <i class="fas fa-plus"></i>
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item signers-post">
+                            <div class="signers-post-content">
+                                <img src="../assets/img/dash/singer-5.png" alt="">
+                                <a href="signer">Mohamed Abdo</a>
+                                <button class="white-btn regular-size">
+                                    <i class="fas fa-plus"></i>
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -902,6 +952,86 @@
                 </div>
             </div>
         </div>
+
+        <div class="ramas-player">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <div class="main-control d-flex">
+                        <div class="main-control-item amplitude-prev">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="main-control-item amplitude-play-pause amplitude-paused" data-amplitude-song-index="0">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="main-control-item amplitude-next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                    </div>
+                    <div class="time-control">
+                        <div class="d-flex">
+                            <img class="song-img" width="50" height="50" src="../assets/img/dash/player-img.png" alt="">
+                            <div class="time-content">
+                                <div class="player-info">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="left-info">
+                                            <div class="song-title">Dusk To Dawn</div>
+                                            <div class="song-artist">Emancipator</div>
+                                        </div>
+                                        <div class="right-info">
+                                            <div id="repeat-container">
+                                                <div class="repeat-item amplitude-repeat amplitude-repeat-off" id="repeat">
+                                                    <img src="../assets/img/dash/repeat.png" alt="">
+                                                </div>
+                                                <div class="repeat-item amplitude-shuffle amplitude-shuffle-off" id="shuffle">
+                                                    <i class="fas fa-random"></i>
+                                                </div>
+                                                <div class="repeat-item ">
+                                                    <i class="fas fa-share-square"></i>
+                                                </div>
+                                                <div class="repeat-item volum-item" id="volume-container">
+                                                    <div class="volume-controls">
+                                                        <div class="amplitude-mute amplitude-not-muted"></div>
+                                                        <input type="range" class="amplitude-volume-slider">
+                                                        <div class="ms-range-fix"></div>
+                                                    </div>
+                                                    <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-bar">
+                                    <div class="current-time">
+                                        <span class="amplitude-current-minutes" data-amplitude-song-index="1">00</span>:<span class="amplitude-current-seconds" data-amplitude-song-index="1">00</span>
+                                    </div>
+                                    <progress class="amplitude-song-played-progress" data-amplitude-song-index="0" id="song-played-progress-1" value="0"></progress>
+                                    <div class="duration">
+                                        <span class="amplitude-duration-minutes" data-amplitude-song-index="1">00</span>:<span class="amplitude-duration-seconds" data-amplitude-song-index="1">00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra-tools">
+                        <a href="">
+                            <img src="../assets/img/dash/list.png" alt="">
+                            <span>Queue list</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video Clip</span>
+                        </a>
+                        <a href="">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <span>Download</span>
+                        </a>
+                        <a href="">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     </div>
 
@@ -928,6 +1058,9 @@
     <!-- Slick Carousel -->
     <script src="../assets/js/slick.min.js"></script>
 
+    <!-- player -->
+    <script src="../assets/js/amplitude.min.js"></script>
+
     <!-- home playlists Carousel -->
     <script type="text/javascript">
         $('.home-playlists .home-carousel').slick({
@@ -940,7 +1073,7 @@
             nextArrow: "<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>",
             responsive: [
                 {
-                    breakpoint: 1439,
+                    breakpoint: 1441,
                     settings: {
                         slidesToShow: 5
                     }
@@ -971,38 +1104,117 @@
     <script type="text/javascript">
         $('.home-clips .home-carousel').slick({
             slidesToShow: 4,
-            centerPadding: '60px',
             slidesToScroll: 1,
             autoplay: false,
             autoplaySpeed: 2000,
             centerMode: true,
-            prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/img/dash/left.png'>",
-            nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>"
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='../assets/img/dash/left.png'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>",
+            responsive: [
+                {
+                    breakpoint: 1441,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
     </script>
 
     <!-- Signers Carousel -->
     <script type="text/javascript">
         $('.signers .home-carousel').slick({
-            slidesToShow: 5,
+            slidesToShow: 7,
             slidesToScroll: 1,
             autoplay: false,
+            centerMode: true,
             autoplaySpeed: 2000,
             prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/img/dash/left.png'>",
-            nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>"
+            nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>",
+            responsive: [
+                {
+                    breakpoint: 1441,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+
         });
     </script>
     
     <!-- Songs Carousel -->
     <script type="text/javascript">
         $('.songs .home-carousel').slick({
-            slidesToShow: 5,
+            slidesToShow: 7,
             slidesToScroll: 1,
             autoplay: false,
             autoplaySpeed: 2000,
             centerMode: true,
             prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/img/dash/left.png'>",
-            nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>"
+            nextArrow:"<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>",
+            responsive: [
+                {
+                    breakpoint: 1441,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
     </script>
 

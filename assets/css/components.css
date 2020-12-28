@@ -4,14 +4,133 @@ Author: BMA
 Author URI: https://mostaql.com/u/bma_dev
 */
 
+
+
+
+@font-face {
+  font-family: 'GE SS Text';
+  src: url('../fonts/GESSTextLight-Light.woff2') format('woff2'),
+      url('../fonts/GESSTextLight-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('../fonts/GESSTwoBold-Bold.woff2') format('woff2'),
+      url('../fonts/GESSTwoBold-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('../fonts/GESSTwoMedium-Medium.woff2') format('woff2'),
+      url('../fonts/GESSTwoMedium-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Unique';
+  src: url('../fonts/GESSUniqueBold-Bold.woff2') format('woff2'),
+      url('../fonts/GESSUniqueBold-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Text';
+  src: url('../fonts/GESSTextBold-Bold.woff2') format('woff2'),
+      url('../fonts/GESSTextBold-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Text';
+  src: url('../fonts/GESSTextMedium-Medium.woff2') format('woff2'),
+      url('../fonts/GESSTextMedium-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Text';
+  src: url('../fonts/GESSTextItalic-LightItalic.woff2') format('woff2'),
+      url('../fonts/GESSTextItalic-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Unique';
+  src: url('../fonts/GESSUniqueLight-Light.woff2') format('woff2'),
+      url('../fonts/GESSUniqueLight-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Text';
+  src: url('../fonts/GESSTextUltraLight-UltraLight.woff2') format('woff2'),
+      url('../fonts/GESSTextUltraLight-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url('../fonts/GESSTwoLight-Light.woff2') format('woff2'),
+      url('../fonts/GESSTwoLight-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS TV';
+  src: url('../fonts/GESSTV-Light.woff2') format('woff2'),
+      url('../fonts/GESSTV-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS Three';
+  src: url('../fonts/GESSThree-Light.woff2') format('woff2'),
+      url('../fonts/GESSThree-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GE SS TV';
+  src: url('../fonts/GESSTV-Medium.woff2') format('woff2'),
+      url('../fonts/GESSTV-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
 /*=========================================
 ============ Common Components ============
 ===========================================*/
-  
-
-  /*========================
-   +++ Colors +++ 
-   =========================*/
 
 
   /*========================
@@ -25,6 +144,14 @@ Author URI: https://mostaql.com/u/bma_dev
       border: none;
       border-radius: 5px;
       background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
+    }
+    .large-size{
+      padding: 8px 40px;
+      height: 45px;
+      line-height: 2;
+      font-weight: 700;
+      min-width: 175px;
+      text-align: center;
     }
     .regular-size{
       padding: 0 30px;
@@ -44,6 +171,10 @@ Author URI: https://mostaql.com/u/bma_dev
     .small-size svg {
       font-size: 13px;
       margin-right: 5px;
+    }
+    .main-btn:hover{
+      color: #fff;
+      text-decoration: none;
     }
     .main-btn.regular-size:hover{
       padding: 0 35px;
@@ -85,6 +216,7 @@ Author URI: https://mostaql.com/u/bma_dev
      position: relative;
      margin-bottom: 15px;
      text-align: left;
+     color: #fff;
    }
    .sec-tlt .sec-title h3{
      font-size: 20px;
@@ -122,11 +254,87 @@ Author URI: https://mostaql.com/u/bma_dev
   /*========================
    +++ Forms +++ 
    =========================*/
+   .main-form input,
+   .main-form select{
+    border: 2px solid rgba(225, 225, 225, 0.16);
+    background-color: transparent;
+    height: 45px;
+    color: #000 !important;
+    margin-bottom: 25px;
+   }
+   .main-form label{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+   }
+   .main-form select{;
+    color: rgba(225, 225, 225, 0.16) !important;
+   }
+   .main-form select:focus{;
+    color: rgba(0, 0, 0) !important;
+   }
+   .main-form input::placeholder{
+     color: rgba(225, 225, 225, .16);
+     font-size: 15px;
+   }
+
 
 
   /*========================
    +++ Prices +++ 
    =========================*/
+   .plans{}
+   .plans .sub-plan{
+     position: relative;
+     background-image: linear-gradient(45deg, #fff, #D1D1D1);
+     padding: 25px;
+     height: 500px;
+     max-width: 280px;
+     margin: auto;
+     text-align: center;
+     border-radius: 8px;
+   }
+   .plans .sub-plan.active{
+     border-top: 4px solid #FFDD00;
+   }
+   .plans .sub-plan .top-plan{
+     position: relative;
+     margin-bottom: 80px;
+   }
+   .plans .sub-plan .top-plan h3{
+     color: #383838;
+     font-size: 26px;
+     font-weight: bold;
+   }
+   .plans .sub-plan .top-plan span{
+    color: #383838;
+    font-size: 28px;
+    font-weight: 300;
+   }
+   .plans .sub-plan .txt-plan p{
+     font-size: 16px;
+     color: #000000;
+   }
+   .plans .sub-plan .btn-plan{
+    position: absolute;
+    bottom: 35px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+   }
+   .plans .sub-plan .btn-plan a{
+    top: -15px;
+    position: relative;
+   }
+   .plans .sub-plan .btn-plan small{
+     display: block;
+     text-align: center;
+     color: #979797;
+     font-size: 12px;
+   }
 
 
   /*========================
@@ -420,6 +628,37 @@ Author URI: https://mostaql.com/u/bma_dev
 
 
 
+    /* === === Reams Player === ===*/
+    .ramas-player{
+      position: fixed;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 99;
+      padding: 15px;
+      background: linear-gradient(to right, #A900FF 0%, #3900F9 100%);
+    }
+    .ramas-player .main-control{}
+    .ramas-player .main-control .main-control-item{}
+    .ramas-player .main-control .main-control-item svg{}
+
+    .ramas-player .time-control{}
+    .ramas-player .time-control .song-img{}
+    .ramas-player .time-control .player-info{}
+    .ramas-player .time-control .player-info .left-info{}
+    .ramas-player .time-control .player-info .left-info .song-title{}
+    .ramas-player .time-control .player-info .left-info .song-artist{}
+    .ramas-player .time-control .player-info .right-info{}
+    .ramas-player .time-control .player-info .right-info .repeat-item img{}
+    .ramas-player .time-control .player-info .right-info .repeat-item svg{}
+    .ramas-player .time-control .player-info .time-bar{}
+    .ramas-player .time-control .player-info .time-bar span{}
+    .ramas-player .time-control .player-info .time-bar progress{}
+    .ramas-player .extra-tools{}
+    .ramas-player .extra-tools a{}
+    .ramas-player .extra-tools a svg{}
+
+
     /* === === settings nav === ===*/
     .settings-list{
       position: fixed;
@@ -569,6 +808,24 @@ Author URI: https://mostaql.com/u/bma_dev
       display: block;
       color: #979797;
       font-size: 14px;
+    }
+    .artist-stats{
+      border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+    .artist-stats div{
+      margin: 10px;
+      font-size: 12px;
+    }
+    .artist-stats span{
+      color: #979797 !important;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .artist-stats small{
+      color: #979797;
+      display: inline-block !important;
     }
 
 
@@ -745,7 +1002,8 @@ Author URI: https://mostaql.com/u/bma_dev
     /* === === Home Playlists === ===*/
     .home-playlists{
       position: relative;
-      margin-bottom: 35px;
+      margin-bottom: 50px;
+      left: 50px;
     }
     .home-playlists img{
       max-width: 100%;
@@ -757,32 +1015,59 @@ Author URI: https://mostaql.com/u/bma_dev
       opacity: .8;
       transform: scale(1.05);
     }
+    .home-playlists .slick-slider .slick-arrow.slick-next,
+    .home-clips .slick-slider .slick-arrow.slick-next{
+      right: 75px;
+    }
 
     /* === === Home Clips === ===*/
     .home-clips{
       position: relative;
-      margin-bottom: 35px;
+      margin-bottom: 50px;
+      left: 50px;
     }
     .home-clips .home-clips-post{
       position: relative;
       overflow: hidden;
+      display: inline-block;
+      max-width: 430px;
+      width: 100%;
+      height: 220px;
+      padding-right: 60px;
     }
     .home-clips .home-clips-post svg{
       position: absolute;
       width: 30px;
       height: 30px;
       left: 45%;
-      top: 45%;
-      background-color: #534753;
+      top: 35%;
+      background-color: #3a3a3a65;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
       color: #fff;
       padding: 7px;
       border-radius: 50%;
       z-index: 9;
     }
-    .home-clips .home-clips-post img{}
-    .home-clips .home-clips-post .home-clips-info{}
-    .home-clips .home-clips-post .home-clips-info span{}
-    .home-clips .home-clips-post .home-clips-info .home-clips-meta{}
+    .home-clips .home-clips-post img{
+      width: 100%;
+      height: 145px;
+      border-radius: 5px 5px 0 0;
+    }
+    .home-clips .home-clips-post .home-clips-info{
+      background-color: #000;
+      padding: 10px;
+      border-radius: 0 0 5px 5px;
+    }
+    .home-clips .home-clips-post .home-clips-info span{
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .home-clips .home-clips-post .home-clips-info .home-clips-meta{
+      color: #979797;
+    }
 
     /* === === Home Signers === ===*/
     .signers .signers-content{
@@ -791,8 +1076,9 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-right: 70px !important;
       margin: auto;
       padding: 25px;
-      margin-bottom: 35px;
       border-radius: 5px;
+      margin-bottom: 50px;
+      margin: 0 50px 50px 50px;
     }
     .the-content .main-content.music-content .signers .sec-tlt{
       padding-right: 0!important;
@@ -818,9 +1104,65 @@ Author URI: https://mostaql.com/u/bma_dev
       margin: 20px 0;
       display: block;
     }
-    .signers .signers-post-content button{}
+    .signers .slick-slider .slick-arrow.slick-next {
+      right: -38px;
+    }
+    .signers .slick-slider .slick-arrow.slick-prev {
+      left: -38px;
+    }
 
     /* === === home Songs === ===*/
+    .songs{
+        position: relative;
+        margin-bottom: 50px;
+        left: 50px;
+    }
+    .songs .home-songs-post a{
+      position: relative;
+      display: inline-block !important;
+      max-width: 175px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .songs .home-songs-post img{
+      border-radius: 5px;
+      width: 171px;
+      height: 171px;
+      overflow: hidden;
+    }
+    .songs .home-songs-post:hover img{
+      transform: scale(1.1);
+    }
+    .songs .home-songs-post svg{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 42%;
+      top: 32%;
+      background-color: #3a3a3a65;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 9;
+      opacity: 0;
+    }
+    .songs .home-songs-post:hover svg{
+      opacity: 1;
+    }
+    .songs .home-songs-post span{
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+    .songs .home-songs-post small{
+      color: #979797;
+    }
 
     /* === === Geners === ===*/
 

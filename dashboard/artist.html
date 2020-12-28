@@ -89,16 +89,16 @@
         <div class="top-nav">
             <div class="top-nav-content">
                 <div class="d-flex justify-content-between">
-                    <div class="top-nav-search">
+                    <div class="top-nav-search align-self-center">
                         <form class="form-inline">
                             <i class="fas fa-search"></i>
                             <input class="form-control mr-sm-2" type="search"
                                 placeholder="Search for Artist, tracks, albums..." aria-label="Search">
                         </form>
                     </div>
-                    <div class="top-nav-profile">
+                    <div class="top-nav-profile align-self-center">
                         <div class="d-flex">
-                            <a href="../prices.html" class="main-btn reg-size">Upgrad</a>
+                            <a href="../prices.html" class="main-btn regular-size">Upgrad</a>
 
                             <div class="dropdown show">
                                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropNotification"
@@ -107,15 +107,44 @@
                                     <span class="badge">4</span>
                                 </a>
     
-                                <div class="dropdown-menu" aria-labelledby="dropNotification">
-                                    <a class="dropdown-item" href="#">Action</a>
+                                <div class="dropdown-menu notif-drop dropdown-menu-right" aria-labelledby="dropNotification">
                                     <div class="d-flex">
-                                        <img src="../assets/img/dash/" alt="">
+                                        <img src="../assets/img/dash/notif.png" alt="">
                                         <div class="not-det">
-                                            <h6><a href="#">New Iraqi Songs</a></h6>
-                                            <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a href="#">New Iraqi Songs</a>
+                                            <p class="text-truncate">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            </p>
+                                            <span>09:35 AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="../assets/img/dash/notif.png" alt="">
+                                        <div class="not-det">
+                                            <a href="#">New Iraqi Songs</a>
+                                            <p class="text-truncate">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            </p>
+                                            <span>09:35 AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="../assets/img/dash/notif.png" alt="">
+                                        <div class="not-det">
+                                            <a href="#">New Iraqi Songs</a>
+                                            <p class="text-truncate">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            </p>
+                                            <span>09:35 AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img src="../assets/img/dash/notif.png" alt="">
+                                        <div class="not-det">
+                                            <a href="#">New Iraqi Songs</a>
+                                            <p class="text-truncate">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            </p>
                                             <span>09:35 AM</span>
                                         </div>
                                     </div>
@@ -129,7 +158,7 @@
                                     <img src="../assets/img/dash/user.png" alt="profile image">
                                 </a>
     
-                                <div class="dropdown-menu" aria-labelledby="dropProfile">
+                                <div class="dropdown-menu profile-drop dropdown-menu-right" aria-labelledby="dropProfile">
                                     <div class="drop-item">
                                         <span>Ahmed Saleh</span>
                                         <small><a href="">Edit</a></small>
@@ -167,17 +196,16 @@
         </div>
     
         <!-- = = main content = = -->
-        <div class="main-content">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="artist-single single-block">
+        <div class="main-content no-padding artist-page">
+            <div class="artist-page-content">
+                <div class="artist-single single-block">
                         <div class="signle-block-img">
                             <button type="button" class="shr-btn"><i class="fas fa-share-square"></i></button>
                             <img src="../assets/img/dash/ar-user.png" alt="">
                         </div>
                         <div class="single-block-tlt">
                             <h3>Asala Nasry</h3>
-                            <div class="artist-stats d-flex">
+                            <div class="artist-stats d-flex justify-content-center">
                                 <div class="artist-stat">
                                     <span>1.5M</span>
                                     <small>Followers</small>
@@ -189,11 +217,11 @@
                             </div>
                         </div>
                         <div class="signle-block-btns d-flex justify-content-center">
-                            <a href="#" class="main-btn regular-btn">
+                            <a href="#" class="main-btn regular-size mr-4">
                                 <i class="fas fa-play"></i>
                                 <span>Play</span>
                             </a>
-                            <a href="#" class="sec-btn regular-size">
+                            <a href="#" class="white-btn regular-size">
                                 <i class="far fa-heart"></i>
                                 <span>My List</span>
                             </a>
@@ -201,7 +229,7 @@
                     </div>
                 </div>
         
-                <div class="col-9">
+                <div class="right-single-block p-5">
                     <div class="home-clips">
                         <div class="sec-tlt">
                             <div class="d-flex justify-content-between">
