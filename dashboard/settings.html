@@ -59,7 +59,7 @@
                         <i class="fas fa-podcast"></i>
                         <a class="nav-link" href="#">Live</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <i class="fas fa-music"></i>
                         <span>Library</span>
                         <ul>
@@ -70,7 +70,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="foot-nav">
+            <div class="foot-nav  active">
                 <a href="settings.html">
                     <i class="fas fa-cog"></i>
                     <span>Settings</span>
@@ -204,46 +204,39 @@
                             <h4><i class="fas fa-cog"></i>Settings</h4>
                         </div>
                         <div class="settings-list-tab">
-                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <li>
-                                    <a class="nav-link d-flex active" id="profile-tab" href="#profile-link" data-toggle="pill"
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link d-flex" id="profile-tab" href="#profile-link" data-toggle="pill"
                                         href="#profile" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/user.png" alt="">
                                         <span>Edit Profile</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
-                                </li>
-                                <li>
                                     <a class="nav-link d-flex" id="app-tab" href="#app-link" data-toggle="pill"
                                         href="#app" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/app.png" alt="">
                                         <span>App Settings</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
-                                </li>
-                                <li>
                                     <a class="nav-link d-flex" id="subscription-tab" href="#subscription-link" data-toggle="pill"
                                         href="#subscription" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/sub.png" alt="">
                                         <span>Subscription</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
-                                </li>
-                                <li>
                                     <a class="nav-link d-flex" id="notification-tab" href="#notification-link" data-toggle="pill"
                                         href="#notification" role="tab">
                                         <img class="align-self-center" src="../assets/img/dash/notification.png" alt="">
                                         <span>Notification</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
-                                </li>
-                            </ul>
+                                    <a href="" class="animation"></a>
+                                </div>
                         </div>
                     </div>
         
                     <div class="tab-content p-5" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="profile-link" role="tabpanel">
-                            <div class="edit-profile">
+                            <div class="edit-profile wow fadeIn">
                                 <div class="edit-photo edit-block">
                                     <div class="profile-photo">
                                         <img src="../assets/img/dash/user-2.png" alt="">
@@ -314,7 +307,7 @@
                                     </button>
                                 </div>
                                 <div class="text-right mt-4">
-                                    <a href="#" class="main-btn regular-size">Save</a>
+                                    <a href="#" class="main-btn regular-size py-2">Save</a>
                                 </div>
                             </div>
                         </div>
@@ -326,11 +319,11 @@
                                     <div class="custom-control custom-radio">
                                         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio1">English</label>
-                                      </div>
-                                      <div class="custom-control custom-radio">
+                                    </div>
+                                    <div class="custom-control custom-radio">
                                         <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                                         <label class="custom-control-label" for="customRadio2"> Arabic (عربي) </label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="edit-lang">
                                     <span>Theme</span>
@@ -356,7 +349,7 @@
                                     <div class="plans-content">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <div class="sub-plan active">
+                                                <div class="sub-plan active wow fadeInUp">
                                                     <div class="top-plan">
                                                         <h3>Premium Plan</h3>
                                                         <span>$49.99/month</span>
@@ -373,7 +366,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                <div class="sub-plan">
+                                                <div class="sub-plan wow fadeInDown">
                                                     <div class="top-plan">
                                                         <h3>Family Plan</h3>
                                                         <span>$24.99/month</span>
@@ -390,7 +383,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
-                                                <div class="sub-plan">
+                                                <div class="sub-plan wow fadeInUp">
                                                     <div class="top-plan">
                                                         <h3>Personal Plan</h3>
                                                         <span>$19.99/month</span>

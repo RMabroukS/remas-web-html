@@ -7,123 +7,7 @@ Author URI: https://mostaql.com/u/bma_dev
 
 
 
-@font-face {
-  font-family: 'GE SS Text';
-  src: url('../fonts/GESSTextLight-Light.woff2') format('woff2'),
-      url('../fonts/GESSTextLight-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Two';
-  src: url('../fonts/GESSTwoBold-Bold.woff2') format('woff2'),
-      url('../fonts/GESSTwoBold-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Two';
-  src: url('../fonts/GESSTwoMedium-Medium.woff2') format('woff2'),
-      url('../fonts/GESSTwoMedium-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Unique';
-  src: url('../fonts/GESSUniqueBold-Bold.woff2') format('woff2'),
-      url('../fonts/GESSUniqueBold-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Text';
-  src: url('../fonts/GESSTextBold-Bold.woff2') format('woff2'),
-      url('../fonts/GESSTextBold-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Text';
-  src: url('../fonts/GESSTextMedium-Medium.woff2') format('woff2'),
-      url('../fonts/GESSTextMedium-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Text';
-  src: url('../fonts/GESSTextItalic-LightItalic.woff2') format('woff2'),
-      url('../fonts/GESSTextItalic-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Unique';
-  src: url('../fonts/GESSUniqueLight-Light.woff2') format('woff2'),
-      url('../fonts/GESSUniqueLight-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Text';
-  src: url('../fonts/GESSTextUltraLight-UltraLight.woff2') format('woff2'),
-      url('../fonts/GESSTextUltraLight-UltraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Two';
-  src: url('../fonts/GESSTwoLight-Light.woff2') format('woff2'),
-      url('../fonts/GESSTwoLight-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS TV';
-  src: url('../fonts/GESSTV-Light.woff2') format('woff2'),
-      url('../fonts/GESSTV-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS Three';
-  src: url('../fonts/GESSThree-Light.woff2') format('woff2'),
-      url('../fonts/GESSThree-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GE SS TV';
-  src: url('../fonts/GESSTV-Medium.woff2') format('woff2'),
-      url('../fonts/GESSTV-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 
 
@@ -143,7 +27,7 @@ Author URI: https://mostaql.com/u/bma_dev
       color: #fff;
       border: none;
       border-radius: 5px;
-      background: linear-gradient(0deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
+      background: linear-gradient(to right, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
     }
     .large-size{
       padding: 8px 40px;
@@ -175,6 +59,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .main-btn:hover{
       color: #fff;
       text-decoration: none;
+      transform: scale(1.03);
     }
     .main-btn.regular-size:hover{
       padding: 0 35px;
@@ -230,12 +115,12 @@ Author URI: https://mostaql.com/u/bma_dev
   }
    .sec-tlt .sec-search{
      position: relative;
-     width: 55%;
+     width: 65%;
 
    }
    .sec-tlt .sec-search form{
     position: relative;
-    width: 75%;
+    width: 65%;
     display: inline-block;
   }
    .sec-tlt .sec-search input{
@@ -248,6 +133,9 @@ Author URI: https://mostaql.com/u/bma_dev
     position: absolute;
     left: 10px;
     top: 10px;
+   }
+   .sec-tlt svg{
+     color: #fff;
    }
 
 
@@ -504,14 +392,14 @@ Author URI: https://mostaql.com/u/bma_dev
       height: 16px;
       color: #979797;
     }
-    .top-nav .top-nav-profile{
+    .top-nav-profile{
       position: relative;
       padding-top: 5px;
     }
-    .top-nav .top-nav-profile a{
+    .top-nav-profile a{
       margin-right: 25px;
     }
-    .top-nav .top-nav-profile .dropdown a{
+    .top-nav-profile .dropdown a{
       background-color: transparent;
       border: none;
       box-shadow: none;
@@ -519,144 +407,115 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-left: 15px;
       padding: 0;
     }
-    .top-nav .top-nav-profile .dropdown a:after{
+    .top-nav-profile .dropdown a:after{
       display: none;
     }
-    .top-nav .top-nav-profile .dropdown a svg{
+    .top-nav-profile .dropdown a svg{
       color: #fff;
       font-size: 18px;
     }
-    .top-nav .top-nav-profile .dropdown a span{
+    .top-nav-profile .dropdown a span{
       position: absolute;
       background-color: #FF3434;
       font-size: 11px;
       border-radius: 50%;
       padding: 3px 5px;
       right: 10px;
+      top: 5px;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop{
       position: relative;
       max-width: 350px;
       background-color: #000;
       padding: 20px;
       border-radius: 5px;
       border: none;
+      transform: translate(-90%, 5%)!important;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex{
       padding: 10px 0;
       margin-bottom: 10px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex:last-child{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex:last-child{
       border-bottom: none;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop img{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop img{
       width: 76px;
       height: 76px;
       margin-right: 15px;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det{
       position: relative;
       width: 70%;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det a{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det a{
       color: #fff;
       margin: 0;
       padding: 0;
       font-weight: bold;
       font-size: 16px;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det p{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det p{
       color: #979797;
       display: block;
       margin-bottom: 0;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det span{
+    .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det span{
       color: #FFDD00;
       font-size: 11px;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop{
       position: relative;
       max-width: 200px;
       background-color: #000;
       border-radius: 5px;
       border: none;
+      transform: translate(-60%, 12%)!important;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{
       padding: 10px 20px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item:last-child{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item:last-child{
       border: none;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop span{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop span{
       font-size: 14px;
       color: #fff;
       font-weight: bold;
       display: block;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop small a{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop small a{
       font-size: 11px;
       color: #FFDD00;
       margin: 0;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item{
       font-size: 14px;
       color: #979797;
       margin: 0;
-      padding: 5px 0;
+      padding: 5px 0 !important;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item:hover{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item:hover{
       color: #fff;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{}
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{}
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a{
       padding: 0;
       margin: 0;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a span{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a span{
       position: relative;
       display: inline-block;
       background: transparent;
       margin-left: 10px;
     }
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a svg{}
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a span,
-    .top-nav .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a svg{
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a svg{}
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a span,
+    .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a svg{
       color: #FF3434;
     }
-
-
-
-    /* === === Reams Player === ===*/
-    .ramas-player{
-      position: fixed;
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      z-index: 99;
-      padding: 15px;
-      background: linear-gradient(to right, #A900FF 0%, #3900F9 100%);
-    }
-    .ramas-player .main-control{}
-    .ramas-player .main-control .main-control-item{}
-    .ramas-player .main-control .main-control-item svg{}
-
-    .ramas-player .time-control{}
-    .ramas-player .time-control .song-img{}
-    .ramas-player .time-control .player-info{}
-    .ramas-player .time-control .player-info .left-info{}
-    .ramas-player .time-control .player-info .left-info .song-title{}
-    .ramas-player .time-control .player-info .left-info .song-artist{}
-    .ramas-player .time-control .player-info .right-info{}
-    .ramas-player .time-control .player-info .right-info .repeat-item img{}
-    .ramas-player .time-control .player-info .right-info .repeat-item svg{}
-    .ramas-player .time-control .player-info .time-bar{}
-    .ramas-player .time-control .player-info .time-bar span{}
-    .ramas-player .time-control .player-info .time-bar progress{}
-    .ramas-player .extra-tools{}
-    .ramas-player .extra-tools a{}
-    .ramas-player .extra-tools a svg{}
 
 
     /* === === settings nav === ===*/
@@ -677,25 +536,47 @@ Author URI: https://mostaql.com/u/bma_dev
     .settings-list h4 svg{
       margin-right: 10px;
     }
-    .settings-list ul{
+    .settings-list .nav-pills{
       position: relative;
       margin-top: 25px;
     }
-    .settings-list ul li a{
+    .settings-list .nav-pills a.animation{
+      position: absolute;
+      width: 100%;
+      height: 25%;
+      top: 0;
+      background-color: #3A3A3A !important;
+      z-index: 1 !important;
+      transition: all .5;
+    }
+    .settings-list .nav-pills a{
       padding: 15px 35px;
       position: relative;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 400;
+      font-size: 17px;
+      color: #fff;
+      font-weight: 400;
+      z-index: 9 !important;
     }
-    .settings-list ul li a.active{
-      background-color: #3A3A3A !important;
+    .settings-list .nav-pills a.active{
+      background-color: transparent !important;
       border-radius: 0;
     }
-    .settings-list ul li a img{
+    .settings-list .nav-pills #profile-tab.active ~ a.animation{
+      top: 0%;
+    }
+    .settings-list .nav-pills #app-tab.active ~ a.animation{
+      top: 25%;
+    }
+    .settings-list .nav-pills #subscription-tab.active ~ a.animation{
+      top: 50%;
+    }
+    .settings-list .nav-pills #notification-tab.active ~ a.animation{
+      top: 75%;
+    }
+    .settings-list .nav-pills a img{
       margin-right: 20px;
     }
-    .settings-list ul li a span{
+    .settings-list .nav-pills a span{
       margin-left: 0;
       font-size: 14px;
       color: #fff;
@@ -703,7 +584,7 @@ Author URI: https://mostaql.com/u/bma_dev
       font-weight: 400;
       line-height: 2.5;
     }
-    .settings-list ul li a svg{
+    .settings-list .nav-pills a svg{
       position: absolute;
       right: 25px;
       top: 25px;
@@ -725,14 +606,14 @@ Author URI: https://mostaql.com/u/bma_dev
       font-weight: bold;
       border-bottom: 1px solid rgba(225, 225, 225, .16);
     }
-    .library-list ul{
+    .library-list .nav-pills{
       position: relative;
       margin-top: 25px;
     }
-    .library-list ul li{
+    .library-list .nav-pills a{
       border-bottom: 1px solid rgba(225, 225, 225, .16);
     }
-    .library-list ul li span{
+    .library-list .nav-pills span{
       font-size: 16px;
       color: #fff;
       font-weight: bold;
@@ -740,27 +621,54 @@ Author URI: https://mostaql.com/u/bma_dev
       display: block;
       margin-left: 35px;
     }
-    .library-list ul li a{
-      padding: 15px 35px;
-    font-size: 17px;
-    color: #fff;
-    font-weight: 400;
-    }
-    .library-list ul li a.active{
+
+    .library-list .nav-pills a.animation{
+      position: absolute;
+      width: 100%;
+      top: 0;
       background-color: #3A3A3A !important;
+      z-index: 1 !important;
+      transition: all .5;
+    }
+    .library-list .nav-pills a.active{
+      background-color: transparent !important;
       border-radius: 0;
     }
-    .library-list ul li a img{
+    .library-list .nav-pills #liked-songs-tab.active ~ a.animation{
+      top: 6%;
+      height: 15.4%;
+    }
+    .library-list .nav-pills #liked-clips-tab.active ~ a.animation{
+      top: 21%;
+      height: 15.4%;
+    }
+    .library-list .nav-pills #album-the-tab.active ~ a.animation{
+      top: 78%;
+      height: 11%;
+    }
+    .library-list .nav-pills #artist-the-tab.active ~ a.animation{
+      top: 89%;
+      height: 11%;
+    }
+
+    .library-list .nav-pills a{
+      padding: 15px 35px;
+      font-size: 17px;
+      color: #fff;
+      font-weight: 400;
+      z-index: 9;
+    }
+    .library-list .nav-pills a img{
       margin-right: 20px;
     }
-    .library-list ul li a span{
+    .library-list .nav-pills a span{
       margin-left: 0;
       font-size: 14px;
       color: #fff;
       margin-bottom: 0;
       font-weight: 400;
     }
-    .library-list ul li a small{
+    .library-list .nav-pills a small{
       font-size: 11px;
       color: #979797;
     }
@@ -1016,7 +924,9 @@ Author URI: https://mostaql.com/u/bma_dev
       transform: scale(1.05);
     }
     .home-playlists .slick-slider .slick-arrow.slick-next,
-    .home-clips .slick-slider .slick-arrow.slick-next{
+    .home-clips .slick-slider .slick-arrow.slick-next,
+    .songs .slick-slider .slick-arrow.slick-next,
+    .genrs .slick-slider .slick-arrow.slick-next{
       right: 75px;
     }
 
@@ -1033,14 +943,14 @@ Author URI: https://mostaql.com/u/bma_dev
       max-width: 430px;
       width: 100%;
       height: 220px;
-      padding-right: 60px;
+      padding-right: 30px;
     }
     .home-clips .home-clips-post svg{
       position: absolute;
       width: 30px;
       height: 30px;
-      left: 45%;
-      top: 35%;
+      left: 40%;
+      top: 30%;
       background-color: #3a3a3a65;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       -webkit-backdrop-filter: blur(10px);
@@ -1067,6 +977,12 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .home-clips .home-clips-post .home-clips-info .home-clips-meta{
       color: #979797;
+    }
+    .home-clips .slick-slider .slick-arrow.slick-next,
+    .home-clips .slick-slider .slick-arrow.slick-prev,
+    .songs .slick-slider .slick-arrow.slick-next,
+    .songs .slick-slider .slick-arrow.slick-prev{
+      top: 30%;
     }
 
     /* === === Home Signers === ===*/
@@ -1124,11 +1040,14 @@ Author URI: https://mostaql.com/u/bma_dev
       width: 100%;
       overflow: hidden;
     }
-    .songs .home-songs-post img{
+    .songs .home-songs-post .song-post-img{
       border-radius: 5px;
       width: 171px;
       height: 171px;
       overflow: hidden;
+    }
+    .songs .home-songs-post:hover img{
+      width: 100%;
     }
     .songs .home-songs-post:hover img{
       transform: scale(1.1);
@@ -1165,11 +1084,61 @@ Author URI: https://mostaql.com/u/bma_dev
     }
 
     /* === === Geners === ===*/
+    .genrs{
+      position: relative;
+      margin-bottom: 50px;
+      left: 50px;
+    }
+    .genrs .genrs-post{
+      width: 170px !important;
+      position: relative;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .genrs .genrs-post img{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    .genrs .genrs-post .genrs-overlay{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 5px;
+    }
+    .genrs .genrs-post .genrs-overlay.g-overlay-1{
+      background-image: linear-gradient(50deg, #ff00b77c, rgba(245, 0, 0, 0.52)00);
+    }
+    .genrs .genrs-post .genrs-overlay.g-overlay-2{
+      background-image: linear-gradient(50deg, #00edf57c, #00ff8075);
+    }
+    .genrs .genrs-post .genrs-overlay.g-overlay-3{
+      background-image: linear-gradient(50deg, #aa00ff88, #89898965);
+    }
+    .genrs .genrs-post .genrs-overlay.g-overlay-4{
+      background-image: linear-gradient(50deg, #c95e5e83, #83000083);
+    }
+    .genrs .genrs-post .genrs-overlay.g-overlay-5{
+      background-image: linear-gradient(50deg, #0029f578, #00c3ff73);
+    }
+    .genrs .genrs-post .genrs-overlay.g-overlay-6{
+      background-image: linear-gradient(50deg, #f5dd007c,rgba(255, 179, 0, 0.493)00);
+    }
+    .genrs .genrs-post .genrs-overlay span{
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      top: 75px;
+    }
 
     /* === === Videos Clips === ===*/
     .videos-clips{
       position: relative;
-      padding-right: 70px;
+      padding-right: 50px;
+      padding-left: 50px;
     }
     .the-content .main-content.music-content .videos-clips .sec-tlt{
       padding-right: 0!important;
@@ -1178,6 +1147,7 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       overflow: hidden;
       margin-bottom: 25px;
+      max-width: 250px;
     }
     .videos-clips .video-clip-post img{
       width: 100%;
@@ -1222,6 +1192,144 @@ Author URI: https://mostaql.com/u/bma_dev
    =========================*/
 
     /* === === Main Player === ===*/
+    .remas-player{
+      position: fixed;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 99;
+      background: linear-gradient(to right, #A900FF 0%, #3900F9 100%);
+    }
+    .remas-player .main-control {
+      position: relative;
+      width: 250px;
+      margin-right: 50px;
+      text-align: center;
+      border-right: 1px solid rgb(255 255 255 / 30%);
+    }
+    .remas-player .main-control .main-control-item{
+      margin: 10px;
+    }
+    .remas-player .main-control .main-control-item svg{
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .remas-player .time-control{
+      position: relative;
+      padding: 15px;
+      width: 45%;
+      border-right: 1px solid rgb(255 255 255 / 30%);
+      padding-right: 35px;
+    }
+    .remas-player .time-control .song-img{
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+    .remas-player .time-control .time-content{
+      width: 100%;
+    }
+    .remas-player .time-control .player-info{
+    }
+    .remas-player .time-control .player-info .left-info{
+      flex: 1;
+    }
+    .remas-player .time-control .player-info .left-info .song-title{
+      display: inline-block;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .remas-player .time-control .player-info .left-info .song-title svg{
+      margin-right: 5px;
+    }
+    .remas-player .time-control .player-info .left-info .song-artist{
+      display: inline-block;
+      color: #ffffff73;
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+    .remas-player .time-control .player-info .right-info{
+      flex: 1;
+      text-align: right;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item{
+      display: inline-block;
+      margin: 0 15px;
+      position: relative;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item img{
+      position: relative;
+      top: -3px;
+      width: 107%;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item svg{
+      color: #fff;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item.volum-item input{
+      position: absolute;
+    top: -35px;
+    transform: rotate(90deg);
+    width: 60px;
+    height: 3px;
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item.volum-item:hover input{
+      visibility: visible;
+      opacity: 1;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item.volum-item input[type="range"] {
+      -webkit-appearance: none;
+      background-color: #fff;
+      height: 2px;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item.volum-item input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      position: relative;
+      top: 0px;
+      z-index: 1;
+      width: 11px;
+      height: 11px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    .remas-player .time-control .time-bar{
+      position: relative;
+      margin-top: 5px;
+    }
+    .remas-player .time-control .time-bar span{
+      color: #fff;
+    }
+    .remas-player .time-control .time-bar progress{
+      width: 100%;
+      height: 2px;
+      margin: 0 10px;
+    }
+    .remas-player .extra-tools{
+      position: relative;
+      width: 35%;
+    }
+    .remas-player .extra-tools a{
+      margin: 0 5px;
+      padding: 10px;
+      border-radius: 7px;
+      background-color: rgb(0 0 0 / 30%);
+      color: #fff;
+      font-size: 16px;
+    }
+    .remas-player .extra-tools a.heart{
+      background-color: transparent;
+      font-size: 26px;
+    }
+    .remas-player .extra-tools a svg,
+    .remas-player .extra-tools a img{
+      margin-right: 5px;
+    }
+
 
     /* === === Live Player === ===*/
 

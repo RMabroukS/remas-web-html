@@ -198,14 +198,14 @@
         <!-- = = main content = = -->
         <div class="main-content">
 
-            <div class="songs-list">
+            <div class="songs-list wow fadeIn">
                 <div class="container">
                     <div class="sec-tlt d-flex justify-content-between">
                         <div class="sec-title align-self-center">
                             <h3>Playlists for you</h3>
                             <span>14 Songs</span>
                         </div>
-                        <div class="sec-search align-self-center">
+                        <div class="sec-search text-right align-self-center">
                             <form class="form-inline">
                                 <i class="fas fa-search"></i>
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..."
@@ -429,6 +429,87 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="remas-player">
+            <div class="container-fluidz">
+                <div class="d-flex">
+                    <div class="main-control d-flex justify-content-center">
+                        <div class="main-control-item amplitude-prev align-self-center">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="main-control-item align-self-center amplitude-play-pause amplitude-paused" data-amplitude-song-index="0">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="main-control-item align-self-center amplitude-next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                    </div>
+                    <div class="time-control">
+                        <div class="d-flex">
+                            <img class="song-img" width="50" height="50" src="../assets/img/dash/player-img.png" alt="">
+                            <div class="time-content">
+                                <div class="player-info">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="left-info">
+                                            <div class="song-title"><i class="fas fa-music"></i> Dusk To Dawn -</div>
+                                            <div class="song-artist">Emancipator</div>
+                                        </div>
+                                        <div class="right-info">
+                                            <div id="repeat-container">
+                                                <div class="repeat-item amplitude-repeat amplitude-repeat-off" id="repeat">
+                                                    <img src="../assets/img/dash/repeat.png" alt="">
+                                                </div>
+                                                <div class="repeat-item amplitude-shuffle amplitude-shuffle-off" id="shuffle">
+                                                    <i class="fas fa-random"></i>
+                                                </div>
+                                                <div class="repeat-item ">
+                                                    <i class="fas fa-share-square"></i>
+                                                </div>
+                                                <div class="repeat-item volum-item" id="volume-container">
+                                                    <div class="volume-controls">
+                                                        <div class="amplitude-mute amplitude-not-muted">
+                                                            <i class="fas fa-volume-up"></i>
+                                                        </div>
+                                                        <input type="range" class="amplitude-volume-slider">
+                                                        <div class="ms-range-fix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-bar d-flex">
+                                    <div class="current-time align-self-center">
+                                        <span class="amplitude-current-minutes" data-amplitude-song-index="1">00</span>:<span class="amplitude-current-seconds" data-amplitude-song-index="1">00</span>
+                                    </div>
+                                    <progress class="amplitude-song-played-progress align-self-center" data-amplitude-song-index="0" id="song-played-progress-1" value="0"></progress>
+                                    <div class="duration align-self-center">
+                                        <span class="amplitude-duration-minutes" data-amplitude-song-index="1">00</span>:<span class="amplitude-duration-seconds" data-amplitude-song-index="1">00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra-tools d-flex justify-content-center">
+                        <a class="align-self-center" href="">
+                            <img src="../assets/img/dash/list.png" alt="">
+                            <span>Queue list</span>
+                        </a>
+                        <a class="align-self-center" href="">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video Clip</span>
+                        </a>
+                        <a class="align-self-center" href="">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <span>Download</span>
+                        </a>
+                        <a class="align-self-center heart" href="">
+                            <i class="far fa-heart"></i>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ Author URI: https://mostaql.com/u/bma_dev
 }
 
 body {
-  font-family: 'GE SS Text' !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 textarea:focus,
@@ -271,8 +271,52 @@ a {
     color: #fff;
     margin: 35px 0;
   }
+    
   
   
+  /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+                Live
+  =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+  .live-content{}
+  .live-content .channels{
+    position: relative;
+    height: 495px;
+    width: 200px;
+    overflow-y: scroll;
+  }
+  .live-content .channels li{
+    position: relative;
+    padding: 20px 15px;
+    background-color: #3A3A3A;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+  }
+  .live-content .channels li.active{
+    background-color: #707070;
+  }
+  .live-content .channels li .ch-logo{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin: 0;
+  }
+  .live-content .channels li .ch-content{
+    margin-left: 10px;
+  }
+  .live-content .channels li span{
+    font-size: 14px;
+    color: #fff;
+    display: block;
+  }
+  .live-content .channels li .live-logo{}
+  .live-content .video-live{
+    position: relative;
+    width: 100%;
+  }
+
+
   
   /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
               Responsive
