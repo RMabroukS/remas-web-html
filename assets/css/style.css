@@ -60,64 +60,320 @@ a {
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-               Header
+              About
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.about-page .page-intro{
+  background-image: url(../img/about-intro.png);
+}
+.about-page .about-text p,
+.privacy-page .privacy-text p,
+.terms-page .terms-text p{
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.about-page .social-icons{
+  position: relative;
+  margin-top: 35px;
+  text-align: center;
+}
+.about-page .social-icons a{
+  font-size: 24px;
+  margin: 10px;
+  color: #707070;
+}
 
 
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-               Footer
+            Privacy
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.privacy-page  .page-intro{
+  background-image: url(../img/privacy.png);
+}
 
 
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-               Cars
+            Privacy
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.terms-page  .page-intro{
+  background-image: url(../img/terms.png);
+}
 
 
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-          Car Details
+           Contact us
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.contact-us-page  .page-intro{
+  background-image: url(../img/contact.png);
+}
 
 
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-            Success
+           Upgrade
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.upgrade-page .page-content{
+  padding-bottom: 0;
+}
+.upgrade-page  .page-intro{
+  background-image: url(../img/upgrade.png);
+  background-position: bottom;
+}
+.upgrade-page  .features{
+  position: relative;
+}
+.upgrade-page  .features .card-feat{
+  position: relative;
+  text-align: center;
+  width: 15%;
+  height: 100px;
+  margin: 1%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-top: 15px;
+  border-radius: 5px;
+  max-width: 120px;
+}
+.up-overlay-1{
+  background-image: linear-gradient(135deg, #FFDD00, #FF8800);
+}
+.up-overlay-2{
+  background-image: linear-gradient(135deg, #3900F9, #A900FF);
+}
+.up-overlay-3{
+  background-image: linear-gradient(135deg, #F900AE, #FF3131);
+}
+.up-overlay-4{
+  background-image: linear-gradient(135deg, #00F9B5, #27AD00);
+}
+.up-overlay-5{
+  background-image: linear-gradient(135deg, #FF3434, #BD0000);
+}
+.up-overlay-6{
+  background-image: linear-gradient(135deg, #00CCFF,#009288);
+}
+.upgrade-page  .plans{
+  position: relative;
+  margin-top: 25px;
+}
+.upgrade-page  .plans span{
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.upgrade-page  .reams-modal{
+  z-index: 99999;
+}
+.modal-backdrop{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgb(37 37 37 / 50%) !important;
+  opacity: 1 !important;
+  z-index: 9999!important;
+}
+.upgrade-page  .reams-modal .modal-dialog{
+  background-color: #242424!important;
+  padding: 0;
+  border-top: 5px solid #FFDD00;
+  border-radius: 5px;
+  width: 75%;
+  max-width: 750px;
+}
+.upgrade-page  .reams-modal .modal-head{
+  padding: 25px;
+  text-align: center;
+  background-image: linear-gradient(135deg, #fff, #D1D1D1);
+}
+.upgrade-page  .reams-modal .modal-head h3{
+  color: #383838;
+  font-size: 26px;
+  font-weight: bold;
+}
+.upgrade-page  .reams-modal .modal-head span{
+  color: #383838;
+  font-size: 28px;
+  font-weight: 300;
+}
+.upgrade-page  .reams-modal .modal-content{
+  background-color: transparent;
+  padding: 35px;
+}
+.upgrade-page  .reams-modal .modal-content span{
+  display: block;
+  margin-top: 35px;
+  color: #979797;
+  font-size: 16px;
+  margin: 25px auto 0 auto;
+}
+
+.upgrade-page  .remas-app{
+  position: relative;
+  padding: 35px 0 100px 0;
+  margin: 100px  0 0 0;
+  background-image: url("../img/upgrade-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+.upgrade-page  .remas-app .down-spn{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+.upgrade-page  .remas-app .left-app{
+  width: 50%;
+}
+.upgrade-page  .remas-app .left-app img{
+  margin-right: 15px;
+}
+.upgrade-page  .remas-app .left-app .app-info h4{
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.upgrade-page  .remas-app .left-app .app-info span{
+  font-size: 25px;
+  color: #fff;
+}
+.upgrade-page  .remas-app .left-app .down-app{
+  margin-left: 110px;
+  margin-top: 15px;
+}
 
 
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-          sign in/up
+            Login
 =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.login-page{
+  position: relative;
+  background-image: url("../img/log-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.login-page .log-img {
+  position: absolute;
+  top: -25%;
+  right: -15%;
+}
+.login-page .login-head h1{
+  font-size: 97px;
+  color: #fff;
+  font-weight: bold;
+}
+.login-page .login-forms{
+  position: relative;
+  height: 570px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 345px;
+}
+.login-page .login-forms .login-logo{
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+.login-page .login-forms .step-section{
+  padding: 25px;
+}
+.login-page .login-forms .step-section.step-1{
+  text-align: center;
+}
+.login-page .login-forms .btns-section button{
+  position: relative;
+  height: 40px;
+  max-width: 280px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0 35px 0 15px;
+  line-height: 1;
+  border: none;
+  font-size: 16px;
+}
+.fb-btn{
+  background-color: #1877F2;
+  color: #fff;
+}
+.google-btn{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #979797 !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+}
+.apple-btn{
+  background-color: #000;
+  color: #fff;
+}
+.login-page .login-forms .foot-section{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 50px;
+  color: #979797;
+}
+.login-page .login-forms .foot-section a{
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
 
 
 
 
-/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-          Comparaison
-=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+
+.input-group > .intl-tel-input.allow-dropdown {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group > .intl-tel-input.allow-dropdown > .flag-container {
+	z-index: 4;
+}
+
+.iti-flag {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
+    }
+}
 
 
 
 
-/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-          My Profile
-=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
 
 
-
-
-/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-          Comparaison
-=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
 
 
 

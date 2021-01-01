@@ -45,6 +45,14 @@ Author URI: https://mostaql.com/u/bma_dev
       min-width: 135px;
       text-align: center;
     }
+    .full-btn{
+      padding: 0 30px;
+      height: 35px;
+      line-height: 2;
+      font-weight: 700;
+      min-width: 100%;
+      text-align: center;
+    }
     .small-size{
       padding: 0 10px;
       height: 30px;
@@ -143,6 +151,7 @@ Author URI: https://mostaql.com/u/bma_dev
    +++ Forms +++ 
    =========================*/
    .main-form input,
+   .main-form textarea,
    .main-form select{
     border: 2px solid rgba(225, 225, 225, 0.16);
     background-color: transparent;
@@ -179,11 +188,11 @@ Author URI: https://mostaql.com/u/bma_dev
      position: relative;
      background-image: linear-gradient(45deg, #fff, #D1D1D1);
      padding: 25px;
-     height: 500px;
+     height: 535px;
      max-width: 280px;
      margin: auto;
      text-align: center;
-     border-radius: 8px;
+     border-radius: 5px;
    }
    .plans .sub-plan.active{
      border-top: 4px solid #FFDD00;
@@ -259,17 +268,134 @@ Author URI: https://mostaql.com/u/bma_dev
   /*========================
    +++ Header +++ 
    =========================*/
+   header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    background-color: #242424af;
+    padding:0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+   }
+   header .navbar-brand{}
+   header .navbar-brand img{}
+   header .main-menu ul{}
+   header .main-menu ul li{}
+   header .main-menu ul li a{
+     color: #fff;
+     margin-right: 20px;
+   }
+   header .main-menu ul li a:hover{
+     color: #FFDD00;
+   }
+   header .menu-trigger,
+   header .mobile-menu{
+     display: none;
+   }
+   header .top-nav-profile .dropdown .dropdown-menu.profile-drop,
+   header .top-nav-profile .dropdown .dropdown-menu.notif-drop{
+     position: absolute;
+     transform: none !important;
+   }
 
 
   /*========================
    +++ Footer +++ 
    =========================*/
+   footer{
+     position: relative;
+     background-color: #1B1B1B;
+     margin: 0;
+   }
+   footer .main-footer{
+    background-color: #1B1B1B;
+    position: relative;
+    padding: 50px 0;
+   }
+   footer .main-footer .footer-col{}
+   footer .main-footer .footer-col .footer-logo{
+     margin-bottom: 15px;
+   }
+   footer .main-footer .footer-col .social-icons{
+     max-width: 145px;
+   }
+   footer .main-footer .footer-col .social-icons a{
+     color: #fff;
+     margin: 0 10px;
+     font-size: 18px;
+   }
+   footer .main-footer .footer-col h4{
+     font-size: 20px;
+     font-weight: bold;
+     color: #fff;
+     margin-bottom: 15px;
+   }
+   footer .main-footer .footer-col ul{
+     list-style: none;
+     padding: 0;
+   }
+   footer .main-footer .footer-col ul li{
+     margin-bottom: 10px;
+   }
+   footer .main-footer .footer-col ul li a{
+    font-size: 15px;
+    color: #696969;
+   }
+   footer .main-footer .footer-col ul li a:hover{
+     color: #fff;
+   }
+   footer .copyrights{
+     height: 60px;
+     background-color: #000;
+     line-height: 60px;
+   }
+   footer .copyrights span{
+     font-size: 12px;
+     color: #999999;
+   }
+   footer .copyrights span a{
+     color: #FFDD00;
+   }
 
 
   /*========================
    +++ page intro +++ 
    =========================*/
+   .page-intro{
+     position: relative;
+     background-attachment: fixed;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     text-align: center;
+     height: 550px;
+   }
+   .page-intro h1{
+     font-size: 61px;
+     color: #fff;
+     font-weight: bold;
+     z-index: 99;
+    }
+    .page-intro .intro-overlay{
+      position: absolute;
+      width: 100%;
+      height: 130px;
+      left: 0;
+      bottom: -1px;
+      background-image: linear-gradient(to top, #242424, transparent);
+    }
 
+
+  /*========================
+   +++ page intro +++ 
+   =========================*/
+   .page-content{
+     background-color: #242424;
+     margin: 0;
+     padding: 75px 0;
+   }
   
 /*=========================================
 ========== Dashboard Components ===========
@@ -400,7 +526,7 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-right: 25px;
     }
     .top-nav-profile .dropdown a{
-      background-color: transparent;
+      background-color: transparent !important;
       border: none;
       box-shadow: none;
       position: relative;
@@ -1108,22 +1234,22 @@ Author URI: https://mostaql.com/u/bma_dev
       top: 0;
       border-radius: 5px;
     }
-    .genrs .genrs-post .genrs-overlay.g-overlay-1{
+    .g-overlay-1{
       background-image: linear-gradient(50deg, #ff00b77c, rgba(245, 0, 0, 0.52)00);
     }
-    .genrs .genrs-post .genrs-overlay.g-overlay-2{
+    .g-overlay-2{
       background-image: linear-gradient(50deg, #00edf57c, #00ff8075);
     }
-    .genrs .genrs-post .genrs-overlay.g-overlay-3{
+    .g-overlay-3{
       background-image: linear-gradient(50deg, #aa00ff88, #89898965);
     }
-    .genrs .genrs-post .genrs-overlay.g-overlay-4{
+    .g-overlay-4{
       background-image: linear-gradient(50deg, #c95e5e83, #83000083);
     }
-    .genrs .genrs-post .genrs-overlay.g-overlay-5{
+    .g-overlay-5{
       background-image: linear-gradient(50deg, #0029f578, #00c3ff73);
     }
-    .genrs .genrs-post .genrs-overlay.g-overlay-6{
+    .g-overlay-6{
       background-image: linear-gradient(50deg, #f5dd007c,rgba(255, 179, 0, 0.493)00);
     }
     .genrs .genrs-post .genrs-overlay span{
