@@ -35,7 +35,11 @@
 
     <!-- Slick Slider css Style -->
     <link rel="stylesheet" href="assets/css/slick.css" />
-    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet"
+        media="screen">
+
+
 
 </head>
 
@@ -43,20 +47,20 @@
 
     <!-- ==== HEADER ==== -->
     <header class="main-header">
-    
+
         <!-- Main Menu -->
         <div class="main-menu hs-menubar">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-    
+
                     <!-- Brand -->
                     <a class="navbar-brand" href="./index.html">
                         <img src="assets/img/hor-logo.png" class="navbar-brand-img" alt="logo">
                     </a>
-    
+
                     <!-- Toggler -->
                     <div class="menu-trigger"> <i class="fas fa-bars"></i></div>
-    
+
                     <div class="collapse navbar-collapse main-menu" id="navbarCollapse">
                         <!-- Navigation -->
                         <ul class="left-menu navbar-nav m-auto">
@@ -74,16 +78,17 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="top-nav-profile align-self-center">
                         <div class="d-flex">
                             <div class="dropdown show">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropNotification"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropNotification" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
                                     <i class="fas fa-bell"></i>
                                     <span class="badge">4</span>
                                 </a>
-    
+
                                 <div class="dropdown-menu notif-drop dropdown-menu-right"
                                     aria-labelledby="dropNotification">
                                     <div class="d-flex">
@@ -128,15 +133,16 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="dropdown show">
                                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropProfile"
                                     data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                                     <i class="fas fa-ellipsis-h"></i>
                                     <img src="assets/img/dash/user.png" alt="profile image">
                                 </a>
-    
-                                <div class="dropdown-menu profile-drop dropdown-menu-right" aria-labelledby="dropProfile">
+
+                                <div class="dropdown-menu profile-drop dropdown-menu-right"
+                                    aria-labelledby="dropProfile">
                                     <div class="drop-item">
                                         <span>Ahmed Saleh</span>
                                         <small><a href="">Edit</a></small>
@@ -172,7 +178,7 @@
                 </nav>
             </div>
         </div>
-    
+
         <!-- mobile menu -->
         <nav class="mobile-menu hs-navigation">
             <ul class="nav-links">
@@ -183,9 +189,9 @@
             </ul>
         </nav>
     </header>
-    
-    
-    
+
+
+
     <!-- ==== Main content ==== -->
     <main class="main-content contact-us-page">
         <div class="page-intro d-flex justify-content-center">
@@ -197,43 +203,40 @@
                 <div class="contact-us-form">
                     <form class="main-form w-75 m-auto">
                         <div class="row">
-                          <div class="col-6">
-                            <label for="email">Your Name</label>
-                            <input type="text" class="form-control" placeholder="First name">
-                          </div>
-                          <div class="col-6 align-self-end">
-                            <input type="text" class="form-control" placeholder="Last name">
-                          </div>
-                          <div class="col-6">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" placeholder="Your Email">
-                          </div>
-                          <div class="col-6">
-                                <label for="phone">Your mobile number</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                          </div>
-                          <div class="col-12">
-                            <label for="email">Your Massage</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                          </div>
-                          <div class="col-12 text-right">
-                            <button class="main-btn regular-size" type="submit">Send</button>
-                          </div>
+                            <div class="col-6">
+                                <label for="email">Your Name</label>
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col-6 align-self-end">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                            <div class="col-6">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="col-6">
+
+                                <div class="input-group input-group-sm rem-tel-input">
+                                    <label for="phone">Your mobile number</label>
+                                    <input id="phone" type="tel">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="email">Your Massage</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            </div>
+                            <div class="col-12 text-right">
+                                <button class="main-btn regular-size" type="submit">Send</button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </main>
-    
-    
-    
+
+
+
     <!-- ==== Footer ==== -->
     <footer class="footer">
         <div class="container">
@@ -247,7 +250,8 @@
                             <div class="social-icons text-center">
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                                        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.twitter.com" target="_blank"><i
+                                                class="fab fa-twitter"></i></a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a href="https://www.facebook.com" target="_blank"><i
@@ -310,6 +314,8 @@
     <!-- JQuery -->
     <script src="assets/js/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+
     <!-- Main -->
     <script src="assets/js/main.js"></script>
 
@@ -325,6 +331,63 @@
 
     <!-- Slick Carousel -->
     <script src="assets/js/slick.min.js"></script>
+
+    <!--phone number  -->
+    <script type="text/javascript">
+        var telInput = $("#phone"),
+            errorMsg = $("#error-msg"),
+            validMsg = $("#valid-msg");
+
+        // initialise plugin
+        telInput.intlTelInput({
+
+            allowExtensions: true,
+            formatOnDisplay: true,
+            autoFormat: true,
+            autoHideDialCode: true,
+            autoPlaceholder: true,
+            defaultCountry: "auto",
+            ipinfoToken: "yolo",
+
+            nationalMode: false,
+            numberType: "MOBILE",
+            //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            preferredCountries: ['sa', 'ae', 'qa', 'om', 'bh', 'kw', 'ma'],
+            preventInvalidNumbers: true,
+            separateDialCode: true,
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
+        });
+
+        var reset = function () {
+            telInput.removeClass("error");
+            errorMsg.addClass("hide");
+            validMsg.addClass("hide");
+        };
+
+        // on blur: validate
+        telInput.blur(function () {
+            reset();
+            if ($.trim(telInput.val())) {
+                if (telInput.intlTelInput("isValidNumber")) {
+                    validMsg.removeClass("hide");
+                } else {
+                    telInput.addClass("error");
+                    errorMsg.removeClass("hide");
+                }
+            }
+        });
+
+        // on keyup / change flag: reset
+        telInput.on("keyup change", reset);
+
+    </script>
 
     <!-- Wow Animation -->
     <script type="text/javascript">

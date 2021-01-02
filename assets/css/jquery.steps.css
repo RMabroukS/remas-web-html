@@ -16,8 +16,8 @@
     outline: 0;
 }
 
-.wizard ul,
-.tabcontrol ul
+.wizard .steps ul,
+.wizard .actions.clearfix ul
 {
     list-style: none !important;
     padding: 0;

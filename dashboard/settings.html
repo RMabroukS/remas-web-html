@@ -37,6 +37,8 @@
 
     <!-- Slick Slider css Style -->
     <link rel="stylesheet" href="../assets/css/slick.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
     
 
 </head>
@@ -261,14 +263,10 @@
                                             <input type="email" class="form-control" placeholder="Your Email">
                                           </div>
                                           <div class="col-6">
+                                            <div class="input-group input-group-sm rem-tel-input">
                                                 <label for="phone">Your mobile number</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                  <option>1</option>
-                                                  <option>2</option>
-                                                  <option>3</option>
-                                                  <option>4</option>
-                                                  <option>5</option>
-                                                </select>
+                                                <input id="phone" type="tel">
+                                            </div>
                                           </div>
                                         </div>
                                     </form>
@@ -458,6 +456,8 @@
     <!-- JQuery -->
     <script src="../assets/js/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+
     <!-- Main -->
     <script src="../assets/js/main.js"></script>
 
@@ -474,6 +474,62 @@
     <!-- Slick Carousel -->
     <script src="../assets/js/slick.min.js"></script>
 
+    <!--phone number  -->
+    <script type="text/javascript">
+        var telInput = $("#phone"),
+            errorMsg = $("#error-msg"),
+            validMsg = $("#valid-msg");
+
+        // initialise plugin
+        telInput.intlTelInput({
+
+            allowExtensions: true,
+            formatOnDisplay: true,
+            autoFormat: true,
+            autoHideDialCode: true,
+            autoPlaceholder: true,
+            defaultCountry: "auto",
+            ipinfoToken: "yolo",
+
+            nationalMode: false,
+            numberType: "MOBILE",
+            //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            preferredCountries: ['sa', 'ae', 'qa', 'om', 'bh', 'kw', 'ma'],
+            preventInvalidNumbers: true,
+            separateDialCode: true,
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
+        });
+
+        var reset = function () {
+            telInput.removeClass("error");
+            errorMsg.addClass("hide");
+            validMsg.addClass("hide");
+        };
+
+        // on blur: validate
+        telInput.blur(function () {
+            reset();
+            if ($.trim(telInput.val())) {
+                if (telInput.intlTelInput("isValidNumber")) {
+                    validMsg.removeClass("hide");
+                } else {
+                    telInput.addClass("error");
+                    errorMsg.removeClass("hide");
+                }
+            }
+        });
+
+        // on keyup / change flag: reset
+        telInput.on("keyup change", reset);
+
+    </script>
 
     <!-- Wow Animation -->
     <script type="text/javascript">

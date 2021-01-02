@@ -342,33 +342,97 @@ a {
   margin-top: 15px;
 }
 
-
-
-
-
-
-
-.input-group > .intl-tel-input.allow-dropdown {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: 1%;
+.flags-number{
+  text-align: center;
+  padding-top: 75px;
+}
+.login-forms input{
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}
+.login-forms label{
+  font-weight: bold;
+  color: #242424;
+}
+.flags-number .rem-tel-input input{
+  padding-right: 0 !important;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  padding-left: 50px !important;
+  width: 300px !important;
+  display: block;
+}
+.flags-number .rem-tel-input .selected-flag{
+  background-color: transparent !important;
+  font-size: 12px !important;
+  position: relative;
+}
+.flags-number .rem-tel-input .selected-flag:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 1px;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.intl-tel-input .country-list .country-name{
+  font-size: 12px!important;
+}
+.intl-tel-input.separate-dial-code .selected-dial-code{
+  display: none !important;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 .selected-flag{
+  width: 45px !important;
+}
+.flags-number a,
+.login-form a.nxt{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 200px;
+  min-width: 90%;
 }
 
-.input-group > .intl-tel-input.allow-dropdown > .flag-container {
-	z-index: 4;
+.code-group{
+  padding-top: 35px;
+}
+.code-group input{
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.code-group label{
+  font-weight: bold;
+}
+.code-group .snd a{
+  color: #000;
+  margin-right: 15px;
+  text-decoration: underline;
 }
 
-.iti-flag {
-  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags.png");
+.edit-photo input{
+  opacity: 0;
+  width: 90px;
+  cursor: pointer;
 }
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .iti-flag {
-      background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/img/flags@2x.png");
-    }
+.edit-photo label{
+  background: transparent;
+  width: fit-content;
+  border: none;
+  color: #242424;
+  text-align: center;
+  margin-right: auto;
+  cursor: pointer;
+  padding-top: 15px;
 }
-
+.edit-photo label::after{
+  display: none;
+}
 
 
 
