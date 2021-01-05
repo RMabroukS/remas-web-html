@@ -15,6 +15,32 @@ Author URI: https://mostaql.com/u/bma_dev
 /*=========================================
 ============ Common Components ============
 ===========================================*/
+  
+
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}  
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #979797; 
+}
 
 
   /*========================
@@ -46,8 +72,8 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .full-btn{
       padding: 0 30px;
-      height: 35px;
-      line-height: 2;
+      height: 40px;
+      line-height: 40px;
       font-weight: 700;
       min-width: 100%;
       text-align: center;
@@ -158,7 +184,7 @@ Author URI: https://mostaql.com/u/bma_dev
    .main-form select{
     border: 2px solid rgba(225, 225, 225, 0.16);
     background-color: transparent;
-    height: 45px;
+    height: 37px;
     color: #000 !important;
     margin-bottom: 25px;
    }
@@ -185,15 +211,41 @@ Author URI: https://mostaql.com/u/bma_dev
      width: 100% !important;
    }
    .rem-tel-input .intl-tel-input input {
-    padding-left: 60px!important;
+    padding-left: 100px!important;
     width: 100%;
+    height: 37px;
+    border-radius: 5px;
    }
    .rem-tel-input .intl-tel-input .country-list .country-name{
     font-size: 12px!important;
   }
   .rem-tel-input .intl-tel-input.separate-dial-code .selected-dial-code{
-    display: none !important;
+    padding-left: 45px;
+    color: #fff;
   }
+  
+
+
+.rem-tel-input .selected-flag:after{
+    content: "";
+    position: absolute;
+    left: 45px;
+    top: 20%;
+    width: 2px;
+    height: 60%;
+    background-color: rgb(225 225 225 / 49%);
+    border-radius: 15px;
+  }
+  .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 .selected-flag{
+    background-color: transparent;
+  }
+
+
+
+  .intl-tel-input .selected-flag .iti-arrow {
+    right: auto !important;
+    left: 35px !important;
+}
   .rem-tel-input  .selected-flag{
     width: 45px !important;
   }
@@ -207,27 +259,31 @@ Author URI: https://mostaql.com/u/bma_dev
      position: relative;
      background-image: linear-gradient(45deg, #fff, #D1D1D1);
      padding: 25px;
-     height: 535px;
-     max-width: 280px;
+     height: 583px;
+     max-width: 297px;
      margin: auto;
      text-align: center;
      border-radius: 5px;
+     border-top: 8px solid #424242;
    }
-   .plans .sub-plan.active{
-     border-top: 4px solid #FFDD00;
+   .plans .sub-plan:hover{
+     border-top: 8px solid #FFDD00;
+     box-shadow: 0 .5rem 1rem rgba(0,0, 0,.45)!important;
    }
    .plans .sub-plan .top-plan{
-     position: relative;
-     margin-bottom: 80px;
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(225 225 225 / 10%);
    }
    .plans .sub-plan .top-plan h3{
      color: #383838;
-     font-size: 26px;
+     font-size: 35px;
      font-weight: bold;
    }
    .plans .sub-plan .top-plan span{
     color: #383838;
-    font-size: 28px;
+    font-size: 39px;
     font-weight: 300;
    }
    .plans .sub-plan .txt-plan p{
@@ -244,11 +300,24 @@ Author URI: https://mostaql.com/u/bma_dev
    .plans .sub-plan .btn-plan a{
     top: -15px;
     position: relative;
+    background-color: #424242;
+    color: #fff;
+    height: 59px !important;
+    width: 228px !important;
+    display: block;
+    margin: auto;
+    line-height: 2.5;
+    font-size: 24px;
+    padding: 0;
+   }
+   .plans .sub-plan:hover .btn-plan a{
+    background: linear-gradient(135deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
+    color: #fff;
    }
    .plans .sub-plan .btn-plan small{
      display: block;
      text-align: center;
-     color: #979797;
+     color: rgb( 0 0 0 / 50%);
      font-size: 12px;
    }
 
@@ -344,7 +413,10 @@ Author URI: https://mostaql.com/u/bma_dev
      color: #fff;
      margin: 0 10px;
      font-size: 18px;
-   }
+    }
+    footer .main-footer .footer-col .social-icons a:hover{
+      color: #FFDD00;
+    }
    footer .main-footer .footer-col h4{
      font-size: 20px;
      font-weight: bold;
@@ -400,7 +472,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .page-intro .intro-overlay{
       position: absolute;
       width: 100%;
-      height: 130px;
+      height: 100%;
       left: 0;
       bottom: -1px;
       background-image: linear-gradient(to top, #242424, transparent);
@@ -578,6 +650,8 @@ Author URI: https://mostaql.com/u/bma_dev
       border-radius: 5px;
       border: none;
       transform: translate(-90%, 5%)!important;
+      max-height: 450px;
+      overflow-y: scroll;
     }
     .top-nav-profile .dropdown .dropdown-menu.notif-drop .d-flex{
       padding: 10px 0;
