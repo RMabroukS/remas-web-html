@@ -52,7 +52,9 @@ Author URI: https://mostaql.com/u/bma_dev
       color: #fff;
       border: none;
       border-radius: 5px;
-      background: linear-gradient(135deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
+      /*background: linear-gradient(135deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);*/
+      background-image: linear-gradient(to right, #FFDD00 0%, #FF8800 51%, #FFDD00 100%);
+      background-size: 200% auto;
     }
     .large-size{
       padding: 8px 40px;
@@ -63,11 +65,10 @@ Author URI: https://mostaql.com/u/bma_dev
       text-align: center;
     }
     .regular-size{
-      padding: 0 30px;
-      height: 35px;
-      line-height: 2;
-      font-weight: 700;
-      min-width: 135px;
+      height: 31px;
+      line-height: 31px;
+      font-weight: 400;
+      min-width: 118px;
       text-align: center;
     }
     .full-btn{
@@ -79,10 +80,11 @@ Author URI: https://mostaql.com/u/bma_dev
       text-align: center;
     }
     .small-size{
-      padding: 0 10px;
-      height: 30px;
-      line-height: 1.8;
-      font-weight: 700;
+      width: 65px;
+      font-size: 13px;
+      font-weight: 300;
+      height: 27px;
+      line-height: 27px;
     }
     .regular-size svg,
     .small-size svg {
@@ -92,13 +94,9 @@ Author URI: https://mostaql.com/u/bma_dev
     .main-btn:hover{
       color: #fff;
       text-decoration: none;
-      transform: scale(1.03);
+      background-position: right center;
     }
-    .main-btn.regular-size:hover{
-      padding: 0 35px;
-      color: #fff;
-      text-decoration: none;
-    }
+
 
     /* === === White Button === ===*/
     .white-btn{
@@ -119,11 +117,12 @@ Author URI: https://mostaql.com/u/bma_dev
 
     /* === === Grey Button === ===*/
     .grey-btn{
-      color: rgba(225, 225, 225, .66);
+      color: rgba(225, 225, 225, .50);
       border: none;
       border-radius: 5px;
-      background: #707070;
+      background: #4A4A4A;
       text-decoration: none;
+      text-align: center;
     }
     .grey-btn:hover{
       color: #fff;
@@ -136,11 +135,11 @@ Author URI: https://mostaql.com/u/bma_dev
    =========================*/
    .sec-tlt{
      position: relative;
-     margin-bottom: 15px;
+     margin-bottom: 25px;
      text-align: left;
      color: #fff;
    }
-   .sec-tlt .sec-title h3{
+   .sec-tlt h3{
      font-size: 20px;
      margin-bottom: 3px;
      color: #fff;
@@ -163,16 +162,33 @@ Author URI: https://mostaql.com/u/bma_dev
    .sec-tlt .sec-search input{
      width: 100%;
      padding-left: 35px;
+     height: 31px;
+     margin-top: -2px;
    }
    .sec-tlt .sec-search form svg{
     font-size: 16px;
     color: #707070;
     position: absolute;
     left: 10px;
-    top: 10px;
+    top: 7px;
    }
    .sec-tlt svg{
      color: #fff;
+   }
+   .sec-spn-tlt{}
+   .sec-spn-tlt img{
+     width: 64px;
+     height: 64px;
+   }
+   .sec-spn-tlt span{
+     font-size: 16px;
+     font-weight: bold;
+     color: #fff;
+   }
+   .sec-spn-tlt small{
+     font-size: 16px;
+     font-weight: 400;
+     color: rgba(225, 225, 225, .6);
    }
 
 
@@ -218,6 +234,11 @@ Author URI: https://mostaql.com/u/bma_dev
    }
    .rem-tel-input .intl-tel-input .country-list .country-name{
     font-size: 12px!important;
+    display: unset !important;
+    color: #000;
+  }
+  .rem-tel-input .intl-tel-input .country-list .dial-code{
+    display: inline-block !important;
   }
   .rem-tel-input .intl-tel-input.separate-dial-code .selected-dial-code{
     padding-left: 45px;
@@ -501,11 +522,12 @@ Author URI: https://mostaql.com/u/bma_dev
     .sidenav{
       position: fixed;
       height: 100vh;
-      width: 250px;
+      width: 200px;
       left: 0;
       top:0;
       background-color: #000;
       float: left;
+      overflow-y: scroll;
     }
     .sidenav .logo{
       margin: auto;
@@ -557,8 +579,9 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-bottom: 15px;
     }
     .sidenav .foot-nav{
-      position: absolute;
-      bottom: 150px;
+      position: relative;
+      height: 400px;
+      padding-top: 300px !important;
       padding: 0 35px;
     }
     .foot-nav svg{
@@ -582,8 +605,8 @@ Author URI: https://mostaql.com/u/bma_dev
     .top-nav{
       position: fixed;
       z-index: 99;
-      width: calc(100% - 250px);
-      left: 250px;
+      width: calc(100% - 200px);
+      left: 200px;
       background-color: #24242480;
       padding: 15px 50px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -615,8 +638,9 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       padding-top: 5px;
     }
-    .top-nav-profile a{
+    .top-nav-profile a.main-btn{
       margin-right: 25px;
+      font-weight: bold !important;
     }
     .top-nav-profile .dropdown a{
       background-color: transparent !important;
@@ -838,7 +862,10 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-top: 25px;
     }
     .library-list .nav-pills a{
-      border-bottom: 1px solid rgba(225, 225, 225, .16);
+      border-top: 1px solid rgba(225, 225, 225, .16);
+    }
+    .library-list .nav-pills a.d-flex{
+      border-top: none ;
     }
     .library-list .nav-pills span{
       font-size: 16px;
@@ -868,6 +895,18 @@ Author URI: https://mostaql.com/u/bma_dev
     .library-list .nav-pills #liked-clips-tab.active ~ a.animation{
       top: 21%;
       height: 15.4%;
+    }
+    .library-list .nav-pills #downloaded-tab.active ~ a.animation{
+      top: 36%;
+      height: 14%;
+    }
+    .library-list .nav-pills #recently-tab.active ~ a.animation{
+      top: 49.5%;
+      height: 14%;
+    }
+    .library-list .nav-pills #custom-list-tab.active ~ a.animation{
+      top: 63.5%;
+      height: 14.8%;
     }
     .library-list .nav-pills #album-the-tab.active ~ a.animation{
       top: 78%;
@@ -938,6 +977,7 @@ Author URI: https://mostaql.com/u/bma_dev
       font-weight: bold;
       color: #fff;
       font-size: 30px;
+      margin-bottom: 0;
     }
     .single-block .single-block-tlt small{
       display: block;
@@ -969,6 +1009,9 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       text-align: center;
     }
+    .artists-list h3{
+      font-size: 16px  !important;
+    }
     .artists-list .artists-list-content{
       margin-top: 50px;
     }
@@ -976,19 +1019,23 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       margin-bottom: 40px;
     }
+    .artists-list .artist-item:hover img{
+      border: 3px solid #FFDD00;
+    }
     .artists-list .artist-item img{
       border-radius: 50%;
-      width: 110px;
-      height: 110px;
+      width: 113px;
+      height: 113px;
       position: relative;
       display: block;
       margin: auto;
+      border: 3px solid #242424;
     }
     .artists-list .artist-item a{
-      font-size: 13px;
+      font-size: 11px;
       color: #fff;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 10px;
       display: block;
     }
     .artists-list .artist-item a:hover{
@@ -1124,6 +1171,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .songs-list .song-item .songs-btns a{
       margin: 0 10px;
       color: #fff;
+      font-size: 13px;
     }
     .songs-list .song-item .songs-btns a:hover{
       color: #FFDD00;
@@ -1143,11 +1191,18 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-bottom: 50px;
       left: 50px;
     }
+    .home-playlists .h-p-item{
+      position: relative;
+      width: 207px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 7px;
+      margin-right: 20px;
+    }
     .home-playlists img{
       max-width: 100%;
       max-height: 100%;
       transition: all 350ms;
-      border-radius: 10px;
     }
     .home-playlists img:hover{
       opacity: .8;
@@ -1170,9 +1225,10 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       overflow: hidden;
       display: inline-block;
-      max-width: 430px;
+      min-width: 443px;
+      max-width: 443px;
       width: 100%;
-      height: 220px;
+      height: 248px;
       padding-right: 30px;
     }
     .home-clips .home-clips-post svg{
@@ -1192,13 +1248,14 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .home-clips .home-clips-post img{
       width: 100%;
-      height: 145px;
+      height: 193px;
       border-radius: 5px 5px 0 0;
     }
     .home-clips .home-clips-post .home-clips-info{
       background-color: #000;
-      padding: 10px;
+      padding: 5px 10px;
       border-radius: 0 0 5px 5px;
+      height: 55px;
     }
     .home-clips .home-clips-post .home-clips-info span{
       color: #fff;
@@ -1209,10 +1266,8 @@ Author URI: https://mostaql.com/u/bma_dev
       color: #979797;
     }
     .home-clips .slick-slider .slick-arrow.slick-next,
-    .home-clips .slick-slider .slick-arrow.slick-prev,
-    .songs .slick-slider .slick-arrow.slick-next,
-    .songs .slick-slider .slick-arrow.slick-prev{
-      top: 30%;
+    .home-clips .slick-slider .slick-arrow.slick-prev{
+      top: 40%;
     }
 
     /* === === Home Signers === ===*/
@@ -1236,6 +1291,11 @@ Author URI: https://mostaql.com/u/bma_dev
       padding: 15px;
       text-align: center;
       max-width: 175px;
+      margin: auto;
+      border: 3px solid #242424;
+    }
+    .signers .signers-post-content:hover{
+      background-color: rgb(36 36 36 / 35%);
     }
     .signers .signers-post-content img{
       width: 110px;
@@ -1247,8 +1307,20 @@ Author URI: https://mostaql.com/u/bma_dev
     .signers .signers-post-content a{
       font-size: 13px;
       color: #fff;
-      margin: 20px 0;
+      margin: 15px 0;
       display: block;
+    }
+    .signers .signers-post-content button{
+      height: 25px !important;
+      font-size: 11px !important;
+      line-height: 25px !important;
+      font-weight: 400 !important;
+      min-width: 82px !important;
+      width: 82px;
+      padding: 0 !important;
+    }
+    .signers .signers-post-content button svg{
+      font-size: 8px !important;
     }
     .signers .slick-slider .slick-arrow.slick-next {
       right: -38px;
@@ -1269,6 +1341,7 @@ Author URI: https://mostaql.com/u/bma_dev
       max-width: 175px;
       width: 100%;
       overflow: hidden;
+      margin-right: 20px;
     }
     .songs .home-songs-post .song-post-img{
       border-radius: 5px;
@@ -1307,10 +1380,14 @@ Author URI: https://mostaql.com/u/bma_dev
       font-weight: bold;
       display: block;
       margin-top: 15px;
-      margin-left: 5px;
     }
     .songs .home-songs-post small{
       color: #979797;
+      font-size: 14px;
+    }
+    .songs .slick-slider .slick-arrow.slick-next,
+    .songs .slick-slider .slick-arrow.slick-prev{
+      top: 30%;
     }
 
     /* === === Geners === ===*/
@@ -1324,6 +1401,7 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       text-align: center;
       margin-bottom: 15px;
+      margin-right: 20px;
     }
     .genrs .genrs-post img{
       padding: 0;
@@ -1413,7 +1491,50 @@ Author URI: https://mostaql.com/u/bma_dev
       font-weight: 400;
       color: #979797;
     }
-
+    .videos-clips .placeholder-content .placeholder-content-item{
+      background-color: #3D3D3D;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .videos-clips .placeholder-content .placeholder-content-item::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right, transparent 0%, #383838 50%, transparent 100%);
+      animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+    .videos-clips .placeholder-content .vid-placeholder{
+      position: relative;
+      width: 100%;
+      max-width: 250px;
+      height: 120px;
+      border-radius: 10px;
+    }
+    .videos-clips .placeholder-content .tlt-placeholder{
+      position: relative;
+      width: 75%;
+      max-width: 185px;
+      height: 12px;
+      border-radius: 10px;
+    }
+    .videos-clips .placeholder-content .s-tlt-placeholder{
+      position: relative;
+      width: 50%;
+      max-width: 120px;
+      height: 12px;
+      border-radius: 10px;
+    }
+    @keyframes load {
+      from {
+          left: -150px;
+      }
+      to   {
+          left: 100%;
+      }
+    }
   
   
 
@@ -1432,7 +1553,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .remas-player .main-control {
       position: relative;
-      width: 250px;
+      width: 200px;
       margin-right: 50px;
       text-align: center;
       border-right: 1px solid rgb(255 255 255 / 30%);
@@ -1448,7 +1569,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .remas-player .time-control{
       position: relative;
       padding: 15px;
-      width: 45%;
+      width: 50%;
       border-right: 1px solid rgb(255 255 255 / 30%);
       padding-right: 35px;
     }
@@ -1489,6 +1610,14 @@ Author URI: https://mostaql.com/u/bma_dev
       display: inline-block;
       margin: 0 15px;
       position: relative;
+      width: 30px;
+      height: 30px;
+      padding: 7px;
+      border-radius: 100%;
+      line-height: 15px;
+    }
+    .remas-player .time-control .player-info .right-info .repeat-item:hover{
+      background-color: rgb(64 0 176 / 40%);
     }
     .remas-player .time-control .player-info .right-info .repeat-item img{
       position: relative;
@@ -1504,7 +1633,7 @@ Author URI: https://mostaql.com/u/bma_dev
     transform: rotate(90deg);
     width: 60px;
     height: 3px;
-    left: -20px;
+    left: -15px;
     opacity: 0;
     visibility: hidden;
     }

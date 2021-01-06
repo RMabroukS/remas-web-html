@@ -217,23 +217,23 @@
                                     role="tab">
                                     <img class="align-self-center" src="../assets/img/dash/lib-2.png" alt="">
                                     <div class="lib-name align-self-center">
-                                        <span>Clips</span>
+                                        <span>Liked Video Clips</span>
                                         <small>54 Videos</small>
                                     </div>
                                 </a>
-                                <a class="nav-link d-flex" href="#">
+                                <a class="nav-link d-flex" id="downloaded-tab" data-toggle="pill" href="#downloaded">
                                     <img class="align-self-center" src="../assets/img/dash/lib-3.png" alt="">
                                     <div class="lib-name align-self-center">
                                         <span>Downloads (Play Offline)</span>
                                     </div>
                                 </a>
-                                <a class="nav-link d-flex" href="#">
+                                <a class="nav-link d-flex" id="recently-tab" data-toggle="pill" href="#recently">
                                     <img class="align-self-center" src="../assets/img/dash/lib-4.png" alt="">
                                     <div class="lib-name align-self-center">
                                         <span>Recently Played</span>
                                     </div>
                                 </a>
-                                <a class="nav-link d-flex" href="#">
+                                <a class="nav-link d-flex" id="custom-list-tab" data-toggle="pill" href="#custom-list">
                                     <img class="align-self-center" src="../assets/img/dash/lib-5.png" alt="">
                                     <div class="lib-name align-self-center">
                                         <span>New Iraqi Songs</span>
@@ -250,17 +250,24 @@
                 <div class="tab-content py-5" id="v-pills-tabContent">
                     <div class="tab-pane px-5 fade show active" id="liked-songs" role="tabpanel">
                         <div class="songs-list">
-                            <div class="sec-tlt d-flex justify-content-between">
-                                <div class="sec-title align-self-center">
-                                    <h3>Playlists for you</h3>
-                                    <span>14 Songs</span>
-                                </div>
-                                <div class="sec-search align-self-center text-right">
-                                    <form class="form-inline">
-                                        <i class="fas fa-search"></i>
-                                        <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..."
-                                            aria-label="Search">
-                                    </form>
+                            <div class="sec-tlt">
+                                <div class="d-flex justify-content-between">
+                                    <div class="sec-spn-tlt d-flex">
+                                        <img class="align-self-center mr-3" src="../assets/img/lib-1.svg" alt="">
+                                        <div class="lib-name align-self-center">
+                                            <span class="d-block">Likes</span>
+                                            <small>214 Songs</small>
+                                        </div>
+                                    </div>
+                                    <div class="sec-search align-self-center text-right">
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="main-btn regular-size mr-4">play</a>
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..." aria-label="Search">
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="songs-list-content">
@@ -416,16 +423,16 @@
                             <div class="sec-tlt">
                                 <div class="d-flex justify-content-between">
                                     <div class="sec-spn-tlt d-flex">
-                                        <img class="align-self-center mr-3" src="../assets/img/dash/lib-1.png" alt="">
+                                        <img class="align-self-center mr-3" src="../assets/img/lib-2.svg" alt="">
                                         <div class="lib-name align-self-center">
                                             <span class="d-block">Liked Songs</span>
                                             <small>214 Songs</small>
                                         </div>
                                     </div>
                                     <div class="sec-search align-self-center text-right">
-                                        <div class="d-flex">
+                                        <div class="d-flex justify-content-end">
                                             <a href="" class="main-btn regular-size mr-4">play</a>
-                                            <form class="form-inline">
+                                            <form class="form-inline text-right">
                                                 <i class="fas fa-search"></i>
                                                 <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..." aria-label="Search">
                                             </form>
@@ -725,7 +732,517 @@
                             </div>
                         </div>
                     </div>
-        
+
+                    <div class="tab-pane px-5 fade" id="downloaded" role="tabpanel">
+                        <div class="songs-list">
+                            <div class="sec-tlt">
+                                <div class="d-flex justify-content-between">
+                                    <div class="sec-spn-tlt d-flex">
+                                        <img class="align-self-center mr-3" src="../assets/img/lib-1.svg" alt="">
+                                        <div class="lib-name align-self-center">
+                                            <span class="d-block">Likes</span>
+                                            <small>214 Songs</small>
+                                        </div>
+                                    </div>
+                                    <div class="sec-search align-self-center text-right">
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="main-btn regular-size mr-4">play</a>
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..." aria-label="Search">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="songs-list-content">
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-1.png" alt="">
+                                            <a href="song.html">Ahed El Donia</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Ramy Sabri</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>05:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-2.png" alt="">
+                                            <a href="song.html">Ya Magnoon</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Asala Nasry</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>03:53</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-3.png" alt="">
+                                            <a href="song.html">Mahkama</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Kazem El-Saher</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>07:55</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-4.png" alt="">
+                                            <a href="song.html">Song Name</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Artist Name</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>02:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-5.png" alt="">
+                                            <a href="song.html">North Ireland</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Call Band</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>05:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-6.png" alt="">
+                                            <a href="song.html">Hello it's me</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Adele</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>04:45</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane px-5 fade" id="recently" role="tabpanel">
+                        <div class="songs-list">
+                            <div class="sec-tlt">
+                                <div class="d-flex justify-content-between">
+                                    <div class="sec-spn-tlt d-flex">
+                                        <img class="align-self-center mr-3" src="../assets/img/lib-1.svg" alt="">
+                                        <div class="lib-name align-self-center">
+                                            <span class="d-block">Likes</span>
+                                            <small>214 Songs</small>
+                                        </div>
+                                    </div>
+                                    <div class="sec-search align-self-center text-right">
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="main-btn regular-size mr-4">play</a>
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..." aria-label="Search">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="songs-list-content">
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-1.png" alt="">
+                                            <a href="song.html">Ahed El Donia</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Ramy Sabri</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>05:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-2.png" alt="">
+                                            <a href="song.html">Ya Magnoon</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Asala Nasry</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>03:53</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-3.png" alt="">
+                                            <a href="song.html">Mahkama</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Kazem El-Saher</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>07:55</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-4.png" alt="">
+                                            <a href="song.html">Song Name</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Artist Name</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>02:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-5.png" alt="">
+                                            <a href="song.html">North Ireland</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Call Band</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>05:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-6.png" alt="">
+                                            <a href="song.html">Hello it's me</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Adele</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>04:45</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane px-5 fade" id="custom-list" role="tabpanel">
+                        <div class="songs-list">
+                            <div class="sec-tlt">
+                                <div class="d-flex justify-content-between">
+                                    <div class="sec-spn-tlt d-flex">
+                                        <img class="align-self-center mr-3" src="../assets/img/lib-1.svg" alt="">
+                                        <div class="lib-name align-self-center">
+                                            <span class="d-block">Likes</span>
+                                            <small>214 Songs</small>
+                                        </div>
+                                    </div>
+                                    <div class="sec-search align-self-center text-right">
+                                        <div class="d-flex justify-content-end">
+                                            <a href="" class="main-btn regular-size mr-4">play</a>
+                                            <form class="form-inline">
+                                                <i class="fas fa-search"></i>
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search in my liked songs..." aria-label="Search">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="songs-list-content">
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-1.png" alt="">
+                                            <a href="song.html">Ahed El Donia</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Ramy Sabri</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>05:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-2.png" alt="">
+                                            <a href="song.html">Ya Magnoon</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Asala Nasry</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>03:53</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-3.png" alt="">
+                                            <a href="song.html">Mahkama</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Kazem El-Saher</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>07:55</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-4.png" alt="">
+                                            <a href="song.html">Song Name</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Artist Name</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>02:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-5.png" alt="">
+                                            <a href="song.html">North Ireland</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Call Band</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>05:33</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="song-item">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="song-name align-self-center">
+                                            <img src="../assets/img/dash/song-6.png" alt="">
+                                            <a href="song.html">Hello it's me</a>
+                                        </div>
+                                        <div class="song-artist align-self-center">
+                                            <a href="artist.html">Adele</a>
+                                        </div>
+                                        <div class="song-length align-self-center">
+                                            <span>04:45</span>
+                                        </div>
+                                        <div class="songs-btns align-self-center d-flex">
+                                            <a href="">
+                                                <i class="fas fa-play-circle"></i>
+                                                Video Clip
+                                            </a>
+                                            <a href="">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
                     <div class="tab-pane fade px-5" id="album-tab" role="tabpanel">
                         <div class="album-list">
                             <div class="sec-tlt d-flex justify-content-between">

@@ -55,8 +55,8 @@ a {
   
   .the-content{
     position: relative;
-    width: calc(100% - 250px);
-    margin-left: 250px;
+    width: calc(100% - 200px);
+    margin-left: 200px;
     background-color: #242424;
     overflow: hidden;
     min-height: 100vh;
@@ -172,7 +172,7 @@ a {
     height: 40px;
     max-width: 280px;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0 35px 0 15px;
     line-height: 1;
     border: none;
@@ -226,8 +226,8 @@ a {
   .edit-theme .custom-control input{}
   .edit-theme .custom-control label,
   .edit-notification .custom-control label{
-    color: rgba(225, 225, 225, 0.16);
-    font-size: 18px;
+    color: rgba(225, 225, 225, 0.6);
+    font-size: 16px;
     display: block;
     width: 100%;
   }
