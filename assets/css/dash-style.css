@@ -31,6 +31,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
+.custom-control-input:focus~.custom-control-label::before,
 .btn.focus,
 .btn:focus {
   border-color: transparent !important;
@@ -251,10 +252,13 @@ a {
   .edit-theme .custom-control .custom-control-input:checked~.custom-control-label::before,
   .edit-notification .custom-control .custom-control-input:not(:disabled):active~.custom-control-label::before,
   .edit-notification .custom-control .custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    background-color: #FFDD00;
+    color: #FFDD00;
+    background-color: #383838;
     background-image: none;
     border-color: #3371b5;
+    content: "✓";
+    font-size: 18px;
+    padding-left: 5px;
   }
 
 

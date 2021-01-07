@@ -1680,6 +1680,9 @@ Author URI: https://mostaql.com/u/bma_dev
       color: #fff;
       font-size: 16px;
     }
+    .remas-player .extra-tools a:hover{
+      background-color: #FF8800;
+    }
     .remas-player .extra-tools a.heart{
       background-color: transparent;
       font-size: 26px;
@@ -1691,9 +1694,110 @@ Author URI: https://mostaql.com/u/bma_dev
 
 
     /* === === Live Player === ===*/
+    .custom-controll{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 57px;
+      padding: 10px 20px;
+      background-color: #121212;
+      line-height: 42px;
+      z-index: 99;
+    }
+    .custom-controll .cstm-btn{
+      color: #fff;
+    }
+    .custom-controll .play-btn{
+      font-size: 25px;
+      margin: 0 35px 0 10px;
+    }
+    .custom-controll .prev-next{
+      margin: 0 35px 0 0;
+    }
+    .custom-controll .prev-next .prev-btn{
+      margin-right: 15px;
+      font-size: 18px;
+    }
+    .custom-controll .prev-next .next-btn{
+      font-size: 20px;
+    }
+    .custom-controll .range-control{
+      flex: 1;
+    }
+    .custom-controll .range-control span{
+      color: #fff;
+    }
+    .custom-controll .range-control .range-cntrl{
+      width: 100%;
+      margin: 0 25px;
+    }
+    .custom-controll .range-control .range-cntrl .progress{
+      background-color: #C2C2C2 !important;
+      overflow: visible;
+    }
+    .custom-controll .range-control .range-cntrl .progress .progress-bar{
+      background-color: #FFDD00;
+      position: relative;
+    }
+    .custom-controll .range-control .range-cntrl .progress .progress-bar:after{
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #FFDD00;
+      position: absolute;
+      right: 0;
+    }
+    .custom-controll .sound-cntrl{
+      font-size: 22px;
+      margin: 0 15px 0 30px;
+    }
+    .custom-controll .settings-cntrl{
+      font-size: 22px;
+      margin: 0 15px;
+    }
+    .custom-controll .settings-cntrl .quality-vid{
+      position: absolute;
+      width: 135px;
+      top: -220px;
+      right: 35px;
+      height: 215px;
+      padding: 20px;
+      text-align: center;
+      background-color: #121212;
+      font-size: 16px;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .custom-controll .settings-cntrl .quality-vid.open{
+      visibility: visible;
+      opacity: 1;
+    }
+    .custom-controll .settings-cntrl .quality-vid ul{
+      padding: 0;
+    }
+    .custom-controll .settings-cntrl .quality-vid ul li{
+      line-height: 35px;
+      color: #fff;
+    }
+    .custom-controll .settings-cntrl .quality-vid ul li.active{
+      line-height: 35px;
+      color: #FFDD00;
+    }
+    .custom-controll .full-cntrl{
+      font-size: 22px;
+      margin: 0 15px;
+    }
 
     /* === === Clip Player === ===*/
-
+    .video-clip-content{
+      position: relative;
+    }
+    .vid-live-img{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
   
   
   /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
