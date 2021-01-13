@@ -132,7 +132,7 @@ a {
 }
 .upgrade-page  .page-intro{
   background-image: url(../img/upgrade.png);
-  background-position: bottom;
+  background-position: top;
 }
 .upgrade-page  .features{
   position: relative;
@@ -532,10 +532,16 @@ a {
 @media only screen and (max-width: 768px) {
   
   /*=== Header ===*/
+  header{
+    background-color: #242424 !important;
+  }
 
   /*=== Footer ===*/
 
   /*=== Home ===*/
+  .main-content{
+    padding-top: 58px;
+  }
 
   
 }

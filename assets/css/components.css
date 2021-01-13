@@ -1107,9 +1107,12 @@ Author URI: https://mostaql.com/u/bma_dev
     .artists-list .artists-list-content{
       margin-top: 50px;
     }
+    .artists-list .artists-list-content .d-flex{
+      flex-wrap: wrap !important;
+    }
     .artists-list .artist-item{
       position: relative;
-      margin-bottom: 40px;
+      margin: 20px 10px;
     }
     .artists-list .artist-item:hover img{
       border: 3px solid #FFDD00;
@@ -2138,7 +2141,6 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     /**/
     .login-page {
-      height: auto;
       overflow: hidden;
       padding: 35px 0;
     }
@@ -2213,6 +2215,15 @@ Author URI: https://mostaql.com/u/bma_dev
     /*=== Footer ===*/
   
     /*=== Home ===*/
+    .page-intro {
+      position: relative;
+      background-attachment: fixed;
+      background-size: contain;
+      background-position: top;
+      background-repeat: no-repeat;
+      text-align: center;
+      height: 200px;
+    }
 
     /*=== Top Nav ===*/
     .top-nav .top-logo{
@@ -2279,6 +2290,25 @@ Author URI: https://mostaql.com/u/bma_dev
       padding-right: 25px!important;
       padding-left: 25px !important;
     }
+
+    .home-playlists,
+    .home-clips,
+    .songs,
+    .genrs{
+      left: 0;
+    }
+    .the-content .main-content.music-content .sec-tlt{
+      padding-right: 0 !important;
+    }
+    .signers .signers-content {
+      margin-right: 0 !important;
+      margin: 0;
+    }
+    .signers .signers-content{
+      padding: 20px 15px;
+      margin-bottom: 25px;
+    }
+
     .single-block {
       position: relative;
       height: auto;
@@ -2378,6 +2408,30 @@ Author URI: https://mostaql.com/u/bma_dev
     .video-clip-page .sec-tlt .d-flex{
       text-align: left;
     }
+    /**/
+    .custom-controll .play-btn {
+      font-size: 18px;
+      margin: 0 15px 0 0;
+    }
+    .custom-controll .prev-next {
+      margin: 0 15px 0 0;
+    }
+    .custom-controll .prev-next .next-btn,
+    .custom-controll .prev-next .prev-btn {
+      font-size: 15px;
+    }
+    .custom-controll .sound-cntrl {
+      font-size: 15px;
+      margin: 0 15px 0 30px;
+    }
+    .custom-controll .settings-cntrl {
+      font-size: 15px;
+      margin: 0px 5px;
+    }
+    .custom-controll .full-cntrl {
+      font-size: 15px;
+      margin: 0 10px;
+    }
 
     
   }
@@ -2385,14 +2439,91 @@ Author URI: https://mostaql.com/u/bma_dev
 
   
   /*========= 580px ==========*/
-  @media only screen and (max-width: 580px) {
+  @media only screen and (max-width: 576px) {
     
     /*=== Header ===*/
   
     /*=== Footer ===*/
   
     /*=== Home ===*/
+    .page-intro {
+      height: 180px;
+      background-size: 150%;
+    }
+    .page-intro h1 {
+      font-size: 42px;
+      padding: 0 15px;
+      position: relative;
+      top: 125px;
+    }
+    .about-page .page-content,
+    .contact-us-page .contact-us-page .page-content{
+      padding: 100px 0;
+    }
+    .about-page .page-intro h1,
+    .contact-us-page .page-intro h1 {
+      font-size: 42px;
+      padding: 0 15px;
+      position: relative;
+      top: 90px;
+    }
+    .page-content {
+      padding: 135px 0;
+    }
+    /**/
+    .login-page .login-forms .step-section {
+      padding: 35px 15px;
+      width: 100% !important;
+    }
+    .flags-number a, .login-form a.nxt {
+      left: 20px;
+    }
   
+
+    /*=== Dashboard ===*/
+    .videos-clips .video-clip-post {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 25px;
+      max-width: 100%;
+      width: 100%;
+    }
+    .videos-clips .video-clip-post img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    .videos-clips .placeholder-content .vid-placeholder {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      height: 180px;
+      border-radius: 10px;
+    }
+
+
+      /**/
+  .live-content .channels {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: auto;
+  }
+  .live-content .channels ul{
+    display: flex;
+    margin: 0;
+  }
+  .live-content .channels li {
+    width: 20%;
+    min-width: 160px;
+  }
+  .live-content  video{
+    height: 180px;
+  }
+
+
+
     
   }
   
@@ -2435,6 +2566,7 @@ Author URI: https://mostaql.com/u/bma_dev
   }
 
 
+
     /*=== Player ===*/
     .remas-player .main-control .main-control-item svg,
     .remas-player .extra-tools a.heart,
@@ -2446,15 +2578,7 @@ Author URI: https://mostaql.com/u/bma_dev
     
     /* === === Dashboard === ===*/
 
-    .home-playlists,
-    .home-clips,
-    .songs,
-    .genrs{
-      left: 0;
-    }
-    .the-content .main-content.music-content .sec-tlt{
-      padding-right: 0 !important;
-    }
+
     .home-clips .home-clips-post {
       position: relative;
       overflow: hidden;
@@ -2465,20 +2589,14 @@ Author URI: https://mostaql.com/u/bma_dev
       height: auto;
       padding-right: 0;
     }
-    .signers .signers-content {
-      margin-right: 0 !important;
-      margin: 0;
-    }
+
     .videos-clips{
       padding: 0!important;
     }
     .videos-clips .video-clip-post {
       margin: auto;
     }
-    .placeholder-content {
-      max-width: 250px;
-      margin: auto;
-    }
+
 
     /**/
     .right-single-block.p-5{
@@ -2544,10 +2662,7 @@ Author URI: https://mostaql.com/u/bma_dev
  .song-length{
     display: none;
   }
-  .signers .signers-content{
-    padding: 20px 5px;
-    margin-bottom: 25px;
-  }
+
   .videos-clips .video-clip-post{
     margin-bottom: 25px;
   }
@@ -2562,26 +2677,34 @@ Author URI: https://mostaql.com/u/bma_dev
   .custom-controll .prev-next {
     margin: 0 35px 0 0;
     display: none !important;
-}
+  }
+
   /**/
-  .live-content .channels {
-    position: relative;
-    height: auto;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: auto;
+  .live-content  video{
+    height: 225px;
   }
-  .live-content .channels ul{
-    display: flex;
-    margin: 0;
-  }
-  .live-content .channels li {
-    width: 20%;
-    min-width: 160px;
-  }
+  .custom-controll {
+    height: 45px;
+    line-height: 28px;
+
+}
+
 
 
 
   
   }
   
+
+
+
+  @media only screen and (max-width: 380px){
+
+    .page-intro {
+      height: 130px;
+      background-size: 170%;
+    }
+
+  }
+
+
