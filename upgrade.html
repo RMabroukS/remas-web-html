@@ -199,80 +199,88 @@
         <div class="page-content">
             <div class="container">
                 <div class="features">
-                    <div class="d-flex justify-content-center">
+                    <div class="slick-item">
                         <div class="card-feat up-overlay-1">
                             <span>Listen <br> Offline</span>
                         </div>
+                    </div>
+                    <div class="slick-item">
                         <div class="card-feat up-overlay-2">
                             <span>High <br> Quality</span>
                         </div>
+                    </div>
+                    <div class="slick-item">
                         <div class="card-feat up-overlay-3">
+                            <span>Listen <br> Offline</span>
+                        </div>
+                    </div>
+                    <div class="slick-item">
+                        <div class="card-feat up-overlay-4">
                             <span>High <br> Quality</span>
                         </div>
-                        <div class="card-feat up-overlay-4">
+                    </div>
+                    <div class="slick-item">
+                        <div class="card-feat up-overlay-5">
                             <span>no <br> ads</span>
                         </div>
-                        <div class="card-feat up-overlay-5">
-                            <span>Title <br> here</span>
-                        </div>
+                    </div>
+                    <div class="slick-item">
                         <div class="card-feat up-overlay-6">
-                            <span>Listen <br> Offline</span>
+                            <span>Title <br> here</span>
                         </div>
                     </div>
                 </div>
                 <div class="plans">
                     <span>Our plans for you</span>
                     <div class="plans-content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="sub-plan active wow fadeIn">
-                                    <div class="top-plan">
-                                        <h3>Premium Plan</h3>
-                                        <span>$49.99/month</span>
-                                    </div>
-                                    <div class="txt-plan">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        </p>
-                                    </div>
-                                    <div class="btn-plan">
-                                        <a href="#" class="grey-btn large-size" data-toggle="modal" data-target="#familyPlan">Subscribe Now</a>
-                                        <small>Cancel any time</small>
-                                    </div>
+                        <div class="slick-item ">
+                            <div class="sub-plan active wow fadeIn">
+                                <div class="top-plan up-overlay-1">
+                                    <h3>Premium Plan</h3>
+                                    <span>$49.99/month</span>
+                                </div>
+                                <div class="txt-plan">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                                <div class="btn-plan">
+                                    <a href="#" class="grey-btn large-size" data-toggle="modal" data-target="#familyPlan">Subscribe Now</a>
+                                    <small>Cancel any time</small>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="sub-plan wow fadeIn" data-wow-delay="0.35s">
-                                    <div class="top-plan">
-                                        <h3>Family Plan</h3>
-                                        <span>$24.99/month</span>
-                                    </div>
-                                    <div class="txt-plan">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        </p>
-                                    </div>
-                                    <div class="btn-plan">
-                                        <a href="#" class="grey-btn large-size">Subscribe Now</a>
-                                        <small>Cancel any time</small>
-                                    </div>
+                        </div>
+                        <div class="slick-item ">
+                            <div class="sub-plan wow fadeIn" data-wow-delay="0.35s">
+                                <div class="top-plan up-overlay-2">
+                                    <h3>Family Plan</h3>
+                                    <span>$24.99/month</span>
+                                </div>
+                                <div class="txt-plan">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                                <div class="btn-plan">
+                                    <a href="#" class="grey-btn large-size">Subscribe Now</a>
+                                    <small>Cancel any time</small>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="sub-plan wow fadeIn" data-wow-delay="0.7s">
-                                    <div class="top-plan">
-                                        <h3>Personal Plan</h3>
-                                        <span>$19.99/month</span>
-                                    </div>
-                                    <div class="txt-plan">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        </p>
-                                    </div>
-                                    <div class="btn-plan">
-                                        <a href="#" class="grey-btn large-size">Subscribe Now</a>
-                                        <small>Cancel any time</small>
-                                    </div>
+                        </div>
+                        <div class="slick-item ">
+                            <div class="sub-plan wow fadeIn" data-wow-delay="0.7s">
+                                <div class="top-plan up-overlay-4">
+                                    <h3>Personal Plan</h3>
+                                    <span>$19.99/month</span>
+                                </div>
+                                <div class="txt-plan">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    </p>
+                                </div>
+                                <div class="btn-plan">
+                                    <a href="#" class="grey-btn large-size">Subscribe Now</a>
+                                    <small>Cancel any time</small>
                                 </div>
                             </div>
                         </div>
@@ -506,6 +514,80 @@
         // on keyup / change flag: reset
         telInput.on("keyup change", reset);
 
+    </script>
+
+    <!-- features Carousel -->
+    <script type="text/javascript">
+        $('.features').slick({
+            slidesToShow: 6,
+            variableWidth: false,
+            infinite: false,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerMode: true,
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='../assets/img/dash/left.png'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='../assets/img/dash/right.png'>",
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        centerMode: false,
+                        variableWidth: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        variableWidth: true,
+                        centerMode: false,
+                        centerPadding: '40px',
+                        slidesToScroll: 1,
+                        slidesToShow: 2
+                    }
+                },
+            ]
+        });
+    </script>
+
+    <!-- plans Carousel -->
+    <script type="text/javascript">
+        $('.plans-content').slick({
+            slidesToShow: 3,
+            variableWidth: false,
+            infinite: false,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        variableWidth: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        variableWidth: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToScroll: 1,
+                        slidesToShow: 1
+                    }
+                },
+            ]
+        });
     </script>
 
     <!-- Wow Animation -->

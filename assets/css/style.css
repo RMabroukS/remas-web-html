@@ -137,12 +137,15 @@ a {
 .upgrade-page  .features{
   position: relative;
 }
+.upgrade-page  .features .slick-slide{
+  margin: 0 10px;
+}
 .upgrade-page  .features .card-feat{
   position: relative;
   text-align: center;
   width: 138px;
   height: 100px;
-  margin: 10px;
+  margin: auto;
   color: #fff;
   font-size: 19px;
   line-height: 1.5;
