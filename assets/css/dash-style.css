@@ -281,10 +281,14 @@ a {
   /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
                 Live
   =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
-  .live-content{}
+  .live-content .d-sm-flex{
+    height: 65vh;
+    position: relative;
+    width: 100%;
+  }
   .live-content .channels{
     position: relative;
-    height: 495px;
+    height: 100%;
     width: 200px;
     overflow-y: scroll;
   }
