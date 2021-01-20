@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en-US"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title> Login </title>
+
+    <!-- META DATA -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="img/fav.png" type="image/png" sizes="16x16">
+
+
+    <!-- ============== Resources style ============== -->
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/components.css" />
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Animate css Style -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+    <!-- Slick Slider css Style -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+
+    <!-- Slick Slider css Style -->
+    <link rel="stylesheet" href="assets/css/jquery.steps.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet" media="screen">
+
+
+
+</head>
+
+<body>
+
+
+
+    <!-- ==== Main content ==== -->
+    <main class="main-content login-page d-flex">
+        <div class="container align-self-center">
+            <img src="assets/img/log-img.png" class="log-img" alt="">
+            <div class="d-md-flex justify-content-between">
+                <div class="login-head align-self-center">
+                    <h1>Music <br> Speaks</h1>
+                </div>
+                <div class="login-forms align-self-center">
+                    <div class="login-logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </div>
+                    <div class="login-steps-form">
+                        <div class="create-steps" id="create-steps">
+                            <h3></h3>
+                            <section class="step-section step-1">
+                                <div class="btns-section actions">
+                                    <a href="#next" class="main-btn full-btn mb-4 d-block" role="menuitem">Signup with
+                                        phone number</a>
+                                    <button type="button" class="fb-btn full-btn mb-4">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Connect to facebbok</span>
+                                    </button>
+                                    <button type="button" class="google-btn full-btn mb-4">
+                                        <img src="assets/img/dash/search.png" alt="">
+                                        <span>Connect to Google</span>
+                                    </button>
+                                    <button type="button" class="apple-btn  full-btn mb-4">
+                                        <i class="fab fa-apple"></i>
+                                        <span>Connect to Apple</span>
+                                    </button>
+                                </div>
+                                <div class="foot-section login-lnk">
+                                    <span>Already you have an account?</span>
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </section>
+
+                            <h3></h3>
+                            <section class="step-section">
+                                <form class="flags-number actions">
+                                    <div class="input-group input-group-sm rem-tel-input">
+                                        <label for="phone">Your mobile number</label>
+                                        <input id="phone" type="tel">
+                                    </div>
+                                    <a href="#next" class="main-btn full-btn d-block" role="menuitem">Next</a>
+                                </form>
+                            </section>
+
+                            <h3></h3>
+                            <section class="step-section">
+                                <div class="login-form actions">
+                                    <div class="code-group">
+                                        <label for="code" class="d-block">Verify your number</label>
+                                        <input type="text" class="form-control" placeholder="-" maxlength="1">
+                                        <input type="text" class="form-control" placeholder="-" maxlength="1">
+                                        <input type="text" class="form-control" placeholder="-" maxlength="1">
+                                        <input type="text" class="form-control" placeholder="-" maxlength="1">
+                                        <div class="d-flex justify-content-center snd">
+                                            <a href="">Send again?</a>
+                                            <div class="count-down">
+                                                <article class="clock" id="model3">
+                                                    <div class="count">
+                                                        <div id="timer"></div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <a href="#next" class="main-btn full-btn d-block nxt" role="menuitem">Next</a>
+                                </div>
+
+                            </section>
+
+                            <h3></h3>
+                            <section class="step-section">
+                                <div class="login-form mb-4">
+                                    <div class="edit-photo d-flex">
+                                        <div class="profile-photo mr-1">
+                                            <img src="assets/img/dash/user-2.png" alt="">
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">Add Photo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login-form">
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <label for="Name">Name</label>
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                        <div class="col-6 mb-3 align-self-end">
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label for="Name">Your Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="main-btn full-btn d-block nxt">Signup</a>
+                                </div>
+
+                            </section>
+
+                            <h3></h3>
+                            <section class="step-section">
+                                <div class="login-form pt-3">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <label for="Name">Email</label>
+                                            <input type="email" class="form-control" placeholder="Email or phone">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <label for="Name">Your Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="main-btn full-btn d-block">Login</a>
+                                </div>
+                                <div class="foot-section login-lnk">
+                                    <span>You don't have an account yet?</span>
+                                    <a href="#">Signup</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- ============== Resources JS ============== -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+
+    <!-- Main -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="assets/js/all.min.js"></script>
+
+    <!-- scroll Animation -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <script src="assets/js/jquery.steps.min.js"></script>
+
+
+   <!-- Login steps -->
+    <script type="text/javascript">
+        $("#create-steps").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            autoFocus: true
+        });
+        $("#create-steps-t-4").get(0).click();
+    </script>
+    
+    <!-- CountDown -->
+    <script type="text/javascript">
+        var sec = 60,
+            countDiv = document.getElementById("timer"),
+            secpass,
+            countDown = setInterval(function () {
+                'use strict';
+
+                secpass();
+            }, 1000);
+
+        function secpass() {
+            'use strict';
+
+            var min = Math.floor(sec / 60),
+                remSec = sec % 60;
+
+            if (remSec < 10) {
+
+                remSec = '0' + remSec;
+
+            }
+            if (min < 10) {
+
+                min = '0' + min;
+
+            }
+            countDiv.innerHTML = min + ":" + remSec;
+
+            if (sec > 0) {
+
+                sec = sec - 1;
+
+            } else {
+
+                clearInterval(countDown);
+
+                countDiv.innerHTML = 'countdown done';
+
+            }
+        }
+    </script>
+
+     <!--phone number  -->
+    <script type="text/javascript">
+        var telInput = $("#phone"),
+            errorMsg = $("#error-msg"),
+            validMsg = $("#valid-msg");
+
+        // initialise plugin
+        telInput.intlTelInput({
+
+            allowExtensions: true,
+            formatOnDisplay: true,
+            autoFormat: true,
+            autoHideDialCode: true,
+            autoPlaceholder: true,
+            defaultCountry: "auto",
+            ipinfoToken: "yolo",
+
+            nationalMode: false,
+            numberType: "MOBILE",
+            //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+            preferredCountries: ['sa', 'ae', 'qa', 'om', 'bh', 'kw', 'ma'],
+            preventInvalidNumbers: true,
+            separateDialCode: true,
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get("http://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
+        });
+
+        var reset = function () {
+            telInput.removeClass("error");
+            errorMsg.addClass("hide");
+            validMsg.addClass("hide");
+        };
+
+        // on blur: validate
+        telInput.blur(function () {
+            reset();
+            if ($.trim(telInput.val())) {
+                if (telInput.intlTelInput("isValidNumber")) {
+                    validMsg.removeClass("hide");
+                } else {
+                    telInput.addClass("error");
+                    errorMsg.removeClass("hide");
+                }
+            }
+        });
+
+        // on keyup / change flag: reset
+        telInput.on("keyup change", reset);
+
+    </script>
+
+    <!-- Wow Animation -->
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,578 @@
+/*
+Theme Name : hajar cars
+Author: BMA
+Author URI: https://mostaql.com/u/bma_dev
+*/
+
+/*=========================================
+======= Font ==============================
+===========================================*/
+
+
+
+/*=========================================
+======= ==== ==============================
+===========================================*/
+
+* {
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  -moz-transition: all 350ms;
+  transition: all 350ms;
+}
+
+*:focus{
+  outline: none !important;
+}
+
+body {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+  border-color: #FFDD00 !important;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+              About
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.about-page .page-intro{
+  background-image: url(../img/about-intro.png);
+}
+.about-page .about-text p,
+.privacy-page .privacy-text p,
+.terms-page .terms-text p{
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+.about-page .social-icons{
+  position: relative;
+  margin-top: 35px;
+  text-align: center;
+}
+.about-page .social-icons a{
+  font-size: 24px;
+  margin: 10px;
+  color: #707070;
+}
+.about-page .social-icons a:hover{
+  color: #FFDD00;
+  transform: scale(1.08);
+}
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Privacy
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.privacy-page  .page-intro{
+  background-image: url(../img/privacy.png);
+}
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Privacy
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.terms-page  .page-intro{
+  background-image: url(../img/terms.png);
+}
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+           Contact us
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.contact-us-page  .page-intro{
+  background-image: url(../img/contact.png);
+}
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+           Upgrade
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.upgrade-page .page-content{
+  padding-bottom: 0;
+}
+.upgrade-page  .page-intro{
+  background-image: url(../img/upgrade.png);
+  background-position: top;
+}
+.upgrade-page  .features{
+  position: relative;
+}
+.upgrade-page  .features .slick-slide{
+  margin: 0 10px;
+}
+.upgrade-page  .features .card-feat{
+  position: relative;
+  text-align: center;
+  width: 138px;
+  height: 100px;
+  margin: auto;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.5;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+.up-overlay-1{
+  background-image: linear-gradient(135deg, #FFDD00, #FF8800);
+}
+.up-overlay-2{
+  background-image: linear-gradient(135deg, #3900F9, #A900FF);
+}
+.up-overlay-3{
+  background-image: linear-gradient(135deg, #F900AE, #FF3131);
+}
+.up-overlay-4{
+  background-image: linear-gradient(135deg, #00F9B5, #27AD00);
+}
+.up-overlay-5{
+  background-image: linear-gradient(135deg, #FF3434, #BD0000);
+}
+.up-overlay-6{
+  background-image: linear-gradient(135deg, #00CCFF,#009288);
+}
+.upgrade-page  .plans{
+  position: relative;
+  margin-top: 50px;
+}
+.upgrade-page  .plans span{
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.upgrade-page  .reams-modal{
+  z-index: 99999;
+}
+.modal-backdrop{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgb(37 37 37 / 50%) !important;
+  opacity: 1 !important;
+  z-index: 9999!important;
+}
+.upgrade-page  .reams-modal .modal-main-content{
+  background-color: #242424!important;
+  padding: 0;
+  border-top: 5px solid #FFDD00;
+  border-radius: 5px;
+
+}
+.upgrade-page  .reams-modal .modal-head{
+  padding: 25px;
+  text-align: center;
+  background-image: linear-gradient(135deg, #fff, #D1D1D1);
+}
+.upgrade-page  .reams-modal .modal-head h3{
+  color: #383838;
+  font-size: 25px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.upgrade-page  .reams-modal .modal-head span{
+  color: #383838;
+  font-size: 25px;
+  font-weight: 300;
+}
+.upgrade-page  .reams-modal .modal-content{
+  background-color: transparent;
+  padding: 35px;
+}
+.upgrade-page  .reams-modal .mstr-card img{
+  position: absolute;
+  top: 42px;
+  right: 25px;
+}
+.upgrade-page  .reams-modal .mstr-card input{
+  padding-right: 50px;
+}
+.upgrade-page  .reams-modal .modal-content span{
+  display: block;
+  margin-top: 14px;
+  color: rgb(225 225 225 / 50%);
+  font-size: 14px;
+  margin: 15px auto 0 auto;
+}
+
+
+.upgrade-page  .remas-app{
+  position: relative;
+  padding: 35px 0 100px 0;
+  margin: 100px  0 0 0;
+  background-image: url("../img/upgrade-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+.upgrade-page  .remas-app .down-spn{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+.upgrade-page  .remas-app .left-app{
+  width: 50%;
+}
+.upgrade-page  .remas-app .left-app img{
+  margin-left: 25px;
+  width: 97px;
+  height: 97px;
+}
+.upgrade-page  .remas-app .left-app .app-info h4{
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top:-8px;
+}
+.upgrade-page  .remas-app .left-app .app-info span{
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+  top:-8px;
+}
+.upgrade-page  .remas-app .left-app .down-app{
+  margin-right: 110px;
+  margin-top: 15px;
+}
+.upgrade-page .remas-app .left-app .down-app img{
+  width: 100%;
+  height: auto;
+}
+
+.upgrade-page .remas-app .right-app img{
+  transform: rotateY(180deg);
+}
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Login
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.login-page{
+  position: relative;
+  background-image: url("../img/log-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.login-page .log-img {
+  position: absolute;
+  top: -25%;
+  left: -15%;
+}
+.login-page .login-head h1{
+  font-size: 97px;
+  color: #fff;
+  font-weight: bold;
+}
+.login-page .login-forms{
+  position: relative;
+  height: 570px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 345px;
+}
+.login-page .login-forms .login-logo{
+  text-align: center;
+  padding: 35px 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+.login-page .login-forms .step-section{
+  padding: 35px 49px;
+  width: 100% !important;
+}
+.login-page .login-forms .step-section.step-1{
+  text-align: center;
+}
+.login-page .login-forms .btns-section button{
+  position: relative;
+  height: 40px;
+  max-width: 280px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0 35px 0 15px;
+  line-height: 1;
+  border: none;
+  font-size: 16px;
+}
+.login-page .login-forms .btns-section button svg,
+.login-page .login-forms .btns-section button img{
+  float: right;
+  right: 15px;
+}
+.fb-btn{
+  background-color: #1877F2;
+  color: #fff;
+}
+.google-btn{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #979797 !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+}
+.apple-btn{
+  background-color: #000;
+  color: #fff;
+}
+.login-page .login-forms .foot-section{
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 105%;
+  right: 0;
+  left: 0;
+  height: 50px;
+  color: rgb(0 0 0 / 0.6);
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  font-size: 14px
+}
+.lg-pg.login-page .login-forms .foot-section {
+  bottom: 35px;
+  width: 100%;
+}
+
+
+.login-page .login-forms .foot-section a{
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
+.flags-number{
+  text-align: center;
+  padding-top: 50px;
+}
+.login-forms input{
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}
+.login-forms input:focus{
+  border-color: #000 !important;
+}
+.login-forms input::placeholder{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  top: -2px !important;
+  position: relative;
+}
+.login-forms label{
+  font-weight: bold;
+  color: #242424;
+  margin-bottom: 3px;
+}
+.flags-number .rem-tel-input input{
+  padding-right: 0 !important;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  padding-right: 50px !important;
+  display: block;
+}
+.flags-number .rem-tel-input .intl-tel-input input{
+  padding-left: 90px !important;
+}
+.flags-number .rem-tel-input .selected-flag{
+  background-color: transparent !important;
+  font-size: 12px !important;
+  position: relative;
+}
+.flags-number .rem-tel-input .selected-flag:after{
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 20%;
+  width: 1.5px;
+  height: 60%;
+  background-color: rgb(0 0 0 / 49%);
+  border-radius: 15px;
+}
+.intl-tel-input .country-list .country-name{
+  font-size: 12px!important;
+}
+.intl-tel-input.separate-dial-code .selected-dial-code{
+
+}
+.flags-number .intl-tel-input.separate-dial-code .selected-dial-code {
+  padding-left: 45px;
+  color: #666 !important;
+}
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 .selected-flag{
+  width: 45px !important;
+}
+.flags-number a,
+.login-form a.nxt{
+  position: absolute;
+  bottom: 20px;
+  width: 247px;
+  min-width: 247px;
+  left: 49px;
+}
+
+.code-group{
+  padding-top: 35px;
+}
+.code-group input{
+  display: inline;
+  width: 56px;
+  height: 37px;
+  margin: 1px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.code-group label{
+  font-weight: bold;
+}
+.code-group .snd a{
+  color: #000;
+  margin-left: 15px;
+  text-decoration: underline;
+}
+
+.edit-photo input{
+  opacity: 0;
+  width: 90px;
+  cursor: pointer;
+}
+.edit-photo label{
+  background: transparent;
+  width: fit-content;
+  border: none;
+  color: #242424;
+  text-align: center;
+  margin-left: auto;
+  cursor: pointer;
+  padding-top: 15px;
+  font-size: 13px;
+}
+.edit-photo label::after{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+            Responsive
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+/*========= 1024px ==========*/
+@media only screen and (max-width: 1024px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 990px ==========*/
+@media only screen and (max-width: 990px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 768px ==========*/
+@media only screen and (max-width: 768px) {
+  
+  /*=== Header ===*/
+  header{
+    background-color: #242424 !important;
+  }
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+  .main-content{
+    padding-top: 58px;
+  }
+
+  
+}
+
+/*========= 580px ==========*/
+@media only screen and (max-width: 580px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+  
+}
+
+/*========= 480px ==========*/
+@media only screen and (max-width: 480px) {
+  
+  /*=== Header ===*/
+
+  /*=== Footer ===*/
+
+  /*=== Home ===*/
+
+
+}
