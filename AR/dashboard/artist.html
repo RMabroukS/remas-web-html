@@ -217,9 +217,13 @@
                                         </a>
                                     </div>
                                     <div class="drop-item">
-                                        <a href="settings.html">
+                                        <a class="d-flex justify-content-between">
                                             <i class="fas fa-moon"></i>
-                                            <span>Dark Mode</span>
+                                            <span class="">Dark Mode</span>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="lightSwitch">
+                                                <label class="custom-control-label" for="lightSwitch"></label>
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="drop-item log-out">
@@ -959,6 +963,14 @@
     <script type="text/javascript">
         new WOW().init();
     </script>
+    
+    <!--  Light mode switcher  -->
+    <script>
+        $("#lightSwitch").click(function () {
+            $("body").toggleClass('light-mode');
+        });
+    </script>
+
 
 </body>
 

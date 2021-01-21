@@ -1,4 +1,3 @@
-  
 /*
 Theme Name : hajar cars
 Author: BMA
@@ -51,7 +50,7 @@ Author URI: https://mostaql.com/u/bma_dev
 
     /* === === Main Button === ===*/
     .main-btn{
-      color: #fff;
+      color: #000;
       border: none;
       border-radius: 5px;
       /*background: linear-gradient(135deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);*/
@@ -94,7 +93,7 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-left: 5px;
     }
     .main-btn:hover{
-      color: #fff;
+      color: #000;
       text-decoration: none;
       background-position: right center;
     }
@@ -105,12 +104,12 @@ Author URI: https://mostaql.com/u/bma_dev
       color: #000;
       border: none;
       border-radius: 5px;
-      background: #fff;
+      background: #000;
       text-decoration: none;
       text-align: center;
     }
     .white-btn:hover{
-      color: #fff;
+      color: #000;
       background: #000;
     }
     .white-btn svg{
@@ -127,7 +126,7 @@ Author URI: https://mostaql.com/u/bma_dev
       text-align: center;
     }
     .grey-btn:hover{
-      color: #fff;
+      color: #000;
       text-decoration: none;
     }
   
@@ -139,12 +138,12 @@ Author URI: https://mostaql.com/u/bma_dev
      position: relative;
      margin-bottom: 25px;
      text-align: right;
-     color: #fff;
+     color: #000;
    }
    .sec-tlt h3{
      font-size: 20px;
      margin-bottom: 3px;
-     color: #fff;
+     color: #000;
      font-weight: bold;
    }
    .sec-tlt .sec-title  span{
@@ -175,7 +174,7 @@ Author URI: https://mostaql.com/u/bma_dev
     top: 7px;
    }
    .sec-tlt svg{
-     color: #fff;
+     color: #000;
    }
    .sec-spn-tlt{}
    .sec-spn-tlt img{
@@ -185,7 +184,7 @@ Author URI: https://mostaql.com/u/bma_dev
    .sec-spn-tlt span{
      font-size: 16px;
      font-weight: bold;
-     color: #fff;
+     color: #000;
    }
    .sec-spn-tlt small{
      font-size: 16px;
@@ -208,7 +207,7 @@ Author URI: https://mostaql.com/u/bma_dev
    }
    .main-form label{
     font-size: 16px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     text-align: right;
     margin-bottom: 10px;
@@ -244,7 +243,7 @@ Author URI: https://mostaql.com/u/bma_dev
   }
   .rem-tel-input .intl-tel-input.separate-dial-code .selected-dial-code{
     padding-left: 45px;
-    color: #fff;
+    color: #000;
   }
   .rem-tel-input .intl-tel-input.separate-dial-code .iti-flag{
     left: 10px;
@@ -289,7 +288,7 @@ Author URI: https://mostaql.com/u/bma_dev
    .plans{}
    .plans .sub-plan{
      position: relative;
-     background-image: linear-gradient(45deg, #fff, #D1D1D1);
+     background-image: linear-gradient(45deg, #000, #D1D1D1);
      padding: 25px;
      height: 583px;
      max-width: 297px;
@@ -339,7 +338,7 @@ Author URI: https://mostaql.com/u/bma_dev
     top: -15px;
     position: relative;
     background-color: #424242;
-    color: #fff;
+    color: #000;
     height: 59px !important;
     width: 228px !important;
     display: block;
@@ -350,7 +349,7 @@ Author URI: https://mostaql.com/u/bma_dev
    }
    .plans .sub-plan:hover .btn-plan a{
     background: linear-gradient(135deg, rgba(255,221,0,1) 0%, rgba(255,136,0,1) 100%);
-    color: #fff;
+    color: #000;
    }
    .plans .sub-plan .btn-plan small{
      display: block;
@@ -399,7 +398,7 @@ Author URI: https://mostaql.com/u/bma_dev
     z-index: 9999;
     width: 100%;
     right: 0;
-    background-color: #242424af;
+    background-color: #F5F6FAaf;
     padding:0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(10px);
@@ -413,7 +412,7 @@ Author URI: https://mostaql.com/u/bma_dev
    header .main-menu ul{}
    header .main-menu ul li{}
    header .main-menu ul li a{
-     color: #fff;
+     color: #000;
      margin-left: 20px;
    }
    header .main-menu ul li a:hover{
@@ -454,7 +453,7 @@ Author URI: https://mostaql.com/u/bma_dev
      max-width: 145px;
    }
    footer .main-footer .footer-col .social-icons a{
-     color: #fff;
+     color: #000;
      margin: 0 10px;
      font-size: 18px;
     }
@@ -464,7 +463,7 @@ Author URI: https://mostaql.com/u/bma_dev
    footer .main-footer .footer-col h4{
      font-size: 20px;
      font-weight: bold;
-     color: #fff;
+     color: #000;
      margin-bottom: 15px;
    }
    footer .main-footer .footer-col ul{
@@ -479,7 +478,7 @@ Author URI: https://mostaql.com/u/bma_dev
     color: #696969;
    }
    footer .main-footer .footer-col ul li a:hover{
-     color: #fff;
+     color: #000;
    }
    footer .copyrights{
      height: 60px;
@@ -509,7 +508,7 @@ Author URI: https://mostaql.com/u/bma_dev
    }
    .page-intro h1{
      font-size: 61px;
-     color: #fff;
+     color: #000;
      font-weight: bold;
      z-index: 99;
     }
@@ -519,7 +518,7 @@ Author URI: https://mostaql.com/u/bma_dev
       height: 100%;
       right: 0;
       bottom: -1px;
-      background-image: linear-gradient(to top, #242424, transparent);
+      background-image: linear-gradient(to top, #F5F6FA, transparent);
     }
 
 
@@ -527,7 +526,7 @@ Author URI: https://mostaql.com/u/bma_dev
    +++ page intro +++ 
    =========================*/
    .page-content{
-     background-color: #242424;
+     background-color: #F5F6FA;
      margin: 0;
      padding: 75px 0;
    }
@@ -575,7 +574,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .sidenav .ver-menu li.active svg,
     .foot-nav svg{
-      color: #fff;
+      color: #000;
     }
     .sidenav .ver-menu li a,
     .sidenav .ver-menu li span{
@@ -590,7 +589,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .sidenav .ver-menu li.active span,
     .sidenav .ver-menu li.active ul li.active a{
       font-weight: 700;
-      color: #fff;
+      color: #000;
     }
     .sidenav .ver-menu li ul{
       padding: 0;
@@ -621,7 +620,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .sidenav .foot-nav a:hover,
     .sidenav .foot-nav a.active{
-      color: #fff;
+      color: #000;
     }
 
 
@@ -634,7 +633,7 @@ Author URI: https://mostaql.com/u/bma_dev
       bottom: 0;
       padding: 10px 25px;
       z-index: 99;
-      background-color: #242424a1;
+      background-color: #F5F6FAa1;
       -webkit-backdrop-filter: blur(20px);
       backdrop-filter: blur(20px);
       display: none;
@@ -656,7 +655,7 @@ Author URI: https://mostaql.com/u/bma_dev
     } 
     .mobile-side-nav .nav-lnk a.active svg,
     .mobile-side-nav .nav-lnk a.active span{
-      color: #fff !important;
+      color: #000 !important;
     }
 
 
@@ -666,7 +665,7 @@ Author URI: https://mostaql.com/u/bma_dev
       z-index: 99;
       width: calc(100% - 200px);
       right: 200px;
-      background-color: #24242480;
+      background-color: #F5F6FA80;
       padding: 15px 25px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       -webkit-backdrop-filter: blur(10px);
@@ -686,7 +685,7 @@ Author URI: https://mostaql.com/u/bma_dev
       box-shadow: none;
       width: 80%;
       height:50px;
-      color: #fff;
+      color: #000;
     }
     .top-nav .top-nav-search input::placeholder{
       color: #979797;
@@ -716,7 +715,7 @@ Author URI: https://mostaql.com/u/bma_dev
       display: none;
     }
     .top-nav-profile .dropdown a svg{
-      color: #fff;
+      color: #000;
       font-size: 18px;
     }
     .top-nav-profile .dropdown a span{
@@ -757,7 +756,7 @@ Author URI: https://mostaql.com/u/bma_dev
       width: 70%;
     }
     .top-nav-profile .dropdown .dropdown-menu.notif-drop .not-det a{
-      color: #fff;
+      color: #000;
       margin: 0;
       padding: 0;
       font-weight: bold;
@@ -777,7 +776,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .top-nav-profile .dropdown .dropdown-menu.profile-drop{
       position: relative;
-      min-width: 185px;
+      max-width: 200px;
       background-color: #000;
       border-radius: 5px;
       border: none;
@@ -792,7 +791,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .top-nav-profile .dropdown .dropdown-menu.profile-drop span{
       font-size: 14px;
-      color: #fff;
+      color: #000;
       font-weight: bold;
       display: block;
     }
@@ -808,7 +807,7 @@ Author URI: https://mostaql.com/u/bma_dev
       padding: 5px 0 !important;
     }
     .top-nav-profile .dropdown .dropdown-menu.profile-drop .dropdown-item:hover{
-      color: #fff;
+      color: #000;
     }
     .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item{}
     .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a{
@@ -820,33 +819,14 @@ Author URI: https://mostaql.com/u/bma_dev
       display: inline-block;
       background: transparent;
       margin-right: 10px;
-      top: 0;
     }
     .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item a svg{
-      top: 3px;
+      top: 7px;
     position: relative;
     }
     .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a span,
     .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item.log-out a svg{
       color: #FF3434;
-    }
-    .top-nav-profile .dropdown .dropdown-menu.profile-drop .custom-switch{
-      position: relative;
-      top: 3px;
-    }
-    .top-nav-profile .dropdown .dropdown-menu.profile-drop .custom-control-label::after {
-      top: 1px !important;
-      width: 15px !important;
-      height: 15px !important;
-      background-color: #ffdc00 !important;
-    }
-    .top-nav-profile .dropdown .dropdown-menu.profile-drop .custom-control-label::before {
-      background: #525252 !important;
-      border: none !important;
-      height: 10px !important;
-    }
-    .top-nav-profile .dropdown .dropdown-menu.profile-drop .custom-control-input:checked ~ .custom-control-label::before{
-      background-color: #FF8800 !important;
     }
 
 
@@ -860,7 +840,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .settings-list h4{
       padding: 35px 50px;
-      color: #fff;
+      color: #000;
       font-size: 24px;
       font-weight: bold;
       border-bottom: 1px solid rgba(225, 225, 225, .16);
@@ -885,7 +865,7 @@ Author URI: https://mostaql.com/u/bma_dev
       padding: 15px 35px;
       position: relative;
       font-size: 17px;
-      color: #fff;
+      color: #000;
       font-weight: 400;
       z-index: 9 !important;
     }
@@ -911,7 +891,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .settings-list .nav-pills a span{
       margin-right: 0;
       font-size: 14px;
-      color: #fff;
+      color: #000;
       margin-bottom: 0;
       font-weight: 400;
       line-height: 2.5;
@@ -934,7 +914,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .library-list h4{
       padding: 35px 50px;
-      color: #fff;
+      color: #000;
       font-size: 24px;
       font-weight: bold;
       border-bottom: 1px solid rgba(225, 225, 225, .16);
@@ -954,7 +934,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .library-list .nav-pills span{
       font-size: 16px;
-      color: #fff;
+      color: #000;
       font-weight: bold;
       margin-bottom: 10px;
       display: block;
@@ -1006,7 +986,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .library-list .nav-pills a{
       padding: 15px 35px;
       font-size: 17px;
-      color: #fff;
+      color: #000;
       font-weight: 400;
       z-index: 9;
     }
@@ -1016,7 +996,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .library-list .nav-pills a span{
       margin-right: 0;
       font-size: 14px;
-      color: #fff;
+      color: #000;
       margin-bottom: 0;
       font-weight: 400;
     }
@@ -1043,8 +1023,8 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .lib-mobile-tab a.active,
     .lib-mobile-tab li.show a{
-      border-bottom: 2px solid #fff;
-      color: #fff;
+      border-bottom: 2px solid #000;
+      color: #000;
       background-color: transparent !important;
     }
     
@@ -1072,7 +1052,7 @@ Author URI: https://mostaql.com/u/bma_dev
       border: none;
     }
     .lib-mobile-tab li .dropdown-menu a.active{
-      background-color: #242424 !important;
+      background-color: #F5F6FA !important;
     }
 
 
@@ -1098,7 +1078,7 @@ Author URI: https://mostaql.com/u/bma_dev
       left: 10px;
       border: none;
       background-color: transparent;
-      color: #fff;
+      color: #000;
       z-index: 9;
       transform: rotateY(180deg);
     }
@@ -1112,7 +1092,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .single-block .single-block-tlt h3{
       font-weight: bold;
-      color: #fff;
+      color: #000;
       font-size: 30px;
       margin-bottom: 0;
     }
@@ -1169,11 +1149,11 @@ Author URI: https://mostaql.com/u/bma_dev
       position: relative;
       display: block;
       margin: auto;
-      border: 3px solid #242424;
+      border: 3px solid #F5F6FA;
     }
     .artists-list .artist-item a{
       font-size: 11px;
-      color: #fff;
+      color: #000;
       text-align: center;
       margin-top: 10px;
       display: block;
@@ -1217,7 +1197,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .album-list .album-item .album-name a{
       font-size: 13px;
-      color: #fff;
+      color: #000;
       font-weight: bold;
     }
     .album-list .album-item .album-name a:hover,
@@ -1236,7 +1216,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .album-list .album-item .album-btn button,
     .remas-player .extra-tools .player-mobile-btn button{
       background-color: transparent!important;
-      color: #fff;
+      color: #000;
       border: none;
     }
     .album-list .album-item .album-btn button:hover,
@@ -1259,7 +1239,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .album-list .album-item .album-btn .dropdown-menu a,
     .remas-player .extra-tools .player-mobile-btn .dropdown-menu a{
       margin-bottom: 10px;
-      color: #fff;
+      color: #000;
       padding: 0 !important;
     }
     .album-list .album-item .album-btn .dropdown-menu a:hover,
@@ -1277,7 +1257,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .remas-player .extra-tools .main-control-item.amplitude-next{
       display: none;
       font-size: 30px;
-      color: #fff;
+      color: #000;
     }
     .album-list .album-item .album-btn .dropdown-menu a span{}
 
@@ -1312,7 +1292,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .songs-list .song-item .song-name a{
       font-size: 13px;
-      color: #fff;
+      color: #000;
       font-weight: bold;
     }
     .songs-list .song-item .song-name a:hover,
@@ -1327,7 +1307,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .songs-list .song-item .songs-btns a{
       margin: 0 10px;
-      color: #fff;
+      color: #000;
       font-size: 13px;
     }
     .songs-list .song-item .songs-btns a:hover{
@@ -1430,7 +1410,7 @@ Author URI: https://mostaql.com/u/bma_dev
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
-      color: #fff;
+      color: #000;
       padding: 10px;
       border-radius: 50%;
       z-index: 9;
@@ -1447,7 +1427,7 @@ Author URI: https://mostaql.com/u/bma_dev
       height: 55px;
     }
     .home-clips .home-clips-post .home-clips-info span{
-      color: #fff;
+      color: #000;
       font-size: 14px;
       font-weight: bold;
     }
@@ -1510,13 +1490,13 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .signers .signers-post-content{
       position: relative;
-      background-color: #242424;
+      background-color: #F5F6FA;
       border-radius: 5px;
       padding: 15px;
       text-align: center;
       max-width: 175px;
       margin: auto;
-      border: 3px solid #242424;
+      border: 3px solid #F5F6FA;
     }
     .signers .signers-post-content:hover{
       background-color: rgb(36 36 36 / 35%);
@@ -1530,7 +1510,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .signers .signers-post-content a{
       font-size: 13px;
-      color: #fff;
+      color: #000;
       margin: 15px 0;
       display: block;
     }
@@ -1622,7 +1602,7 @@ Author URI: https://mostaql.com/u/bma_dev
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
-      color: #fff;
+      color: #000;
       padding: 10px;
       border-radius: 50%;
       z-index: 9;
@@ -1632,7 +1612,7 @@ Author URI: https://mostaql.com/u/bma_dev
       opacity: 1;
     }
     .songs .home-songs-post span{
-      color: #fff;
+      color: #000;
       font-size: 14px;
       font-weight: bold;
       display: block;
@@ -1739,7 +1719,7 @@ Author URI: https://mostaql.com/u/bma_dev
       background-image: linear-gradient(50deg, #f5dd007c,rgba(255, 179, 0, 0.493)00);
     }
     .genrs .genrs-post .genrs-overlay span{
-      color: #fff;
+      color: #000;
       font-size: 20px;
       font-weight: bold;
       position: relative;
@@ -1803,7 +1783,7 @@ Author URI: https://mostaql.com/u/bma_dev
       height: 30px;
       right: 45%;
       top: 25%;
-      color: #fff;
+      color: #000;
       padding: 7px;
       border-radius: 50%;
       z-index: 9;
@@ -1818,7 +1798,7 @@ Author URI: https://mostaql.com/u/bma_dev
     .videos-clips .video-clip-post .video-clips-info span{
       font-size: 17px;
       font-weight: bold;
-      color: #fff;
+      color: #000;
       display: block;
     }
     .videos-clips .video-clip-post .video-clips-info small{
@@ -1898,7 +1878,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .remas-player .main-control .main-control-item svg{
       font-size: 30px;
-      color: #fff;
+      color: #000;
       transform: rotate(180deg);
     }
 
@@ -1924,7 +1904,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .remas-player .time-control .player-info .left-info .song-title{
       display: inline-block;
-      color: #fff;
+      color: #000;
       font-size: 14px;
       font-weight: bold;
     }
@@ -1933,7 +1913,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .remas-player .time-control .player-info .left-info .song-artist{
       display: inline-block;
-      color: #ffffff73;
+      color: #000fff73;
       font-size: 14px;
       font-weight: bold;
       margin-right: 5px;
@@ -1961,7 +1941,7 @@ Author URI: https://mostaql.com/u/bma_dev
       width: 107%;
     }
     .remas-player .time-control .player-info .right-info .repeat-item svg{
-      color: #fff;
+      color: #000;
       transform: rotateY(180deg);
     }
 
@@ -2003,7 +1983,7 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-top: 5px;
     }
     .remas-player .time-control .time-bar span{
-      color: #fff;
+      color: #000;
     }
     .remas-player .time-control .time-bar progress{
       width: 100%;
@@ -2019,7 +1999,7 @@ Author URI: https://mostaql.com/u/bma_dev
       padding: 10px;
       border-radius: 7px;
       background-color: rgb(0 0 0 / 30%);
-      color: #fff;
+      color: #000;
       font-size: 16px;
     }
     .remas-player .extra-tools a:hover{
@@ -2051,7 +2031,7 @@ Author URI: https://mostaql.com/u/bma_dev
       z-index: 99;
     }
     .custom-controll .cstm-btn{
-      color: #fff;
+      color: #000;
     }
     .custom-controll .play-btn{
       font-size: 25px;
@@ -2074,7 +2054,7 @@ Author URI: https://mostaql.com/u/bma_dev
       flex: 1;
     }
     .custom-controll .range-control span{
-      color: #fff;
+      color: #000;
     }
     .custom-controll .range-control .range-cntrl{
       width: 100%;
@@ -2140,7 +2120,7 @@ Author URI: https://mostaql.com/u/bma_dev
     }
     .custom-controll .settings-cntrl .quality-vid ul li{
       line-height: 35px;
-      color: #fff;
+      color: #000;
     }
     .custom-controll .settings-cntrl .quality-vid ul li.active{
       line-height: 35px;
@@ -2181,7 +2161,7 @@ Author URI: https://mostaql.com/u/bma_dev
       top: -15px;
       position: relative;
       background-color: #424242;
-      color: #fff;
+      color: #000;
       height: 50px !important;
       width: 180px !important;
       display: block;
@@ -2438,7 +2418,7 @@ Author URI: https://mostaql.com/u/bma_dev
       width: 25%;
     }
     .settings-list .nav-pills a.active{
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid #000;
     }
     .settings-list .nav-pills a img {
       margin-left: 0;
@@ -2495,11 +2475,11 @@ Author URI: https://mostaql.com/u/bma_dev
       margin-bottom: 20px;
       padding: 25px;
       border-radius: 5px 5px 0 0;
-      color: #fff !important;
+      color: #000 !important;
     }
     .plans .sub-plan .top-plan h3,
     .plans .sub-plan .top-plan span{
-      color: #fff;
+      color: #000;
     }
     .plans .sub-plan .txt-plan p{
       padding: 20px;
@@ -2508,7 +2488,7 @@ Author URI: https://mostaql.com/u/bma_dev
       top: -15px;
       position: relative;
       background-color: #424242;
-      color: #fff;
+      color: #000;
       height: 40px !important;
       width: 215px !important;
       display: block;
@@ -2783,7 +2763,7 @@ Author URI: https://mostaql.com/u/bma_dev
   .songs-list .song-item .song-name a,
   .album-list .album-item .album-name a{
     font-size: 13px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     top: -10px;
     position: relative;
@@ -2842,218 +2822,4 @@ Author URI: https://mostaql.com/u/bma_dev
 
   }
 
-
-
-
-
-
-
-/*=========================================
-============    Light Mode     ============
-===========================================*/
-
-/* Track */
-body.light-mode  ::-webkit-scrollbar-track {
-  background: #fff; 
-}
-body.light-mode  ::-webkit-scrollbar-thumb {
-  background: #979797; 
-}
-
-
-/**/
-body.light-mode .sidenav{
-  background-color: #fff;
-}
-body.light-mode .sidenav .logo,
-body.light-mode .sidenav .ver-menu {
-  border-bottom: 1px solid rgb(0 0 0 / 16%);
-}
-body.light-mode .sidenav .ver-menu li.active a, 
-body.light-mode .sidenav .ver-menu li a:hover, 
-body.light-mode .sidenav .ver-menu li.active span, 
-body.light-mode .sidenav .ver-menu li.active ul li.active a,
-body.light-mode .sidenav .foot-nav a:hover, 
-body.light-mode .sidenav .foot-nav a.active,
-body.light-mode .mobile-side-nav .nav-lnk a.active svg, 
-body.light-mode .mobile-side-nav .nav-lnk a.active span,
-body.light-mode .sidenav .ver-menu li.active svg, 
-body.light-mode .foot-nav svg{
-  color: #000 !important;
-}
- {
-  color: #000;
-}
-
-
-/**/
-body.light-mode .top-nav,
-body.light-mode .mobile-side-nav{
-  background-color: #f2f5f78c;
-}
-body.light-mode .top-nav-profile .dropdown .dropdown-menu.profile-drop{
-  background-color: #fff;
-}
-.top-nav,
-body.light-mode .top-nav-profile .dropdown .dropdown-menu.profile-drop .drop-item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-}
-body.light-mode .top-nav-profile .dropdown .dropdown-menu.profile-drop span{
-  color: #000;
-}
-
-
-/**/
-body.light-mode .sec-tlt h3,
-body.light-mode .top-nav-profile .dropdown a svg,
-body.light-mode .sec-tlt,
-body.light-mode .sec-tlt svg{
-  color: #000;
-}
-body.light-mode .grey-btn {
-  color: rgb(0 0 0);
-  background: #d0d0d0;
-}
-.white-btn {
-  color: #fff;
-  background: #000;
-}
-.white-btn:hover {
-  color: #000;
-  background: #fff;
-}
-
-
-/**/
-body.light-mode .home-clips .home-clips-post .home-clips-info {
-  background-color: #fff;
-}
-body.light-mode .home-clips .home-clips-post .home-clips-info span{
-  color: #000;
-}
-
-body.light-mode .signers .signers-content {
-  background-color: #ffffff;
-}
-body.light-mode .signers .signers-post-content {
-  background-color: #f2f5f7;
-  border: 3px solid #f2f5f7;
-}
-body.light-mode .signers .signers-post-content a {
-  color: #000;
-}
-body.light-mode .signers .signers-post-content:hover {
-  background-color: rgb(242 245 247 / 44%);
-}
-
-body.light-mode .songs .home-songs-post span,
-body.light-mode .videos-clips .video-clip-post .video-clips-info span {
-  color: #000;
-}
-body.light-mode .placeholder-content .placeholder-content-item{
-  background-color: #c3c3c3;
-}
-body.light-mode .placeholder-content .placeholder-content-item::before {
-  background: linear-gradient(to left, transparent 0%, #cccccc 50%, transparent 100%);
-  animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-
-/**/
-body.light-mode .single-block{
-  border-left: 1px solid rgba(0, 0, 0, .16);
-}
-body.light-mode .songs-list .song-item,
-body.light-mode .artist-stats{
-  border-bottom: 1px solid rgba(0, 0, 0, .16);
-}
-body.light-mode .songs-list .song-item .song-name a,
-body.light-mode .songs-list .song-item .songs-btns a,
-body.light-mode .single-block .single-block-tlt h3,
-body.light-mode .artists-list .artist-item a,
-body.light-mode .library-list h4,
-body.light-mode .library-list .nav-pills a,
-body.light-mode .album-list .album-item .album-name a {
-  color: #000;
-}
-body.light-mode .songs-list .song-item:hover,
-body.light-mode .album-list .album-item:hover {
-  background-color: #dedede;
-}
-
-
-/**/
-body.light-mode .artists-list .artist-item img {
-  border: 3px solid #f2f5f7;
-}
-
-/**/
-body.light-mode .library-list h4,
-body.light-mode .settings-list h4,
-body.light-mode .edit-profile .edit-block,
-body.light-mode .edit-theme .custom-control, 
-body.light-mode .edit-notification .custom-control {
-  border-bottom: 1px solid rgba(0, 0, 0, .16) !important;
-}
-body.light-mode .library-list .nav-pills a {
-  border-top: 1px solid rgba(0, 0, 0, .16);
-}
-body.light-mode .library-list .nav-pills a.d-flex{
-  border: none;
-}
-body.light-mode .library-list .nav-pills span,
-body.light-mode .library-list .nav-pills a span,
-body.light-mode .album-list .album-item .album-btn button, 
-body.light-mode .remas-player .extra-tools .player-mobile-btn button,
-body.light-mode .album-list .album-item .album-btn .dropdown-menu a, 
-body.light-mode .remas-player .extra-tools .player-mobile-btn .dropdown-menu a,
-body.light-mode .live-content .channels li span,
-body.light-mode .settings-list h4,
-body.light-mode .settings-list .nav-pills a span,
-body.light-mode .edit-profile .edit-info .main-form span,
-body.light-mode .main-form label,
-body.light-mode .settings-list .nav-pills a svg,
-body.light-mode .edit-profile .edit-block .edit-block-tlt h4,
-body.light-mode .edit-theme .edit-lang span,
-body.light-mode .edit-subscription .plans h2{
-  color: #000;
-}
-body.light-mode .album-list .album-item .album-btn .dropdown-menu, 
-body.light-mode .remas-player .extra-tools .player-mobile-btn .dropdown-menu {
-  background-color: rgb(255 255 255 / 80%);
-}
-body.light-mode .library-list .nav-pills a.animation,
-body.light-mode .settings-list .nav-pills a.animation{
-  background-color: #dedede !important;
-}
-
-
-/**/
-body.light-mode .live-content .channels li {
-  background-color: #dedede;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-}
-
-
-/**/
-body.light-mode .main-form input, 
-body.light-mode .main-form textarea, 
-body.light-mode .main-form select {
-  border: 2px solid rgba(0, 0, 0, 0.16);
-}
-body.light-mode .settings-list {
-  border-left: 1px solid rgba(0, 0, 0, .16);
-}
-body.light-mode .edit-theme .custom-control label, 
-body.light-mode .edit-notification .custom-control label {
-  color: rgb(0 0 0 / 60%);
-}
-body.light-mode .edit-theme .custom-control label::before, 
-body.light-mode .edit-notification .custom-control label::before {
-  background-color: #dedede;
-}
-body.light-mode .edit-subscription .free-txt {
-  border-bottom: 1px solid rgb(0 0 0 / 16%);
-  color: rgb(0 0 0 / 16%);
-}
 

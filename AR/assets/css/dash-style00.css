@@ -1,0 +1,392 @@
+/*
+Theme Name : hajar cars
+Author: BMA
+Author URI: https://mostaql.com/u/bma_dev
+*/
+
+
+* {
+    -webkit-transition: all 350ms;
+    -o-transition: all 350ms;
+    -moz-transition: all 350ms;
+    transition: all 350ms;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+  }
+  
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .custom-control-input:focus~.custom-control-label::before,
+  .btn.focus,
+  .btn:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: 0 none !important;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+                The content
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    
+    .the-content{
+      position: relative;
+      width: calc(100% - 200px);
+      margin-right: 200px;
+      background-color: #F5F6FA;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+    .the-content .main-content{
+      padding: 100px 40px;
+    }
+    .the-content .main-content.no-padding{
+      padding: 81px 0!important;
+    }
+    .the-content .main-content.music-content{
+      padding-left: 0!important;
+      padding-right: 20px;
+    }
+    .the-content .main-content.music-content .sec-tlt{
+      padding-left: 70px!important;
+    }
+    
+  
+  
+  
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+              Library Page
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    .library-page .tab-content,
+    .settings-page .tab-content,
+    .right-single-block{
+      margin-right: 350px;
+    }
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+              Album Page
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    .album-page .signle-block-img{
+      background-image: url(../img/dash/play-list-3.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+              Playlist Page
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    .playlist-page .signle-block-img{
+      background-image: url(../img/dash/play-list-2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+              artist Page
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    .artist-page .single-block .single-block-tlt{
+      margin-top: 0px;
+    }
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+                Settings
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    .edit-profile{}
+    .edit-profile .edit-block{
+      position: relative;
+      text-align: center;
+      padding: 35px 0;
+      border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+    }
+    .edit-profile .edit-block .edit-block-tlt{
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .edit-profile .edit-block .edit-block-tlt h4{
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+    }
+    .edit-profile .edit-block .edit-block-tlt a{
+      font-size: 14px;
+      color: #FFDD00;
+      font-weight: 400;
+    }
+    .edit-profile .edit-photo{}
+    .edit-profile .edit-photo input{
+      opacity: 0;
+      width: 90px;
+      cursor: pointer;
+    }
+    .edit-profile .edit-photo label{
+      background: transparent;
+      width: fit-content;
+      border: none;
+      color: #FFDD00;
+      text-align: center;
+      margin: auto;
+      cursor: pointer;
+    }
+    .edit-profile .edit-photo label::after{
+      display: none;
+    }
+    .edit-profile .edit-info .main-form span{
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+      text-align: right;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .edit-profile .connect-btns{}
+    .edit-profile .connect-btns button{
+      position: relative;
+      height: 40px;
+      max-width: 280px;
+      text-align: right;
+      border-radius: 5px;
+      padding: 0 35px 0 15px;
+      line-height: 1;
+      border: none;
+      font-size: 16px;
+    }
+    .edit-profile .connect-btns button:hover{
+      opacity: 0.7;
+    }
+    .edit-profile .connect-btns button svg,
+    .edit-profile .connect-btns button img{
+      margin-left: 10px;
+    }
+    .edit-profile .connect-btns .fb-btn{
+      background-color: #1877F2;
+      color: #000;
+    }
+    .edit-profile .connect-btns .google-btn{
+      background-color: #000;
+      color: #000;
+      margin: 0 50px;
+    }
+    .edit-profile .connect-btns .apple-btn{
+      background-color: #000;
+      color: #000;
+    }
+  
+    .edit-theme{}
+    .edit-theme .edit-lang{
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .edit-theme .edit-lang span{
+      font-size: 14px;
+      color: #000;
+      font-weight: bold;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .edit-theme .custom-control,
+    .edit-notification .custom-control{
+      margin-bottom: 20px;
+      position: relative;
+      border-bottom: 1px solid rgba(225, 225, 225, 0.16) !important;
+      padding-bottom: 25px;
+      padding-right: 0;
+    }
+    .edit-theme .custom-control:last-child,
+    .edit-notification .custom-control:last-child{
+      border: none;
+    }
+    .edit-theme .custom-control input{}
+    .edit-theme .custom-control label,
+    .edit-notification .custom-control label{
+      color: rgba(225, 225, 225, 0.6);
+      font-size: 16px;
+      display: block;
+      width: 100%;
+    }
+    .edit-theme .custom-control label::before,
+    .edit-theme .custom-control label::after,
+    .edit-notification .custom-control label::before,
+    .edit-notification .custom-control label::after{
+      left: 0!important;
+      right: auto !important;
+      background-image: none !important;
+    }
+    .edit-theme .custom-control label::before,
+    .edit-notification .custom-control label::before{
+      background-color: #383838;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      border: none;
+    }
+    .edit-theme .custom-control .custom-control-input:not(:disabled):active~.custom-control-label::before,
+    .edit-theme .custom-control .custom-control-input:checked~.custom-control-label::before,
+    .edit-notification .custom-control .custom-control-input:not(:disabled):active~.custom-control-label::before,
+    .edit-notification .custom-control .custom-control-input:checked~.custom-control-label::before {
+      color: #FFDD00;
+      background-color: #383838;
+      background-image: none;
+      border-color: #3371b5;
+      content: "✓";
+      font-size: 18px;
+      padding-right: 5px;
+    }
+  
+  
+    .edit-subscription{}
+    .edit-subscription .free-txt{
+      padding: 35px 0;
+      border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+      font-size: 16px;
+      color: rgba(225, 225, 225, 0.16);
+    }
+    .edit-subscription .plans h2{
+      font-size: 34px;
+      font-weight: bold;
+      color: #000;
+      margin: 35px 0;
+    }
+      
+    
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+                  Live
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    .live-content .d-sm-flex{
+      height: 65vh;
+      position: relative;
+      width: 100%;
+    }
+    .live-content .channels{
+      position: relative;
+      height: 100%;
+      width: 200px;
+      overflow-y: scroll;
+    }
+    .live-content .channels li{
+      position: relative;
+      padding: 20px 15px;
+      background-color: #3A3A3A;
+      border-bottom: 1px solid rgba(225, 225, 225, 0.16);
+    }
+    .live-content .channels li.active{
+      background-color: rgba(225, 225, 225, 0.20);
+    }
+    .live-content .channels li .ch-logo{
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      background-color: #000;
+      border-radius: 50%;
+      margin-left: 10px;
+      margin: 0;
+    }
+    .live-content .channels li .ch-content{
+      margin-right: 10px;
+    }
+    .live-content .channels li span{
+      font-size: 14px;
+      color: #000;
+      display: block;
+    }
+    .live-content .channels li .live-logo{}
+    .live-content .video-live{
+      position: relative;
+      width: 100%;
+    }
+  
+  
+    
+    /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+                Responsive
+    =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+    
+    /*========= 1024px ==========*/
+    @media only screen and (max-width: 1024px) {
+      
+      /*=== Header ===*/
+    
+      /*=== Footer ===*/
+    
+      /*=== Home ===*/
+    
+      
+    }
+    
+    /*========= 990px ==========*/
+    @media only screen and (max-width: 990px) {
+      
+      /*=== Header ===*/
+    
+      /*=== Footer ===*/
+    
+      /*=== Home ===*/
+    
+      
+    }
+    
+    /*========= 768px ==========*/
+    @media only screen and (max-width: 768px) {
+      
+      /*=== Header ===*/
+    
+      /*=== Footer ===*/
+    
+      /*=== Home ===*/
+    
+      
+    }
+    
+    /*========= 580px ==========*/
+    @media only screen and (max-width: 580px) {
+      
+      /*=== Header ===*/
+    
+      /*=== Footer ===*/
+    
+      /*=== Home ===*/
+    
+      
+    }
+    
+    /*========= 480px ==========*/
+    @media only screen and (max-width: 480px) {
+      
+      /*=== Header ===*/
+    
+      /*=== Footer ===*/
+    
+      /*=== Home ===*/
+    
+    
+    }
+    
